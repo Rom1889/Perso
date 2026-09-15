@@ -1,0 +1,884 @@
+[
+ {
+  "type": "Défi",
+  "text": "Mets une chanson lente. Un baiser pendant tout le refrain.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Sur le couplet : mains immobiles. Sur le refrain : caresse le dos.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} choisit la chanson. Toi tu cadences les baisers.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Baisse le son très bas. Chuchote plus fort que la musique 20 secondes.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Change de chanson à mi-chrono. Un baiser à chaque changement.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Danse habillés 30 secondes, ensuite un seul baiser.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Coupe le son 5 secondes, fronts collés, remets.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "La chanson doit durer au moins le chrono. Caresse le visage seulement.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Comptez les refrains. Un baiser par refrain.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Fin de chanson = fin du défi même si le chrono tourne encore. Câlin.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Sous la couverture jusqu'au cou. Mains sur le visage seulement, 30 secondes.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Couverture sur {{partner}} seulement. Toi dehors. Caresse les cheveux.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Les deux sous la couverture. Un baiser, mains visibles au-dessus.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Cache un baiser sous la couverture. {{partner}} dit où.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Couverture jusqu'à la taille. Masse les épaules.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Enlève la couverture à mi-chrono. Câlin découvert.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} choisit qui est dessous. L'autre caresse le bras.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Mettez-vous sous la couverture. Silence 20 secondes, seulement un câlin.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Pieds sous la couverture, visages dehors. Baisers.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Sur le canapé, mets {{partner}} contre toi sous une couverture. Vos mains restent hors de la couverture.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "lieux",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Refrain : frottez les bassins. Couplet : stop.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Mets une chanson. Enlève un vêtement au premier refrain.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Volume bas. Caresse sous le haut seulement pendant la chanson.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} choisit une chanson « sale ». Toi tu caresses le ventre.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "À chaque « drop » ou refrain, un baiser plus appuyé.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Musique + {{partner}} contre le mur. Bassins collés.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Coupe 10 secondes au milieu. Silence et souffle seulement.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Interdiction de descendre sous la ceinture tant que le couplet tourne.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Fin au silence. Recouvre {{partner}}.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Deux chansons max. Entre les deux : un verre d'eau proposé.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Sous la couverture. Caresse par-dessus les vêtements 30 secondes.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Mains sous la couverture, visages dehors. Une main chacun sur le ventre.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Couverture. Enlève un vêtement sans sortir.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Frottez les bassins sous la couverture, habillés.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Couverture jusqu'à la poitrine. Embrasse le ventre au-dessus du tissu.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Sortez une main chacun. Le reste caché.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} entièrement sous la couverture. Toi tu caresses par-dessus la couverture.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "À mi-chrono : découvrez les épaules seulement.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Fin : recouvre {{partner}} et demande si ça va.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Sous une couverture, caresse {{partner}} partout sauf sous le sous-vêtement.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "lieux",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Refrain : bouche plus vite. Couplet : plus lent. Sur {{le_sexe}}.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Mets une musique. Ta main est sur {{le_sexe}} de {{partner}}. Tu ne bouges que sur les coups de batterie (ou le beat). Entre deux coups, tu t'arrêtes.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Chanson entière d'oral. Si elle se termine, tu t'arrêtes.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} choisit la chanson. Toi tu fais {{un_oral}}.",
+  "need": "musique",
+  "partner": null,
+  "cat": "oral",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Coupe le son : tu t'arrêtes. Remets : tu reprends.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Refrain = langue sur {{le_point}}. Couplet = cuisses.",
+  "need": "musique",
+  "partner": null,
+  "cat": "oral",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Musique forte assez pour que {{partner}} doive parler plus fort s'{{il}} veut un changement.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Quand la chanson se termine : câlin, plus de bouche sur {{le_sexe}}.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Pendant deux refrains : ta bouche sur {{le_sexe}} de {{partner}}. Le reste de la chanson : seulement tes mains.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Sous la couverture. Masturbe {{partner}} pendant {{time}}.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Visage dehors, bas du corps sous la couverture. Fais {{un_oral}}.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "oral",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Couverture. Les deux mains sous, bouche aussi.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Découvre seulement le ventre. Le reste caché. Langue sur le ventre puis le sexe.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} sous la couverture. Toi tu guides sa tête pour un oral sur toi.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Couverture + 20 secondes de bouche, 10 secondes pause.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Interdiction de jeter la couverture. Restez dessous.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Fin : couverture remonte jusqu'aux épaules, câlin.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Une jambe hors de la couverture, le reste caché. Main sur {{le_sexe}}.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Demande : on reste cachés ou on découvre. Ensuite oral ou main.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Mets une musique. Sur {{le_sexe}} de {{partner}}, accélère au refrain et ralentis au couplet.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Refrain plus franc, couplet plus lent.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} choisit 1 chanson. Vous ne changez pas de position pendant.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Coupe : tu te retires. Play : tu reprends.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Batterie = tes hanches. Chant = tes mains.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Fin de chanson : restez collés 10 secondes.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Interdiction d'aller plus vite que la musique.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Deux chansons. Change de position entre les deux.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Musique basse. Vous devez encore pouvoir vous parler.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Dernière chanson : tu prends jusqu'à la fin de la piste.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Sous la couverture. Prends {{partner}} pendant {{time}}.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Visages dehors. Bassins cachés. Tu prends.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Couverture. Changez de position sans la faire tomber.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Découvrez à mi-chrono. Continuez de vous prendre.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} au-dessus, couverture sur son dos. Tu guides.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Sortez les pieds. Le reste dessous. Tu prends.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Fin : restez enveloppés 20 secondes sans bouger.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Couverture tombée = pause 5 secondes, vous la remettez, vous reprenez.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Une seule position sous la couverture pendant tout le chrono.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Toi tu choisis la chanson sans demander. Tu prends au rythme.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Refrain = plus fort. Si {{partner}} parle, tu reviens au couplet.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Une seule chanson. Position imposée par toi.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Pendant que tu prends {{partner}}, coupe la musique 5 secondes, 3 fois max. À chaque coupe, tu t'arrêtes. Au play, tu reprends.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Musique + quatre pattes pendant tout le refrain.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Quand la chanson se termine, tu t'arrêtes de prendre {{partner}}, même s'{{il}} est au bord de jouir.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} n'a pas le droit de changer la musique.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Après la chanson : 20 secondes de câlin obligatoire.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Pendant deux refrains d'affilée, tu prends {{partner}} sans te retirer.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Silence final 10 secondes les yeux dans les yeux.",
+  "need": "musique",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Tu prends {{partner}} sous la couverture. {{il}} n'a pas le droit de la jeter.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Couverture comme contrainte : moins d'espace, rythme court.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Quatre pattes sous la couverture (si ça tient), sinon assis. Tu prends.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} reste sous la couverture. Tu {{l}} découvres seulement quand tu le dis à voix haute. Ensuite tu {{l}} prends.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Après un rythme fort : remets la couverture, 20 secondes lentes.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Sous la couverture, silence total. Prends {{partner}} pendant {{time}}.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Recouvre {{partner}}, propose de l'eau. Plus aucun ordre pendant 30 secondes.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Impose : tête hors de la couverture, reste du corps dessous.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Si la couverture tombe 2 fois, vous vous arrêtez pour de bon.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Dernière minute découverts. Ensuite tu recouvres.",
+  "need": "couverture",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ }
+]

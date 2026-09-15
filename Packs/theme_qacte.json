@@ -1,0 +1,596 @@
+[
+ {
+  "type": "Q+Acte",
+  "text": "Raconte à {{partner}} le premier moment où tu as eu envie de {{l}} toucher. Puis pose la main exactement là, par-dessus les vêtements.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 1
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} : « trop lent, ou encore plus lent ? » Embrasse-{{l}} dans ce rythme pendant {{time}}.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 1
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande : « tu veux que je parle ou que je me taise ? » Respecte ce choix pendant tout le prochain baiser.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 1
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} : « quelle zone te fait le plus fondre ? »\\nEnsuite embrasse exactement cet endroit pendant {{time}}.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 1
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} : « baisers lents ou baisers affamés ? »\\nEnsuite embrasse-{{l}} dans le style choisi pendant {{time}}.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 1
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} où sa peau est la plus sensible.\\nCaresse cet endroit 30 secondes, puis embrasse-le aussi.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 1
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} son baiser préféré du moment.\\nReproduis-le trois fois.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 1
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} : « tu préfères que je te déshabille, ou te regarder le faire ? »\\nEnsuite fais ce qui a été choisi.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 1
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} quelle partie encore habillée tu dois découvrir.\\nDécouvre-la et embrasse-la pendant {{time}}.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 1
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} quel vêtement doit partir en premier.\\nEnlève seulement celui-là, puis embrasse la peau découverte.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 1
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} de lever ses cheveux, puis embrasse la nuque dégagée pendant {{time}}.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 1
+ },
+ {
+  "type": "Q+Acte",
+  "text": "{{partner}} choisit une oreille. Tu n'as le droit d'embrasser et de chuchoter que de ce côté-là.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 1
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} : baiser court ou baiser qui dure ? Fais exactement ce qui a été choisi, 5 fois.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 1
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande où {{partner}} veut tes mains : nuque, taille ou visage. Pose-les là et ne les déplace plus.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 1
+ },
+ {
+  "type": "Q+Acte",
+  "text": "{{partner}} choisit : yeux ouverts ou fermés. Embrasse dans ce mode pendant {{time}}.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 1
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} : une caresse toutes les 2 secondes, ou sans pause ? Tes deux mains restent sur son dos ou son ventre. Tu tiens ce rythme pendant {{time}}.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 1
+ },
+ {
+  "type": "Q+Acte",
+  "text": "{{partner}} désigne une zone encore habillée. Tu n'as le droit de l'embrasser que par-dessus le tissu.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 1
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande : « tu veux ma bouche ici, ou seulement mes mains ? » Fais uniquement ce qui a été choisi pendant {{time}}.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 2
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} quelle zone encore habillée est la plus frustrante. Caresse uniquement celle-là pendant {{time}}.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 2
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande : « par-dessus ou juste sous le tissu ? » Une seule réponse. Tu restes dans ce cadre pendant {{time}}.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 2
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} : « contre le mur ou allongé{{e}} ? »\\nEmbrasse-{{l}} dans cette position pendant {{time}}.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 2
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Raconte à {{partner}} où tu veux mettre ta bouche plus tard, tout en caressant son ventre.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 2
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Caresse {{partner}} par-dessus les vêtements. {{il}} dit « haut » (torse, cou) ou « bas » (ventre, hanches). Tu restes 20 secondes dans la zone dite.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 2
+ },
+ {
+  "type": "Q+Acte",
+  "text": "{{partner}} prend ta main et la glisse sur son corps. Dès qu'{{il}} s'arrête, tu t'arrêtes pile. Tu ne dépasses pas cette limite pendant le reste du chrono.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 2
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} : ventre, cuisses ou hanches ? Tu n'as le droit de toucher que la zone choisie pendant {{time}}.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 2
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Remets ta main exactement où elle était. Demande à {{partner}} : « plus de pression, ou plus de peau ? » Tu fais uniquement ce qu'{{il}} a choisi pendant {{time}}.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 2
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} : contre toi, ou allongé{{e}} ? Embrasse et caresse uniquement dans la pose choisie.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 2
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Caresse ou frotte {{partner}} par-dessus les vêtements. Toutes les 15 secondes, {{il}} dit « stop » ou « encore ». Tu obéis tout de suite.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 2
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} : « je reste sur tes cuisses et ton ventre, ou ma bouche va tout de suite sur {{le_sexe}} ? » Une seule réponse. Fais uniquement ça pendant {{time}}.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 3
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande : « tu veux que je parle pendant que je te goûte, ou silence ? » Respecte ça jusqu'à la fin.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 3
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Fais {{un_oral}} ou masturbe {{partner}} pendant {{time}}. {{il}} choisit avant : tu t'arrêtes 3 fois (5 secondes), ou tu ne t'arrêtes jamais.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 3
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} : « langue plate, pointe de langue, ou succion ? »\\nFais exactement ça pendant {{time}}.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 3
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} : « je vais plus vite ou plus lentement ? »\\nMasturbe-{{l}} dans ce rythme pendant {{time}}.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 3
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} : « tu joues plus avec ma bouche ou avec ma main ? »\\nUtilise seulement cette technique pendant {{time}}.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 3
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} : « main, cuisse, ou ventre contre toi ? »\\nFais exactement ça pendant {{time}}, sans oral.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 3
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} où {{il}} veut tes doigts.\\nReste uniquement là pendant {{time}}.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 3
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande : « plus de pression ou plus de lenteur ? »\\nMasturbe {{partner}} uniquement comme ça.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Demande à {{partner}} un chiffre de 1 à 5. Pose ensuite ta main à plat sur {{le_sexe}}. 1 = tu effleures à peine la peau. 5 = pression franche, sans faire mal. Tu gardes exactement cette pression pendant {{time}}, sans changer d'endroit.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 3
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} : langue, lèvres ou main ? Utilise uniquement la technique choisie pendant {{time}}.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 3
+ },
+ {
+  "type": "Q+Acte",
+  "text": "{{partner}} choisit le rythme de ta bouche : lent ou plus vif. Tu gardes ce rythme jusqu'à la fin.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 3
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} : tu restes au centre de {{le_sexe}}, ou tu fais le tour ? Fais uniquement ce qui a été choisi.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 3
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Caresse ou lèche {{partner}} en te déplaçant lentement. Dès qu'{{il}} dit « là », tu restes sur cette zone jusqu'à la fin du chrono.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 3
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande : « tu veux finir dans ma bouche, ou pendant que je te prends ? » Fais ce choix, sans changer.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 4
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande : « tu veux que je te prenne, ou que tu me prennes ? » Faites ce choix pendant {{time}}.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 4
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande le mot : « plus près », « plus lent », ou « parle-moi ». Un seul mot. Tu l'appliques jusqu'au bout.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 4
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} : « doucement ou plus fort ? »\\nPrends-{{l}} exactement comme ça pendant {{time}}.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 4
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} quelle position vous n'avez pas encore faite ce soir.\\nInstallez-vous dans cette position pendant {{time}}.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 4
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} : « je parle sale, ou on se tait ? »\\nPrends-{{l}} dans ce style.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 4
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} s'il veut tes mains en plus.\\nSi oui, ajoute-les pendant que tu {{l}} prends.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 4
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} : « plus profond ou plus rapide ? »\\nTu n'as le droit d'appliquer que le choix donné.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 4
+ },
+ {
+  "type": "Q+Acte",
+  "text": "{{partner}} montre avec la main la hauteur de bassin qu'{{il}} veut. Tu suis exactement.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 4
+ },
+ {
+  "type": "Q+Acte",
+  "text": "{{partner}} choisit si tes mains sont sur les hanches ou les épaules.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 4
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} : plus lent, ou plus près ? Tu n'appliques que le choix donné, jusqu'à la fin.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 4
+ },
+ {
+  "type": "Q+Acte",
+  "text": "{{partner}} choisit où tu mets tes mains : hanches, poitrine ou nuque. Garde-les là pendant que tu {{l}} prends.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 4
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} : tu parles, ou on se tait ? Respecte ce choix jusqu'à la fin du chrono.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 4
+ },
+ {
+  "type": "Q+Acte",
+  "text": "{{partner}} dit un chiffre 1 à 5 : c'est l'amplitude, pas la vitesse.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 4
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande : « tu veux encore que je mène, ou on passe à parts égales ? » Applique la réponse jusqu'à la fin du chrono.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 5
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande : « tu veux supplier, ou tu veux que ce soit moi ? » Le choix tient jusqu'à la fin du chrono.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 5
+ },
+ {
+  "type": "Q+Acte",
+  "text": "{{partner}} écrit (ou dit) un mot sur ce qu'{{il}} veut. Tu as 10 secondes pour commencer à le faire.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 5
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} : « tu veux supplier, obéir, ou tout donner ? »\\nImpose ce rôle pendant {{time}}.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 5
+ },
+ {
+  "type": "Q+Acte",
+  "text": "{{partner}} choisit un mot : plus fort, plus lent, ou continue.\\nToi tu appliques ce mot pendant {{time}}.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 5
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} le mot de la fin : plus fort, plus tendre, ou on s'arrête.\\nFais les 30 dernières secondes comme ça.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 5
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Demande à {{partner}} le mot du moment : « plus », « moins » ou « stop ». Applique-le pendant 30 secondes.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 5
+ },
+ {
+  "type": "Q+Acte",
+  "text": "{{partner}} choisit : seulement ta bouche, seulement que tu {{l}} prennes, ou les deux en relais. Tu obéis pendant {{time}}.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 5
+ },
+ {
+  "type": "Q+Acte",
+  "text": "Donne un mot à {{partner}} : supplier, attendre ou lâcher. Tout le défi se joue dans ce cadre.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Finis sur {{partner}} : visage, poitrine ou ventre. {{il}} choisit l'endroit avant que tu commences.",
+  "need": null,
+  "partner": null,
+  "cat": "qacte",
+  "pack": "qacte",
+  "level": 5
+ }
+]

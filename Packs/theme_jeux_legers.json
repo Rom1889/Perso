@@ -1,0 +1,1694 @@
+[
+ {
+  "type": "Défi",
+  "text": "Bandeau 15 secondes. Embrasse seulement le front et les joues de {{partner}}.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Guide {{partner}} jusqu'à une chaise. Un seul baiser, ensuite tu retires le bandeau.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Caresse le visage de {{partner}} avec tes deux mains pendant 30 secondes.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Chuchote 3 phrases contre l'oreille de {{partner}}, puis un baiser.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. {{partner}} doit dire où tu viens de l'embrasser. 4 essais.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Tes mains sur les épaules seulement, front contre front, 20 secondes.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Mets le bandeau 10 secondes, retire-le, un baiser, remets-le 10 secondes.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Parcours les cheveux de {{partner}} sans toucher ailleurs.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Un baiser sur chaque paupière (par-dessus le tissu si besoin), puis la bouche.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes devant, lâches. Embrasse les poignets autour du métal pendant 20 secondes.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Une menotte fermée à vide dans ta main. Fais-la toucher l'avant-bras de {{partner}}, puis un baiser.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes devant. Un câlin de 30 secondes, {{partner}} ne peut pas ouvrir les bras.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Attache les poignets devant. Masse les épaules de {{partner}} pendant {{time}}.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes. {{partner}} assis{{e}}. Toi tu embrasses le visage seulement.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Ferme une menotte sur un seul poignet. L'autre reste libre. Baisers pendant {{time}}.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Montre les menottes. Demande : maintenant ou plus tard. Si maintenant : poignets devant + 5 baisers.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes devant. Fronts collés 20 secondes.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes. Guide {{partner}} par les mains liées jusqu'au canapé. Asseyez-vous, un baiser.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Vérifie que deux doigts passent entre menotte et peau. Ensuite 30 secondes de caresses sur les bras.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Sextoy éteint contre l'épaule de {{partner}} 20 secondes.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Fais rouler le sextoy éteint le long de l'avant-bras de {{partner}}.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Pose le sextoy éteint entre vos deux mains. Câlin.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Sextoy éteint dans le dos de {{partner}}, par-dessus, 15 secondes.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Demande où poser le jouet éteint au-dessus de la ceinture. Pose-le là.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Sextoy éteint contre ta propre joue, puis contre celle de {{partner}}.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Faites le tour du sextoy éteint avec vos doigts en même temps.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Sextoy posé sur le lit entre vous. Interdiction de le prendre pendant {{time}}. Baisers seulement.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Glisse le sextoy éteint dans le cou de {{partner}}, comme un glaçon, sans bouton.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Range le sextoy après 20 secondes. Fin en baisers.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Mets le collier, lâche. Embrasse le cou autour pendant 20 secondes.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Collier posé dans tes mains. Fais-le toucher la nuque, puis un baiser.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Collier. Un doigt sous le collier pour vérifier. Câlin.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Guide {{partner}} d'un doigt au collier jusqu'à une chaise. Asseyez-vous.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Collier. 5 baisers sous la ligne du collier.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} met le collier tout seul. Toi tu regardes, puis un baiser.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Collier 30 secondes puis tu l'enlèves. Fin en caresses.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Mets le collier à {{partner}}. Fronts collés 20 secondes, sans tirer le collier.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Demande : collier maintenant ou non. Si oui, lâche + baisers.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Deux doigts sous le collier obligatoires. Ensuite 20 secondes de calme.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Mets le bandeau à {{partner}} pendant 20 secondes. Seulement des baisers sur le visage : front, joues, bouche. Pas le cou, pas le corps.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Caresse le ventre de {{partner}} par-dessus, 30 secondes.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Fais deviner : lèvres, nez ou doigts, sur le cou. 6 contacts.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Glisse une main sous le haut de {{partner}}, dans le dos seulement.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Embrasse la ceinture de {{partner}}, sans ouvrir.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Tourne autour de {{partner}} et pose 5 baisers où tu veux au-dessus de la ceinture.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. {{partner}} reste debout. Toi tu t'agenouilles et tu embrasses les genoux.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau + silence total pendant {{time}}. Seulement des caresses par-dessus.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Une main sur une hanche, l'autre dans le cou. Ne bouge plus 20 secondes.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes dans le dos. Caresse le ventre par-dessus pendant {{time}}.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes devant. Allonge {{partner}} et embrasse le torse.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Une menotte relie vos deux poignets. Frottez-vous habillés 30 secondes.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes. {{partner}} contre le mur, mains liées devant. Baisers seulement.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes. Enlève un vêtement de {{partner}} pendant qu'{{il}} est attaché{{e}}.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes devant. Ta main sous le haut, dans le dos.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes. {{partner}} sur tes genoux. Tes mains libres font tout pendant {{time}}.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Sextoy éteint contre l'intérieur de cuisse, par-dessus, 20 secondes.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Sextoy éteint sous le nombril. Laisse-le là.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Allume la plus basse intensité contre l'épaule, 5 secondes, éteins.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Fais glisser le sextoy éteint le long de la ceinture de {{partner}}, sans l'allumer, 20 secondes.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} tient le sextoy éteint. Toi tu guides sa main sur son ventre.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Vibration basse dans ta main, tu poses la main (pas le jouet) sur {{partner}}.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Sextoy éteint entre vos bassins habillés 15 secondes.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Éteins-le pour de bon à mi-chrono. Caresses ensuite.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Fais choisir : cuisse ou ventre. Jouet éteint seulement.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Collier. Guide {{partner}} vers le mur. Baisers.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Un doigt dans le collier, l'autre main dans le dos.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Collier. Caresse le ventre pendant {{time}}.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Guide jusqu'au canapé par le collier (doux). Asseyez-vous, frottez habillés.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Mets le collier à {{partner}} et enlève-lui un vêtement, sans tirer le cou.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Embrasse sous le collier 30 secondes.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} à genoux (habillé). Toi tu tiens le collier sans tirer.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "À la moitié du chrono, enlève le collier de {{partner}} et finis en caresses libres.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "À la moitié du chrono, enlève le collier de {{partner}} et continue seulement avec des baisers dans le cou.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Enlève le collier de {{partner}} maintenant. Le reste du chrono : caresses, plus de guidage par le cou.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Attache les poignets de {{partner}} devant {{lui}} avec les menottes. Embrasse son cou et sa bouche pendant {{time}}. {{il}} n'utilise pas les mains.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Mets les menottes dans le dos de {{partner}}. Caresse son corps par-dessus les vêtements pendant {{time}}. {{il}} n'a pas le droit d'ouvrir les mains.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Une seule menotte : relie un poignet de {{partner}} au tien. Vous restez attachés pendant {{time}} et tu décides des baisers.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Bande les yeux de {{partner}} et caresse son corps pendant {{time}}, en silence.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Bande les yeux de {{partner}}. Touche une zone : {{il}} doit deviner si ce sont tes lèvres ou tes doigts.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Pose un sextoy éteint contre la cuisse de {{partner}} et laisse-le là pendant {{time}}, sans l'allumer.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Fais {{un_oral}} pendant {{time}}. {{partner}} ne voit rien.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "oral",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau sur {{partner}}. Masturbe-{{l}} 20 secondes, pause 5 secondes, recommence jusqu'à la fin du chrono.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. {{partner}} doit dire « bouche » ou « main ». Tu obéis 30 secondes.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Langue sur {{le_point}} seulement, pas les mains, pendant {{time}}.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "oral",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Alterne cuisse gauche / cuisse droite avec ta bouche, puis le sexe.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "oral",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Tes deux mains sur {{le_sexe}}, ta bouche sur le ventre.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "oral",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. {{partner}} allongé{{e}}. Tu commences aux genoux et tu montes jusqu'à la bouche sur {{le_sexe}}.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Interdiction de parler. Seulement oral ou main pendant {{time}}.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes dans le dos. Masturbe {{partner}} pendant {{time}}.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes devant au-dessus de la tête. Fais {{un_oral}}.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes. {{partner}} assis{{e}} au bord. Toi à genoux, bouche pendant {{time}}.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes. Langue sur {{le_point}}, tes mains tiennent les menottes.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes + {{partner}} à genoux. {{il}} te fait un oral (bouche sur toi) 30 secondes.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes. Alterne 20 secondes de main et 20 secondes de bouche.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes. {{partner}} n'a pas le droit de refermer les cuisses.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Vibro bas sur {{le_sexe}} pendant {{time}}. N'augmente pas.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Allume le sextoy à intensité basse. Pose-le 10 secondes sur {{le_point}} de {{partner}}. Enlève-le, puis mets ta bouche au même endroit pendant {{time}}.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "oral",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} tient le vibro. Toi tu fais {{un_oral}} autour.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "oral",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Sextoy à l'intérieur de cuisse + langue sur {{le_sexe}}.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Sextoy allumé 20 secondes sur {{partner}}, éteint 5 secondes. Recommence pendant {{time}}.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Collier. {{partner}} à genoux. Fais-lui {{un_oral}} ou {{il}} te le fait. Vous choisissez.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Un doigt au collier pendant que tu masturbes {{partner}}.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Guide la tête de {{partner}} vers toi (sans forcer) pour une bouche sur toi 20 secondes.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Collier à {{partner}}. Fais-lui {{un_oral}} pendant {{time}}, sans tirer le collier.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Collier. {{partner}} demande pour que tu descendes la bouche.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Vérifie que le collier de {{partner}} n'est pas trop serré (2 doigts). Ensuite fais {{un_oral}} pendant {{time}}.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Collier + {{partner}} assis{{e}} au bord du lit. Toi à genoux.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Enlève le collier avant la fin si ça gêne la respiration. Sinon continue.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Collier. Interdiction de tirer vers le bas.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Enlève le collier de {{partner}}. Câlin 20 secondes, plus rien au sexe.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes dans le dos de {{partner}}. Allonge-{{l}} et fais-lui {{un_oral}} pendant {{time}}. {{il}} n'a pas le droit de te toucher.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "oral",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Attache les poignets de {{partner}} devant {{lui}}. Mets ses mains au-dessus de sa tête et masturbe-{{l}} pendant {{time}}.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} menotté{{e}} à un pied de lit ou à un montant (si c'est solide). Toi tu fais {{un_oral}} sans qu'{{il}} puisse reculer.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "oral",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Utilise un sextoy sur {{partner}} pendant {{time}}. Commence doucement, puis accélère si {{il}} le veut.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "oral",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Bande les yeux de {{partner}}, puis fais-lui {{un_oral}} pendant {{time}}.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "oral",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Utilise un vibro à intensité basse sur {{le_sexe}} de {{partner}} tout en léchant autour, pendant {{time}}.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "oral",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau à {{partner}} : caresses + masturbation, toujours sans pénétration.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Sextoy sur {{partner}}, intensité basse, toi tu l'embrasses.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Fais vibrer un sextoy contre l'intérieur de cuisse de {{partner}}, pas directement sur {{le_point}}.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} tient le sextoy. Toi tu colles {{le_sexe}} contre, c'est {{il}} qui règle l'intensité.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Prends {{partner}} pendant {{time}}. {{il}} n'a pas le droit d'enlever le bandeau.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Change de position une fois sans prévenir, pendant que tu prends {{partner}}.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. {{partner}} au-dessus. {{il}} ne voit pas. Toi tu guides le bassin.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau + tu prends par-derrière. Une main sur la nuque.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Compte tes mouvements à voix haute. {{partner}} écoute seulement.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Arrête 5 secondes au milieu, reste collé, reprends.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. {{partner}} doit demander pour que tu accélères.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes dans le dos. Prends {{partner}} pendant {{time}}.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes au-dessus de la tête. Face à face, tu prends.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes. {{partner}} au-dessus mais poignets liés : {{il}} mène le bassin, pas les mains.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes. Prends par-derrière, tire un peu vers toi par les menottes (sans faire mal).",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes à un pied de lit + tu prends {{partner}}.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Sextoy sur {{le_point}} pendant que tu prends {{partner}}.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "oral",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} garde le sextoy. Toi tu prends.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Sextoy dans ta main contre {{la_poitrine}} pendant l'acte.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Éteins le jouet dès que tu prends. Ne le rallume qu'une fois.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Sextoy + tu prends par-derrière.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Intensité minimale tout le chrono pendant l'acte.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Collier. Guide {{partner}} et prends-{{l}} là où vous arrivez.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Un doigt au collier pendant que tu prends.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Collier. Par-derrière, sans tirer le cou vers l'arrière trop fort.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Enlève le collier si {{partner}} tousse ou signale. Sinon continue.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} au-dessus. Toi tu tiens le collier sans tirer.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Fin : enlève, vérifie le cou.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes dans le dos. Prends {{partner}} pendant {{time}}. Si {{il}} veut changer de position, {{il}} doit le demander à voix haute.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Attache les poignets de {{partner}} au-dessus de sa tête. Prends-{{l}} en {{l}} regardant. {{il}} n'a pas le droit de baisser les bras.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Une menotte à un poignet de {{partner}}, l'autre à une barre ou à ta propre main. Prends-{{l}} sans détacher pendant {{time}}.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Attache les poignets de {{partner}}, vérifie que ce n'est pas trop serré, puis prends-{{l}}.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Bande les yeux de {{partner}} et prends le contrôle : position, rythme, mains, pendant {{time}}.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Mets le collier à {{partner}} et guide-{{l}} légèrement pendant que tu {{l}} prends.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Garde un sextoy sur {{le_point}} de {{partner}}, intensité minimale, pendant que tu {{l}} prends.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Bande les yeux de {{partner}} et prends-{{l}} (ou continue l'oral). Change deux fois l'angle de tes hanches ou de ta tête, sans prévenir.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} tient le sextoy sur {{le_point}}. Toi tu {{l}} prends en même temps.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Prends {{partner}} plus fort 20 secondes, tout doux 20 secondes.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Amène {{partner}} au bord, arrête, reprends. 3 fois.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Un seul ordre vocal, ensuite silence, tu prends pendant {{time}}.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau + menottes si cochées, sinon poignets tenus. Tu prends {{partner}}.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. {{partner}} doit supplier pour un changement de rythme.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Finis le chrono sans le retirer. Aftercare ensuite : tu l'enlèves doucement.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Impose la position assise sur toi. {{partner}} ne voit pas le moment où tu rentres.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Bandeau. Plus aucun mot. Seulement prendre {{partner}} jusqu'à la fin.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes. Quatre pattes. Tu prends plus fort, tu t'arrêtes si les mains changent de couleur.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes. Bord de jouir 3 fois, menottes toujours fermées.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes + un ordre unique, puis tu prends en silence.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes. {{partner}} assis{{e}} sur toi, mains liées dans le dos.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes. Tu décides quand détacher : pas avant d'avoir pris {{partner}} 1 minute.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes. Après l'orgasme (s'il arrive), détache tout de suite, câlin.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Toi tu règles l'intensité. {{partner}} n'a pas le droit d'y toucher. Tu prends en même temps.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Sextoy au bord de faire jouir, tu l'enlèves, tu prends.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Deux intensités seulement : off ou min. Pendant que tu prends.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Après un orgasme : jouet éteint, câlin. Pas de 2e vague pendant 30 s.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Sextoy sur toi (si possible) pendant que tu prends {{partner}}.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} doit demander pour que le jouet s'allume.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Sextoy + stop-and-go 3 fois pendant que tu prends.",
+  "need": "sextoy",
+  "partner": null,
+  "cat": "sensuel",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Collier. Tu guides où tu veux, ensuite tu prends pendant {{time}}.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Collier + quatre pattes. Pas de traction vers le haut.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Collier à {{partner}}. Donne un seul ordre. Quand c'est fait, tu {{l}} prends pendant {{time}}.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Collier à {{partner}}. Prends-{{l}} jusqu'au bord de jouir, arrête, recommence. 2 fois.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Si gêne : collier enlevé, défi devient un acte doux.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Après l'acte : enlève en premier, avant tout le reste.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Collier à {{partner}}. {{il}} s'assoit sur toi. Tu guides le bassin et tu {{l}} prends pendant {{time}}.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Interdiction de s'en servir comme poignée pour aller plus fort.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Menottes dans le dos, {{partner}} à quatre pattes. Prends-{{l}} pendant {{time}}. Détache dès qu'{{il}} dit le safe word.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Attache {{partner}}, prends-{{l}} jusqu'au bord de jouir, arrête 10 secondes, reprends. Les menottes restent jusqu'à la fin du chrono.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} menotté{{e}} sur le dos. Toi au-dessus : 20 secondes fort, 20 secondes lent. {{il}} n'a que la voix pour demander.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Attache {{partner}} avec les menottes, puis prends le contrôle de tout son corps pendant {{time}}.",
+  "need": "menottes",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Mets le bandeau à {{partner}} et utilise un sextoy sur {{lui}}. {{il}} ne voit rien : toi tu décides où et à quel rythme.",
+  "need": "bandeau",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Mets le collier à {{partner}}, guide-{{l}} où tu veux dans la pièce, puis prends-{{l}} là.",
+  "need": "collar",
+  "partner": null,
+  "cat": "domination",
+  "pack": "classique",
+  "level": 5
+ }
+]

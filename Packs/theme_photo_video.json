@@ -1,0 +1,2198 @@
+[
+ {
+  "type": "Défi",
+  "text": "Photo de tes lèvres sur le poignet de {{partner}}.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 7 secondes : tu tournes {{partner}} et tu embrasses une omoplate.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Photo des deux bouches à 2 cm l'une de l'autre, pas encore de baiser.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo de {{partner}} qui ferme les yeux au moment du baiser.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 10 secondes : tes deux mains glissent sous le col de {{partner}}. On ne voit que le haut du corps et tes mains.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Photo d'un vêtement qui tombe, juste avant qu'il touche le sol.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} prend une photo de tes mains sur son visage.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 5 secondes d'un sourire, puis 5 secondes d'un baiser.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo de vos pieds l'un contre l'autre.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 8 secondes : tu dénoues / déboutonnes sans enlever.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Photo : une seule bretelle ou un col déplacé.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Filme {{partner}} dire ton prénom tout bas, 4 secondes.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo du lit / canapé vide, puis le même cadrage avec vous deux dessus, habillés.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 6 secondes d'un câlin vu de côté.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 10 secondes sans zoom : plan large, un seul baiser au milieu.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de {{partner}} qui te tire vers lui/elle par le t-shirt.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo de la trace d'un baiser sur le cou (s'il se voit).",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Photo : le sourire de {{partner}} juste après un baiser.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 8 secondes : vous vous rapprochez jusqu'au baiser.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de vos fronts collés, yeux fermés.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo d'un seul détail : une oreille, un poignet ou une clavicule de {{partner}} que tu viens d'embrasser.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 10 secondes : tu enlèves un vêtement à {{partner}}, lentement, cadre taille-haut.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Photo : {{partner}} qui te regarde, toi hors champ sauf une main sur son épaule.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo de vos ombres l'une contre l'autre (mur ou lit).",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Photo avant / après : {{partner}} habillé, puis le même cadrage avec un vêtement en moins.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 12 secondes sans parler : seulement vos visages qui se cherchent.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Photo du bas de dos de {{partner}}, vêtement un peu relevé, 3 cm de peau.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Demande à {{partner}} de prendre une photo de toi en train de l'embrasser au cou.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo de vos deux visages trop près, un peu flous, en train de rire ou de vous embrasser.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo de toi en train d'embrasser {{partner}}. Cadre au moins vos deux visages.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 10 secondes : vous vous regardez dans les yeux, sans parler.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo de {{partner}} pendant que tu lui enlèves un vêtement.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo de vous deux collés, encore habillés, bouche contre bouche.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 8 secondes : tu déboutonnes lentement le haut de {{partner}}.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo des mains de {{partner}} serrées sur tes hanches.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Photo : {{partner}} contre le mur, tu l'embrasses. Visage flou si {{il}} veut.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Filme {{partner}} qui enlève un vêtement, du haut vers le bas, 10 secondes.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Prenez un selfie à deux, fronts collés, avec un seul vêtement en moins que tout à l'heure.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 1
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de ta bouche sur le bas du ventre, tissu encore là.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 10 secondes : tu ouvres un pantalon / une jupe sans l'enlever.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Photo d'une main entre les omoplates, l'autre à la ceinture.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Filme {{partner}} contre toi, dos à toi, tes mains sur son ventre, 8 secondes.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Photo du tissu tendu au niveau du sexe, sans le montrer à nu.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo de tes dents qui tirent un peu le t-shirt.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 12 secondes : baiser + une main qui descend et s'arrête à la ceinture.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de {{partner}} assis{{e}} sur toi, encore habillé{{e}}.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 5 secondes : tu glisses deux doigts sous l'élastique du sous-vêtement de {{partner}}, sans aller plus loin.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Photo d'un genou entre les cuisses de {{partner}}, habillés.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} filme tes lèvres qui suivent la ceinture, 8 secondes.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Photo : une fesse encore habillée, ta main dessus.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 10 secondes : vous frottez vos bassins 6 secondes (habillés ou non), vous vous arrêtez, vous vous regardez.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de la peau au-dessus du sous-vêtement seulement.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo de {{partner}} qui enlève TON vêtement.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 7 secondes : souffle sur le ventre, pas de bouche.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Photo des deux ceintures l'une contre l'autre.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 9 secondes : tu plaques le bassin de {{partner}} contre le mur avec le tien. Cadre les hanches.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Photo d'un baiser sous l'oreille + main dans le bas du dos.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo floue exprès de vos hanches.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 6 secondes où {{partner}} dit « plus bas » ou « pas encore ».",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de tes ongles dans le tissu au niveau d'une hanche.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Photo : ta main sous le haut de {{partner}}, cadre uniquement le dos.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 10 secondes : frottement de bassins encore habillés, cadrage taille.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Photo du sous-vêtement de {{partner}} juste décalé, un peu de peau.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo de tes lèvres sur le ventre de {{partner}}.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 8 secondes : {{partner}} contre le mur, un baiser, visage flou si {{il}} veut.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Photo : une jambe de {{partner}} autour de toi, encore habillés.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo de la ceinture ouverte de {{partner}}, rien de plus.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 12 secondes : une main de chacun entre les jambes de l'autre, par-dessus les vêtements.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Photo du bas du dos et du haut des fesses, vêtement baissé de 2 cm.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Demande à {{partner}} de te filmer 8 secondes pendant que tu l'embrasses au ventre.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Photo : tes deux mains sur les hanches de {{partner}}.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Filme le moment où tu glisses une main sous le tissu, 6 secondes, stop.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Photo d'un baiser dans le cou, une main sur une hanche.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo de {{partner}} allongé{{e}}, toi à côté, mains visibles sur le tissu.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 10 secondes en caméra frontale : vous vous caressez par-dessus, puis rangez le téléphone.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Photo : l'élastique du sous-vêtement et tes doigts dessus.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo de tes lèvres tout près du tissu, à hauteur du sexe, sans contact.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 7 secondes : tu remontes un vêtement de 10 cm, tu embrasses, tu redescends.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Photo des deux bassins collés, vêtements encore là.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} prend une photo de ta bouche sur sa poitrine (par-dessus ou peau).",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo de la main de {{partner}} glissée sous ton vêtement, juste à l'entrée, rien de plus.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo du ventre de {{partner}} et d'une main seulement, rien d'autre dans le cadre.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Photo du ventre de {{partner}}, ta main juste sous le nombril.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo du sous-vêtement de {{partner}} décalé d'un côté, juste un peu de peau, pas plus.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Photo des cuisses de {{partner}}, tes lèvres contre l'aine, encore au bord.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Filme {{partner}} se toucher par-dessus les vêtements, 10 secondes.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo de {{la_poitrine}} de {{partner}} avec ta bouche dessus. Cadre seulement ça, pas le visage si {{il}} ne veut pas.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Filme un frottement de vos bassins encore habillés. Cadre seulement la taille et les hanches.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 2
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de ta bouche ouverte juste au-dessus de {{le_sexe}}.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 10 secondes : tu lèches l'intérieur d'une cuisse, tu t'arrêtes avant le sexe.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de deux doigts en V de chaque côté de {{le_point}}, sans appuyer.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 12 secondes d'oral, cadrage depuis le ventre vers toi.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de {{partner}} qui attrape tes cheveux pendant l'oral.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Filme le premier contact langue / {{le_point}}, 4 secondes.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de tes lèvres mouillées juste après avoir retiré la bouche.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} filme ton visage entre ses cuisses, 8 secondes, s'{{il}} est d'accord.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Photo d'une main sur {{la_poitrine}}, la bouche plus bas.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 10 secondes : tu masturbes, tu regardes l'objectif une seconde.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Photo du fil de salive entre ta bouche et {{le_sexe}}.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 8 secondes tête-bêche, un seul côté du cadre.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de tes pouces qui écartent un peu, langue au centre.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Filme {{partner}} dire « là » et toi qui restes sur la zone, 6 secondes.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Mets-toi à genoux devant {{partner}} assis{{e}} ou debout. Pose tes deux mains à plat sur ses cuisses. Prends une photo de tes genoux, tes mains et ses cuisses — pas besoin du visage.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 10 secondes d'oral sans les mains, plan serré.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Photo après 30 secondes : ventre qui monte, pas le sexe.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo de {{le_point}} et de ton index à 1 cm.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 7 secondes : tu poses le sexe contre ta joue, tu te touches.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de {{partner}} au bord du lit, tes épaules entre ses genoux.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 12 secondes : relais bouche / main toutes les 4 secondes.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Photo d'un baiser sur {{le_point}}, yeux de {{partner}} coupés si {{il}} veut.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Filme le moment où tu t'arrêtes et tu demandes si tu continues.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de tes ongles sur l'intérieur de cuisse pendant l'oral.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} prend 2 photos : toi qui approches, toi qui as la bouche dessus.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de tes lèvres tout près de {{le_sexe}} de {{partner}}, pas encore dessus.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 12 secondes : ta bouche descend du ventre vers {{le_sexe}}, tu t'arrêtes juste avant.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Photo : ta langue sur {{le_point}} de {{partner}}.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Filme tes deux mains sur {{le_sexe}} de {{partner}}, va-et-vient lent, 10 secondes.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de {{partner}} assis{{e}} au bord du lit, toi entre ses jambes.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 12 secondes : {{partner}} te guide la tête pendant l'oral.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Photo : un doigt contre l'aine, ta bouche sur {{le_sexe}}.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo de toi à genoux, visage proche du sexe de {{partner}}.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Filme le visage de {{partner}} 15 secondes pendant que tu {{l}} masturbes. Pas le sexe.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Filme {{time}} : ta bouche sur {{le_sexe}}, cadrage corps, visage optionnel.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de tes mains écartant un peu les cuisses de {{partner}}.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 8 secondes sans couper, sur {{le_sexe}} de {{partner}} : 4 secondes d'un glaçon (ou de tes doigts si vous n'avez pas de glaçon), puis 4 secondes de bouche au même endroit.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de {{partner}} qui se touche, toi à 30 cm, rien d'autre.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 10 secondes tête-bêche, seulement les deux bouches qui approchent.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Photo : ta joue contre l'intérieur de cuisse de {{partner}}.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} filme tes yeux pendant que tu as {{le_sexe}} dans ta bouche, 6 secondes.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Photo d'un doigt sur {{le_point}}, net et proche.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Photo après 20 secondes d'oral : le ventre et le bas du nombril seulement.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Filme {{partner}} dire « encore » ou « plus lent », puis ta bouche qui obéit.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de tes lèvres sur le périnée, si {{partner}} est d'accord.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 8 secondes depuis le côté : tête entre les cuisses.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo de toi entre les jambes de {{partner}} (avec son accord).",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Filme uniquement le visage de {{partner}} pendant 15 secondes, pendant que tu {{l}} masturbes ou que tu fais {{un_oral}}. Pas besoin de filmer le sexe.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Filme {{time}} : ta bouche sur {{le_sexe}} de {{partner}}, cadrage corps (pas forcément le visage).",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 10 secondes : {{partner}} assis{{e}} sur ton visage, seuls les mouvements de bassin.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Photo : salive sur {{le_sexe}} de {{partner}}, ta bouche juste au-dessus.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 3
+ },
+ {
+  "type": "Défi",
+  "text": "Photo au moment où tes hanches touchent celles de {{partner}}.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 10 secondes de va-et-vient lent, cadrage bassin seulement.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de {{partner}} au-dessus, tête coupée si {{il}} veut.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 8 secondes : tu changes d'angle, un seul mouvement.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Photo d'une main sous la nuque pendant l'acte.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 12 secondes contre le mur, plan taille-cuisses.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de vos bouches pendant que vous vous prenez.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 6 secondes où tu te retires à moitié, tu reviens.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Photo des draps agrippés par {{partner}}.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} filme tes fesses pendant 7 secondes pendant l'acte.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Photo d'un pied de {{partner}} tendu.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 10 secondes : oral, tu te relèves, tu prends.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de tes mains qui ouvrent un peu les cuisses de {{partner}}.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Filme le souffle de {{partner}} tout près du micro, 5 secondes, pendant l'acte.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de profil : deux bassins, une ligne.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 9 secondes à quatre pattes, lumière douce.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Photo d'un coussin sous les hanches + le contact.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 12 secondes sans couper un changement assis / allongé.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 8 secondes sans couper. {{partner}} dit un chiffre de 1 à 5. Toi tu {{l}} prends : 1 = tu bouges à peine, 5 = mouvement ample. Cadre le bassin.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Photo juste avant d'entrer / de coller : 2 cm d'écart.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 10 secondes de cercles lents au fond.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Photo d'une goutte de lubrifiant (si vous en avez) sur la peau.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} prend une photo de ton visage pendant que tu mènes.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 7 secondes d'arrêt collé, yeux ouverts.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de la trace de tes mains sur les hanches.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 15 secondes, puis vous regardez ensemble si ça reste.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de fin : vous ne bougez plus, encore l'un contre l'autre.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de vos ventres collés pendant le mouvement, pas les visages.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 15 secondes de tes hanches contre {{partner}}, rythme réel.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Filme le visage de {{partner}} pendant que tu {{l}} prends (avec accord).",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 15 secondes de vos corps en mouvement, visages pas obligatoires.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Photo au moment où tu rentres / tu reviens contre {{partner}}.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} prend une photo de toi au-dessus, cadrage torse-bassin.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 10 secondes : tu te retires presque, tu reviens.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 8 secondes face à face, fronts proches.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Photo d'une main sur {{le_point}} pendant que vous êtes l'un dans l'autre / collés.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Filme le changement de position, 10 secondes, sans couper.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Photo après 30 secondes d'acte : seulement les mains accrochées.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 12 secondes : oral puis tu prends, le passage de l'un à l'autre.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Photo des pieds de {{partner}} dans ton dos.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} filme tes hanches 8 secondes, pas ton visage si tu ne veux pas.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Photo : lubrifiant visible sur la peau, juste avant de reprendre.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 10 secondes contre le mur, bassins seulement.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Photo d'un baiser pendant l'acte, cadrage serré.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 6 secondes où {{partner}} dit le rythme qu'{{il}} veut, puis le mouvement.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 15 secondes sans parole, seulement le souffle et le mouvement.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de fin de chrono : vous restez collés, un seul cliché.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Avec l'accord des deux, prends une photo de vous pendant que tu prends {{partner}}.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Pendant que tu prends {{partner}}, prends une photo de vos bassins et ventres. Pas besoin des visages.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Prends une photo : une jambe de {{partner}} relevée, toi collé contre {{lui}}.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Lance la vidéo 10 secondes, sans pause. Seconde 1 à 4 : ta bouche est sur {{le_sexe}} de {{partner}}. Seconde 5-6 : tu te relèves. Seconde 7 à 10 : tu {{l}} prends (pénétration, frottement ou jouet selon vos corps). Cadre le bassin, pas forcément les visages.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 12 secondes : {{partner}} au bord du lit, pieds au sol. Toi entre ses jambes, tu {{l}} prends ou tu as la bouche sur {{le_sexe}}. Cadre taille-cuisses.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 4
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de ta main dans les cheveux de {{partner}} pendant un mouvement plus franc.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 10 secondes : tu donnes un ordre à voix haute (position ou rythme), {{partner}} le fait tout de suite.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de {{partner}} à genoux, cadrage visage-poitrine, avant la bouche.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 8 secondes : tu prends {{partner}}, tu dis « stop » et tu t'arrêtes 2 secondes, puis tu reprends.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Photo des poignets tenus au-dessus de la tête.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 12 secondes : {{partner}} à quatre pattes. Tu {{l}} prends au rythme que tu imposes. Cadre le bassin.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Photo d'un regard vers l'objectif pendant que tu prends, si d'accord.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 6 secondes : {{partner}} dit « s'il te plaît » à voix haute. Toi tu es contre {{lui}}, prêt à reprendre.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de tes dents près d'une épaule, sans forcément mordre.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} filme 10 secondes de toi qui décides tout.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Photo après une coupure au bord : visages seulement.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Photo d'une fesse au moment d'une gifle légère, si le défi le permet.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 10 secondes : {{partner}} sur toi, tes mains sur ses hanches.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de la gorge de {{partner}} un peu tendue.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 7 secondes où tu rappelles le safe word, puis un oui, puis l'acte.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de tes ongles sur le bas du dos.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 12 secondes d'un relais : {{partner}} mène 6 s, toi 6 s.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 5 secondes tout près du bassin pendant l'acte, volontairement flou. Pas de visage.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Photo des genoux de {{partner}} au sol.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de la main qui relâche les poignets.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 8 secondes d'aftercare : couverture ou câlin.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 6 secondes où tu dis la position suivante, puis vous y allez.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Photo d'un accès (porte, couloir) seulement si le pack Lieux est dans votre tête, sinon le lit vu de loin.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 12 secondes : {{partner}} qui demande, toi qui dis oui ou pas encore, puis le geste.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Photo dans l'ordre : un ordre que tu donnes, l'acte, puis le visage de {{partner}}.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Filme {{partner}} 20 secondes pendant que tu {{l}} prends. Visage + mouvement.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de {{partner}} à genoux, toi debout, juste avant la bouche.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 10 secondes : {{partner}} exécute un ordre que tu viens de donner, puis tu {{l}} prends.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 8 secondes : {{partner}} à quatre pattes, toi derrière. Cadre les hanches et le mouvement pendant que tu {{l}} prends.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Photo juste après que {{partner}} a joui : ventre et souffle, rien de posé.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Filme le stop-and-go : 5 secondes d'acte, 3 secondes d'arrêt, 5 secondes d'acte.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de tes mains qui dirigent le bassin de {{partner}}.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "{{partner}} filme 10 secondes de toi qui mènes, selon l'accord.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Photo d'une fessée légère au moment du contact, si c'est dans le défi.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Photo du collier ou des menottes seulement si l'accessoire est là, sinon des poignets tenus.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 15 secondes sans coupe : approche, entrée / frottement, premier gémissement.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 8 secondes où tu t'arrêtes et tu demandes un oui clair.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de tes ongles sur une hanche pendant un mouvement au fond.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Filme la dernière minute du chrono, 10 secondes seulement au milieu.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Photo : {{partner}} assis{{e}} sur ton visage (si d'accord), cadrage bassin, pas forcément le visage.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 6 secondes d'un « s'il te plaît », puis tu obéis ou tu refuses.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Photo après avoir détaché (sangles/menottes) ou après avoir relâché les poignets : câlin.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de la trace d'une morsure ou d'une griffure seulement si elle existe déjà.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 12 secondes : toi qui décides de la position à voix haute, puis vous le faites.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Photo de fin de défi : deux visages proches, plus d'acte dans le cadre.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 12 secondes : {{partner}} demande quelque chose à voix haute, toi tu dis « oui » ou « pas encore », puis tu fais le geste demandé ou tu attends.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Avec l'accord de {{partner}}, prends une série de photos pendant que tu {{l}} domines.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Prends 3 photos, dans l'ordre : un ordre que tu donnes, toi en train de prendre {{partner}}, puis son visage.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 20 secondes pendant que tu imposes le rythme. {{partner}} n'a pas le droit de diriger.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Filme {{partner}} en train de demander, puis toi qui continues juste après.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 15 secondes de très près pendant que tu prends {{partner}} : la peau, le mouvement, un peu de voix.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Marque une hanche de {{partner}} d'une morsure ou de griffes, puis prends une photo de cette marque.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ },
+ {
+  "type": "Défi",
+  "text": "Filme 10 secondes : tu rappelles le safe word, {{partner}} confirme, puis vous reprenez.",
+  "need": null,
+  "partner": null,
+  "cat": "photo",
+  "pack": "photo",
+  "level": 5
+ }
+]
