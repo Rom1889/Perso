@@ -710,8 +710,9 @@ function renderPacksList(){
     return `<label class="checkbox-item"><input type="checkbox" id="pack_${p.id}" ${checked?"checked":""}> ${p.label}</label>`;
   }).join("");
 }
+const ACC_ICO={lubrifiant:"💧",sextoy:"📳",menottes:"🔗",bandeau:"🙈",plumes:"🪶",bougie:"🕯️",glace:"🧊",huile:"🧴",fouet:"👋",pinces:"🖇️",baillon:"🤐",collar:"📿",plug:"🔸",rings:"⭕",harnais:"♠️",restrain:"⛓️",comestible:"🍯",musique:"🎵",couverture:"🛏️"};
 function initLists(){
-  const accIco={lubrifiant:"💧",sextoy:"📳",menottes:"🔗",bandeau:"🙈",plumes:"🪶",bougie:"🕯️",glace:"🧊",huile:"🧴",fouet:"👋",pinces:"🖇️",baillon:"🤐",collar:"📿",plug:"🔸",rings:"⭕",harnais:"♠️",restrain:"⛓️",comestible:"🍯",musique:"🎵",couverture:"🛏️"};
+  const accIco=ACC_ICO;
   const ACC_GROUP_LABEL = {sensoriel:"Sensoriel & douceur", ambiance:"Ambiance", jeux_legers:"Jeux légers", bdsm_avance:"BDSM avancé"};
   const grouped = {sensoriel:[], ambiance:[], jeux_legers:[], bdsm_avance:[], _autre:[]};
   allAccessories.forEach(a=>{
@@ -1614,8 +1615,8 @@ function showChallenge(ch){
   $("challengeType").textContent = players[currentPlayer].name+" • "+modeLabel();
   const badges=$("challengeBadges");
   if(badges){
-    const packLab={classique:"Classique",photo:"Photo",qacte:"Q+Acte",lieux:"Lieux",aftercare:"Aftercare"};
-    badges.innerHTML = `<span class="badge hot">Niv. ${currentLevel}</span><span class="badge act">${ACT_LABEL[eveningAct()]}</span>`;
+    const accBadge = ch.need ? `<span class="badge" style="border-color:#3a5a8a;color:#a8d0ff">${ACC_ICO[ch.need]||"✨"} ${(allAccessories.find(a=>a.id===ch.need)||{}).label||ch.need}</span>` : "";
+    badges.innerHTML = `<span class="badge hot">Niv. ${currentLevel}</span><span class="badge act">${ACT_LABEL[eveningAct()]}</span>${accBadge}`;
   }
   const card=$("challengeCard");
   if(card){ card.classList.remove("flash"); void card.offsetWidth; card.classList.add("flash"); }
@@ -1647,8 +1648,8 @@ function revealHidden(){
     if(ico){ ico.textContent=challengePictogram(lastChallenge); ico.classList.remove("muted"); }
     const badges=$("challengeBadges");
     if(badges){
-      const packLab={classique:"Classique",photo:"Photo",qacte:"Q+Acte",lieux:"Lieux",aftercare:"Aftercare"};
-      badges.innerHTML = `<span class="badge hot">Niv. ${currentLevel}</span><span class="badge act">${ACT_LABEL[eveningAct()]}</span>`;
+      const accBadge = lastChallenge.need ? `<span class="badge" style="border-color:#3a5a8a;color:#a8d0ff">${ACC_ICO[lastChallenge.need]||"✨"} ${(allAccessories.find(a=>a.id===lastChallenge.need)||{}).label||lastChallenge.need}</span>` : "";
+      badges.innerHTML = `<span class="badge hot">Niv. ${currentLevel}</span><span class="badge act">${ACT_LABEL[eveningAct()]}</span>${accBadge}`;
     }
   }
 }
