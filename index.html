@@ -242,7 +242,7 @@
   .flame:nth-child(2){left:24%;width:36%;animation-delay:.12s}
   .flame:nth-child(3){left:48%;width:30%;animation-delay:.05s}
   .flame:nth-child(4){left:68%;width:26%;animation-delay:.18s}
-  .flip-card.burn .flame{animation:flameUp 2.2s ease-out forwards}
+  .flip-card.burn .flame{display:none} /* remplacé par le rendu canvas (startCardFire), plus réaliste */
   .flip-card.burn .ember{
     background:radial-gradient(ellipse at 50% 100%,rgba(255,90,0,.45),transparent 55%);
     animation:emberGlow 2.2s ease-in forwards;
@@ -1116,54 +1116,132 @@ function startCardFire(card){
   canvas.className="fire-canvas";
   card.appendChild(canvas);
   const ctx=canvas.getContext("2d");
-  const fit=()=>{ canvas.width=Math.max(80,card.clientWidth); canvas.height=Math.max(60,card.clientHeight); };
+  const dpr=Math.min(window.devicePixelRatio||1,2);
+  const fit=()=>{
+    const w=Math.max(80,card.clientWidth), h=Math.max(60,card.clientHeight);
+    canvas.style.width=w+"px"; canvas.style.height=h+"px";
+    canvas.width=w*dpr; canvas.height=h*dpr;
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+  };
   fit();
-  const parts=[];
-  const spawn=()=>{
-    for(let i=0;i<7;i++){
-      parts.push({
-        x:canvas.width*(.12+Math.random()*.76),
-        y:canvas.height+Math.random()*8,
-        vx:(Math.random()-.5)*1.1,
-        vy:-(1.6+Math.random()*2.4),
-        life:1,
-        decay:.012+Math.random()*.018,
-        r:4+Math.random()*9
+  const W=()=>canvas.width/dpr, H=()=>canvas.height/dpr;
+  const flames=[]; // corps de flamme : formes effilées qui montent en scintillant
+  const embers=[]; // étincelles rapides
+  const smoke=[];  // fumée en fin de combustion
+
+  const spawnFlame=()=>{
+    const w=W();
+    for(let i=0;i<3;i++){
+      flames.push({
+        x:w*(.15+Math.random()*.7),
+        y:H()+4,
+        vx:(Math.random()-.5)*.4,
+        vy:-(1.1+Math.random()*1.3),
+        life:1, decay:.010+Math.random()*.012,
+        width:w*(.10+Math.random()*.10),
+        wobble:Math.random()*Math.PI*2,
+        wobbleSpeed:.08+Math.random()*.08,
       });
     }
   };
-  let t0=performance.now(), raf;
+  const spawnEmber=()=>{
+    if(Math.random()>.55) return;
+    embers.push({
+      x:W()*(.2+Math.random()*.6), y:H()*(.7+Math.random()*.3),
+      vx:(Math.random()-.5)*1.4, vy:-(1.8+Math.random()*2.6),
+      life:1, decay:.018+Math.random()*.02, r:1+Math.random()*2,
+    });
+  };
+  const spawnSmoke=()=>{
+    smoke.push({
+      x:W()*(.25+Math.random()*.5), y:H()*.3,
+      vx:(Math.random()-.5)*.3, vy:-(.5+Math.random()*.5),
+      life:1, decay:.008+Math.random()*.006, r:W()*(.14+Math.random()*.1),
+    });
+  };
+
+  let t0=performance.now(), raf, windPhase=Math.random()*Math.PI*2;
+
+  const drawFlame=(f, wind)=>{
+    const taper = f.life;                    // s'amincit en montant
+    const stretch = 1 + (1-f.life)*1.6;       // s'étire vers le haut
+    const sway = Math.sin(f.wobble)*3*f.life + wind*4;
+    const x = f.x + sway, y = f.y;
+    const w = f.width*taper, h = f.width*2.6*stretch*taper;
+    ctx.save();
+    ctx.translate(x,y);
+    ctx.scale(w/2, h/2);
+    const g = ctx.createRadialGradient(0,0.15,0, 0,0.15,1);
+    g.addColorStop(0,   `rgba(255,250,220,${.98*f.life})`);
+    g.addColorStop(.28, `rgba(255,196,60,${.92*f.life})`);
+    g.addColorStop(.58, `rgba(255,110,10,${.75*f.life})`);
+    g.addColorStop(.85, `rgba(200,30,0,${.35*f.life})`);
+    g.addColorStop(1,   `rgba(120,0,0,0)`);
+    ctx.fillStyle=g;
+    ctx.beginPath();
+    ctx.ellipse(0,0,1,1,0,0,Math.PI*2);
+    ctx.fill();
+    ctx.restore();
+  };
+
   const tick=(now)=>{
-    const w=canvas.width,h=canvas.height;
-    ctx.globalCompositeOperation="source-over";
-    ctx.fillStyle="rgba(8,2,0,.18)";
+    const w=W(), h=H(), dt=1;
+    const elapsed = now-t0;
+    windPhase += .05;
+    const wind = Math.sin(windPhase*.6);
+
+    ctx.clearRect(0,0,w,h);
+
+    // Phase de combustion active : on alimente le feu pendant ~1.6s, puis on laisse mourir
+    if(elapsed<1600){ spawnFlame(); spawnEmber(); }
+    else if(elapsed<2200 && Math.random()<.4){ spawnSmoke(); }
+
+    // Lueur ambiante douce sous les flammes
+    const glow = ctx.createRadialGradient(w/2,h*.85,0, w/2,h*.85,w*.6);
+    const glowAlpha = elapsed<1600 ? .35 : Math.max(0,.35*(1-(elapsed-1600)/900));
+    glow.addColorStop(0,`rgba(255,120,20,${glowAlpha})`);
+    glow.addColorStop(1,"rgba(255,120,20,0)");
+    ctx.fillStyle=glow;
     ctx.fillRect(0,0,w,h);
-    spawn();
+
     ctx.globalCompositeOperation="lighter";
-    for(let i=parts.length-1;i>=0;i--){
-      const p=parts[i];
-      p.x+=p.vx; p.y+=p.vy; p.vy-=0.03; p.vx+=(Math.random()-.5)*.25; p.life-=p.decay;
-      if(p.life<=0 || p.y<-20){ parts.splice(i,1); continue; }
-      const g=ctx.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r);
-      g.addColorStop(0,`rgba(255,245,200,${.95*p.life})`);
-      g.addColorStop(.25,`rgba(255,190,40,${.8*p.life})`);
-      g.addColorStop(.55,`rgba(255,70,0,${.55*p.life})`);
-      g.addColorStop(1,`rgba(80,0,0,0)`);
-      ctx.fillStyle=g;
-      ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,Math.PI*2); ctx.fill();
+
+    for(let i=flames.length-1;i>=0;i--){
+      const f=flames[i];
+      f.x+=f.vx*dt; f.y+=f.vy*dt; f.vy-=.015; f.wobble+=f.wobbleSpeed; f.life-=f.decay;
+      if(f.life<=0 || f.y<-h*.5){ flames.splice(i,1); continue; }
+      drawFlame(f, wind);
     }
-    if(now-t0<2400) raf=requestAnimationFrame(tick);
-    else{
-      let fade=1;
-      const die=()=>{
-        fade-=.06;
-        ctx.globalCompositeOperation="source-over";
-        ctx.fillStyle=`rgba(6,2,2,${.2})`;
-        ctx.fillRect(0,0,w,h);
-        if(fade>0) requestAnimationFrame(die);
-        else { ctx.fillStyle="#090303"; ctx.fillRect(0,0,w,h); }
-      };
-      die();
+    for(let i=embers.length-1;i>=0;i--){
+      const p=embers[i];
+      p.x+=p.vx; p.y+=p.vy; p.vy-=.02; p.life-=p.decay;
+      if(p.life<=0){ embers.splice(i,1); continue; }
+      const g=ctx.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r*2);
+      g.addColorStop(0,`rgba(255,240,200,${.95*p.life})`);
+      g.addColorStop(.5,`rgba(255,150,30,${.7*p.life})`);
+      g.addColorStop(1,`rgba(255,60,0,0)`);
+      ctx.fillStyle=g;
+      ctx.beginPath(); ctx.arc(p.x,p.y,p.r*2,0,Math.PI*2); ctx.fill();
+    }
+
+    ctx.globalCompositeOperation="source-over";
+    for(let i=smoke.length-1;i>=0;i--){
+      const s=smoke[i];
+      s.x+=s.vx; s.y+=s.vy; s.vy-=.006; s.life-=s.decay; s.r+=.15;
+      if(s.life<=0){ smoke.splice(i,1); continue; }
+      const g=ctx.createRadialGradient(s.x,s.y,0,s.x,s.y,s.r);
+      g.addColorStop(0,`rgba(60,55,58,${.28*s.life})`);
+      g.addColorStop(1,`rgba(40,36,38,0)`);
+      ctx.fillStyle=g;
+      ctx.beginPath(); ctx.arc(s.x,s.y,s.r,0,Math.PI*2); ctx.fill();
+    }
+
+    if(elapsed<3000 || flames.length || embers.length || smoke.length){
+      raf=requestAnimationFrame(tick);
+    } else {
+      ctx.clearRect(0,0,w,h);
+      ctx.fillStyle="#090303";
+      ctx.fillRect(0,0,w,h);
     }
   };
   raf=requestAnimationFrame(tick);
