@@ -10,19 +10,19 @@
 
   // Catalogue des packs : id -> fichier JSON + statut gratuit + nb de défis (pour affichage)
   const CATALOG = {
-    niveau_1:        { free: true,  file: "Packs/niveau_1.json",        count: 139 },
-    niveau_2:        { free: true,  file: "Packs/niveau_2.json",        count: 143 },
-    niveau_3:        { free: true,  file: "Packs/niveau_3.json",        count: 142 },
-    base_aftercare:  { free: true,  file: "Packs/base_aftercare.json",  count: 29  },
-    niveau_4:        { free: false, file: "Packs/niveau_4.json",        count: 132 },
-    niveau_5:        { free: false, file: "Packs/niveau_5.json",        count: 157 },
-    theme_sensoriel:    { free: false, file: "Packs/theme_sensoriel.json",    count: 276 },
-    theme_ambiance:     { free: false, file: "Packs/theme_ambiance.json",     count: 98  },
-    theme_jeux_legers:  { free: false, file: "Packs/theme_jeux_legers.json",  count: 188 },
-    theme_bdsm_avance:  { free: false, file: "Packs/theme_bdsm_avance.json",  count: 201 },
-    theme_photo_video:  { free: false, file: "Packs/theme_photo_video.json",  count: 244 },
-    theme_qacte:        { free: false, file: "Packs/theme_qacte.json",        count: 66  },
-    theme_exterieur:    { free: false, file: "Packs/theme_exterieur.json",    count: 47  },
+    niveau_1:        { free: true,  file: "Packs/niveau_1.json",        count: 125 },
+    niveau_2:        { free: true,  file: "Packs/niveau_2.json",        count: 130 },
+    niveau_3:        { free: true,  file: "Packs/niveau_3.json",        count: 132 },
+    base_aftercare:  { free: true,  file: "Packs/base_aftercare.json",  count: 27  },
+    niveau_4:        { free: false, file: "Packs/niveau_4.json",        count: 119 },
+    niveau_5:        { free: false, file: "Packs/niveau_5.json",        count: 145 },
+    theme_sensoriel:    { free: false, file: "Packs/theme_sensoriel.json",    count: 236 },
+    theme_ambiance:     { free: false, file: "Packs/theme_ambiance.json",     count: 95  },
+    theme_jeux_legers:  { free: false, file: "Packs/theme_jeux_legers.json",  count: 168 },
+    theme_bdsm_avance:  { free: false, file: "Packs/theme_bdsm_avance.json",  count: 181 },
+    theme_photo_video:  { free: false, file: "Packs/theme_photo_video.json",  count: 193 },
+    theme_qacte:        { free: false, file: "Packs/theme_qacte.json",        count: 64  },
+    theme_exterieur:    { free: false, file: "Packs/theme_exterieur.json",    count: 43  },
   };
 
   // Product ID StoreKit = BUNDLE_ID + "." + packId (doit matcher le .storekit / App Store Connect)
