@@ -1149,6 +1149,7 @@ function safeWord(){
   forceAftercare=1;
   sessionPaused=false;
   if($("btnPauseSession")) $("btnPauseSession").textContent="Pause";
+  { const tb=$("timerStart"); if(tb) tb.textContent="⏸"; }
   $("challengeType").textContent="SAFE WORD";
   const play=$("playBox"); if(play) play.style.display="block";
   const box=$("choiceBox"); if(box){ box.classList.remove("show"); box.innerHTML=""; }
@@ -1186,7 +1187,12 @@ function startSessionTimer(){
     updateTimers();
   },1000);
 }
-function toggleSessionPause(){ sessionPaused=!sessionPaused; $("btnPauseSession").textContent=sessionPaused?"Reprendre":"Pause"; toast(sessionPaused?"Pause":"Reprise"); }
+function toggleSessionPause(){
+  sessionPaused=!sessionPaused;
+  $("btnPauseSession").textContent=sessionPaused?"Reprendre":"Pause";
+  const tb=$("timerStart"); if(tb) tb.textContent=sessionPaused?"▶":"⏸";
+  toast(sessionPaused?"Pause":"Reprise");
+}
 function modeLabel(){
   return ({duo:"Duo",solo:"Solo",marathon:"Marathon",roulette:"Roulette",relais:"Relais",de:"Dé 6",cachee:"Cachée",blitz:"Blitz"})[currentMode]||currentMode;
 }
@@ -1940,10 +1946,7 @@ document.querySelectorAll(".mode-btn").forEach(btn=>{
   };
 });
 
-$("timerStart").onclick=()=>{
-  if(isRunning) stopChallengeTimer();
-  else startChallengeTimer();
-};
+$("timerStart").onclick=toggleSessionPause;
 </script>
 </body>
 </html>
