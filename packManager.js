@@ -10,19 +10,19 @@
 
   // Catalogue des packs : id -> fichier JSON + statut gratuit
   const CATALOG = {
-    niveau_1:        { free: true,  file: "packs/niveau_1.json" },
-    niveau_2:        { free: true,  file: "packs/niveau_2.json" },
-    base_aftercare:  { free: true,  file: "packs/base_aftercare.json" },
-    niveau_3:        { free: false, file: "packs/niveau_3.json" },
-    niveau_4:        { free: false, file: "packs/niveau_4.json" },
-    niveau_5:        { free: false, file: "packs/niveau_5.json" },
-    theme_sensoriel:    { free: false, file: "packs/theme_sensoriel.json" },
-    theme_ambiance:     { free: false, file: "packs/theme_ambiance.json" },
-    theme_jeux_legers:  { free: false, file: "packs/theme_jeux_legers.json" },
-    theme_bdsm_avance:  { free: false, file: "packs/theme_bdsm_avance.json" },
-    theme_photo_video:  { free: false, file: "packs/theme_photo_video.json" },
-    theme_qacte:        { free: false, file: "packs/theme_qacte.json" },
-    theme_exterieur:    { free: false, file: "packs/theme_exterieur.json" },
+    niveau_1:        { free: true,  file: "Packs/niveau_1.json" },
+    niveau_2:        { free: true,  file: "Packs/niveau_2.json" },
+    base_aftercare:  { free: true,  file: "Packs/base_aftercare.json" },
+    niveau_3:        { free: false, file: "Packs/niveau_3.json" },
+    niveau_4:        { free: false, file: "Packs/niveau_4.json" },
+    niveau_5:        { free: false, file: "Packs/niveau_5.json" },
+    theme_sensoriel:    { free: false, file: "Packs/theme_sensoriel.json" },
+    theme_ambiance:     { free: false, file: "Packs/theme_ambiance.json" },
+    theme_jeux_legers:  { free: false, file: "Packs/theme_jeux_legers.json" },
+    theme_bdsm_avance:  { free: false, file: "Packs/theme_bdsm_avance.json" },
+    theme_photo_video:  { free: false, file: "Packs/theme_photo_video.json" },
+    theme_qacte:        { free: false, file: "Packs/theme_qacte.json" },
+    theme_exterieur:    { free: false, file: "Packs/theme_exterieur.json" },
   };
 
   // Product ID StoreKit = BUNDLE_ID + "." + packId (doit matcher le .storekit / App Store Connect)
