@@ -117,11 +117,30 @@
   .safe-word{padding:8px 16px;font-size:.9rem;box-shadow:0 6px 20px rgba(0,0,0,.35)}
   .chip-grid{display:flex;flex-wrap:wrap;gap:8px}
   .chip{display:flex;align-items:center;gap:6px;padding:8px 10px;border-radius:999px;background:var(--card2);border:1px solid #3a2a45;font-size:.82rem;cursor:pointer}
-  .level-select button.locked{opacity:.45;cursor:not-allowed}
+  .level-select button.locked{opacity:.45;cursor:not-allowed;position:relative}
   .chip.locked{background:#241a26;border-color:#2a1f32;color:var(--muted);cursor:not-allowed}
   .chip.locked input{cursor:not-allowed}
   .unlock-link{cursor:pointer}
   [data-pack-row].flash-highlight{background:rgba(232,62,140,.25);border-radius:10px;transition:background 1.4s ease}
+
+  /* Boutique "Contenu additionnel" */
+  .shop-item{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px;border-radius:14px;background:var(--card2);border:1px solid #3a2a45;margin-bottom:8px}
+  .shop-item.owned{border-color:#2a4a38}
+  .shop-item.locked{border-color:#3a2a45}
+  .shop-item .shop-label{font-weight:600;font-size:.9rem;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .shop-item .shop-count{font-size:.72rem;color:var(--muted);font-weight:500}
+  .shop-item .badge.owned-badge{color:#7be0a8;border-color:#2a4a38;background:#152a1f}
+  .shop-item .btn-unlock{background:linear-gradient(135deg,#e83e8c,#c2185b);color:#fff;border:none;border-radius:20px;padding:8px 16px;font-weight:700;font-size:.8rem;cursor:pointer;white-space:nowrap}
+  .shop-tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+  .shop-tools .ghost-btn{flex:1;min-width:140px}
+  .acc-group-label{font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:12px 0 6px;font-weight:700}
+  .acc-group-label:first-child{margin-top:0}
+
+  /* Marqueur custom pour <details> "Réglages avancés" */
+  #advancedSettings summary{list-style:none;display:flex;align-items:center;gap:8px}
+  #advancedSettings summary::-webkit-details-marker{display:none}
+  #advancedSettings summary::before{content:"▸";display:inline-block;transition:transform .2s ease;color:var(--accent2)}
+  #advancedSettings[open] summary::before{transform:rotate(90deg)}
   .chip input{accent-color:var(--accent)}
   .mode-select{grid-template-columns:repeat(2,1fr)}
   .mode-select button{display:flex;flex-direction:column;align-items:center;gap:2px;padding:12px 8px;font-size:.8rem}
@@ -351,7 +370,7 @@
     <summary style="cursor:pointer;font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--accent2)">Réglages avancés (accessoires, limites, durées)</summary>
     <div style="margin-top:14px">
       <h2>Accessoires</h2>
-      <div class="chip-grid" id="accessoriesList"></div>
+      <div id="accessoriesList"></div>
     </div>
     <div style="margin-top:16px">
       <h2>Limites (à exclure)</h2>
@@ -660,11 +679,33 @@ function ownedPackTypes(){
   // Note : Aftercare n'apparaît plus ici — contenu de sécurité, toujours inclus, jamais désactivable.
 }
 function renderPacksList(){
-  $("packsList").innerHTML = ownedPackTypes().map(p=>`<label class="checkbox-item"><input type="checkbox" id="pack_${p.id}" ${p.on?"checked":""}> ${p.label}</label>`).join("");
+  // Préserve les choix déjà faits par l'utilisateur avant de reconstruire la liste
+  const prevState = {};
+  document.querySelectorAll("#packsList input[type=checkbox]").forEach(inp=>{
+    prevState[inp.id] = inp.checked;
+  });
+  $("packsList").innerHTML = ownedPackTypes().map(p=>{
+    const prev = prevState["pack_"+p.id];
+    const checked = prev!==undefined ? prev : p.on;
+    return `<label class="checkbox-item"><input type="checkbox" id="pack_${p.id}" ${checked?"checked":""}> ${p.label}</label>`;
+  }).join("");
 }
 function initLists(){
   const accIco={lubrifiant:"💧",sextoy:"📳",menottes:"🔗",bandeau:"🙈",plumes:"🪶",bougie:"🕯️",glace:"🧊",huile:"🧴",fouet:"👋",pinces:"🖇️",baillon:"🤐",collar:"📿",plug:"🔸",rings:"⭕",harnais:"♠️",restrain:"⛓️",comestible:"🍯",musique:"🎵",couverture:"🛏️"};
-  $("accessoriesList").innerHTML = allAccessories.map(a=>`<label class="chip"><input type="checkbox" id="acc_${a.id}" ${a.id==="lubrifiant"?"checked":""}> ${accIco[a.id]||"✨"} ${a.label}</label>`).join("");
+  const ACC_GROUP_LABEL = {sensoriel:"Sensoriel & douceur", ambiance:"Ambiance", jeux_legers:"Jeux légers", bdsm_avance:"BDSM avancé"};
+  const grouped = {sensoriel:[], ambiance:[], jeux_legers:[], bdsm_avance:[], _autre:[]};
+  allAccessories.forEach(a=>{
+    const packId = ACC_TO_PACK[a.id];
+    const grp = packId ? packId.replace(/^theme_/,"") : "_autre";
+    (grouped[grp]||grouped._autre).push(a);
+  });
+  let accHtml = "";
+  Object.entries(grouped).forEach(([grp, list])=>{
+    if(!list.length) return;
+    if(grp!=="_autre") accHtml += `<div class="acc-group-label">${ACC_GROUP_LABEL[grp]}</div>`;
+    accHtml += `<div class="chip-grid">` + list.map(a=>`<label class="chip"><input type="checkbox" id="acc_${a.id}" ${a.id==="lubrifiant"?"checked":""}> ${accIco[a.id]||"✨"} ${a.label}</label>`).join("") + `</div>`;
+  });
+  $("accessoriesList").innerHTML = accHtml;
   renderPacksList();
   $("limitsList").innerHTML = allLimits.map(l=>`<label class="checkbox-item"><input type="checkbox" id="lim_${l.id}"> ${l.label}</label>`).join("");
   renderAccessoryLocks();
@@ -688,27 +729,33 @@ function renderShop(){
   const el = $("shopList");
   if(!el || !window.PackManager) return;
   const anyOwned = Object.keys(window.PackManager.CATALOG).some(id=>!window.PackManager.CATALOG[id].free && window.PackManager.isPurchased(id));
-  const resetBtn = anyOwned ? `<div class="input-row"><button class="ghost-btn" id="btnResetPurchases">↺ Réinitialiser les achats-tests</button></div>` : "";
+  const packIco = {niveau_1:"🔥",niveau_2:"🔥",niveau_3:"🔥",niveau_4:"🔥",niveau_5:"🔥",base_aftercare:"☕",theme_sensoriel:"💧",theme_ambiance:"🎵",theme_jeux_legers:"🙈",theme_bdsm_avance:"⛓️",theme_photo_video:"📷",theme_qacte:"💥",theme_exterieur:"🛋️"};
+  const resetBtn = anyOwned ? `<button class="ghost-btn" id="btnResetPurchases">↺ Réinitialiser les achats-tests</button>` : "";
   const rows = Object.entries(window.PackManager.CATALOG).map(([id, meta])=>{
     const owned = window.PackManager.isPurchased(id);
     const label = id.replace(/^niveau_/,"Niveau ").replace(/^theme_/,"").replace(/_/g," ");
-    const countTxt = meta.count ? ` <span style="color:#a88b9e">(${meta.count})</span>` : "";
+    const ico = packIco[id] || "✨";
+    const countBadge = meta.count ? `<span class="badge">${meta.count} défis</span>` : "";
     if (meta.free){
-      return `<div class="input-row" data-pack-row="${id}"><label style="min-width:auto;flex:1">${label}${countTxt} <span style="color:#a88b9e">· inclus</span></label></div>`;
+      return `<div class="shop-item owned" data-pack-row="${id}">
+        <div class="shop-label">${ico} ${label} ${countBadge}</div>
+        <span class="badge owned-badge">Inclus</span>
+      </div>`;
     }
-    return `<div class="input-row" data-pack-row="${id}">
-      <label style="min-width:auto;flex:1">${owned?"":"🔒 "}${label}${countTxt} ${owned?'<span style="color:#2ecc71">· débloqué</span>':""}</label>
-      ${owned ? "" : `<button class="ghost-btn" data-unlock="${id}">Débloquer (test)</button>`}
+    return `<div class="shop-item ${owned?"owned":"locked"}" data-pack-row="${id}">
+      <div class="shop-label">${owned?"":"🔒 "}${ico} ${label} ${countBadge}</div>
+      ${owned ? `<span class="badge owned-badge">Débloqué</span>` : `<button class="btn-unlock" data-unlock="${id}">Débloquer (test)</button>`}
     </div>`;
   }).join("");
   const restoreBox = `
-    <div class="input-row" style="margin-top:10px"><button class="ghost-btn" id="btnRestorePurchases" style="flex:1">↻ Restaurer mes achats</button></div>
+    <div class="shop-tools" style="margin-top:10px">${resetBtn}<button class="ghost-btn" id="btnRestorePurchases">↻ Restaurer mes achats</button></div>
     <p class="hint" id="restoreHint" style="display:none">
-      Colle ton code de sauvegarde : <input type="text" id="restoreCodeInput" placeholder="code..." style="width:100%;margin:6px 0;padding:6px;border-radius:8px;border:1px solid #3a2a45;background:var(--card2);color:var(--text)">
-      <button class="ghost-btn" id="btnApplyRestoreCode">Appliquer</button>
-      <button class="ghost-btn" id="btnShowMyCode">Voir mon code (à copier avant de changer d'appareil)</button>
+      Colle ton code de sauvegarde pour retrouver tes packs sur un autre navigateur :
+      <input type="text" id="restoreCodeInput" placeholder="code..." style="width:100%;margin:6px 0;padding:10px;border-radius:10px;border:1px solid #3a2a45;background:var(--card2);color:var(--text);font-size:1rem">
+      <span class="shop-tools"><button class="ghost-btn" id="btnApplyRestoreCode">Appliquer</button>
+      <button class="ghost-btn" id="btnShowMyCode">Voir mon code (à copier avant de changer d'appareil)</button></span>
     </p>`;
-  el.innerHTML = resetBtn + rows + restoreBox;
+  el.innerHTML = rows + restoreBox;
   el.querySelectorAll("[data-unlock]").forEach(btn=>{
     btn.onclick = async ()=>{
       // TODO étape 2 : remplacer par un vrai achat StoreKit (RevenueCat) avant d'appeler markPurchased.
