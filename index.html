@@ -841,7 +841,8 @@ function adaptActForActor(text, meG, pG){
 }
 function explainMedia(text, ch){
   if(!ch || (ch.pack!=="photo" && ch.cat!=="photo")) return text;
-  if(/^Vidéo :|^Photo : un seul cliché/i.test(text)) return text;
+  if(/^Vidéo :|^Photo :/i.test(text)) return text;
+  if(/^(Filme|Photo)\b/i.test(text)) return text; // le défi explique déjà quoi filmer/photographier — pas besoin du préambule générique
   const film=/filme|vidéo|video|lance la vidéo/i.test(ch.text);
   const head=film
     ? "Vidéo : un de vous tient le téléphone. Les deux sont d'accord. Tu filmes sans couper. Cadre ce qui est décrit (visage seulement si le texte le dit).\n"
