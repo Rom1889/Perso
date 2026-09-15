@@ -124,6 +124,24 @@
   [data-pack-row].flash-highlight{background:rgba(232,62,140,.25);border-radius:10px;transition:background 1.4s ease}
 
   /* Boutique "Contenu additionnel" */
+  .shop-section-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:16px 0 8px;font-weight:700}
+  .shop-section-label:first-child{margin-top:0}
+  .level-strip{display:flex;gap:8px}
+  .level-tile{flex:1;background:var(--card2);border:1px solid #3a2a45;border-radius:14px;padding:10px 4px 8px;text-align:center}
+  .level-tile.owned{border-color:#2a4a38}
+  .level-tile-num{font-size:1.25rem;font-weight:800;color:var(--accent2);line-height:1.1}
+  .level-tile-count{font-size:.6rem;color:var(--muted);margin-top:2px}
+  .level-tile .lvl-check{display:block;margin-top:4px;color:#7be0a8;font-size:.85rem}
+  .level-tile .btn-unlock-sm{margin-top:6px;width:100%;background:linear-gradient(135deg,#e83e8c,#c2185b);border:none;color:#fff;border-radius:10px;padding:5px 0;font-size:.95rem;cursor:pointer;line-height:1}
+  .theme-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(128px,1fr));gap:10px}
+  .theme-tile{background:var(--card2);border:1px solid #3a2a45;border-radius:14px;padding:12px 8px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:3px}
+  .theme-tile.owned{border-color:#2a4a38}
+  .theme-ico{font-size:1.4rem}
+  .theme-name{font-weight:700;font-size:.8rem;text-transform:capitalize;line-height:1.2}
+  .theme-count{font-size:.62rem;color:var(--muted)}
+  .theme-tile .badge.owned-badge{margin-top:2px}
+  .theme-tile .btn-unlock{margin-top:2px;width:100%;font-size:.72rem;padding:6px 4px}
+  .aftercare-note{font-size:.78rem;color:var(--muted);display:flex;align-items:center;gap:6px;margin-top:14px;padding:9px 12px;background:var(--card2);border-radius:12px}
   .shop-item{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px;border-radius:14px;background:var(--card2);border:1px solid #3a2a45;margin-bottom:8px}
   .shop-item.owned{border-color:#2a4a38}
   .shop-item.locked{border-color:#3a2a45}
@@ -131,6 +149,8 @@
   .shop-item .shop-count{font-size:.72rem;color:var(--muted);font-weight:500}
   .shop-item .badge.owned-badge{color:#7be0a8;border-color:#2a4a38;background:#152a1f}
   .shop-item .btn-unlock{background:linear-gradient(135deg,#e83e8c,#c2185b);color:#fff;border:none;border-radius:20px;padding:8px 16px;font-weight:700;font-size:.8rem;cursor:pointer;white-space:nowrap}
+  .badge.owned-badge{color:#7be0a8;border-color:#2a4a38;background:#152a1f}
+  .btn-unlock{background:linear-gradient(135deg,#e83e8c,#c2185b);color:#fff;border:none;border-radius:20px;padding:8px 16px;font-weight:700;font-size:.8rem;cursor:pointer;white-space:nowrap}
   .shop-tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
   .shop-tools .ghost-btn{flex:1;min-width:140px}
   .acc-group-label{font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:12px 0 6px;font-weight:700}
@@ -728,34 +748,53 @@ async function refreshLevelsData(){
 function renderShop(){
   const el = $("shopList");
   if(!el || !window.PackManager) return;
-  const anyOwned = Object.keys(window.PackManager.CATALOG).some(id=>!window.PackManager.CATALOG[id].free && window.PackManager.isPurchased(id));
-  const packIco = {niveau_1:"🔥",niveau_2:"🔥",niveau_3:"🔥",niveau_4:"🔥",niveau_5:"🔥",base_aftercare:"☕",theme_sensoriel:"💧",theme_ambiance:"🎵",theme_jeux_legers:"🙈",theme_bdsm_avance:"⛓️",theme_photo_video:"📷",theme_qacte:"💥",theme_exterieur:"🛋️"};
-  const resetBtn = anyOwned ? `<button class="ghost-btn" id="btnResetPurchases">↺ Réinitialiser les achats-tests</button>` : "";
-  const rows = Object.entries(window.PackManager.CATALOG).map(([id, meta])=>{
+  const CAT = window.PackManager.CATALOG;
+  const anyOwned = Object.keys(CAT).some(id=>!CAT[id].free && window.PackManager.isPurchased(id));
+  const themeIco = {theme_sensoriel:"💧",theme_ambiance:"🎵",theme_jeux_legers:"🙈",theme_bdsm_avance:"⛓️",theme_photo_video:"📷",theme_qacte:"💥",theme_exterieur:"🛋️"};
+
+  // --- Niveaux : bande compacte de 5 tuiles ---
+  const levelIds = ["niveau_1","niveau_2","niveau_3","niveau_4","niveau_5"];
+  const levelStrip = `<div class="level-strip">` + levelIds.map(id=>{
+    const meta = CAT[id]; if(!meta) return "";
     const owned = window.PackManager.isPurchased(id);
-    const label = id.replace(/^niveau_/,"Niveau ").replace(/^theme_/,"").replace(/_/g," ");
-    const ico = packIco[id] || "✨";
-    const countBadge = meta.count ? `<span class="badge">${meta.count} défis</span>` : "";
-    if (meta.free){
-      return `<div class="shop-item owned" data-pack-row="${id}">
-        <div class="shop-label">${ico} ${label} ${countBadge}</div>
-        <span class="badge owned-badge">Inclus</span>
-      </div>`;
-    }
-    return `<div class="shop-item ${owned?"owned":"locked"}" data-pack-row="${id}">
-      <div class="shop-label">${owned?"":"🔒 "}${ico} ${label} ${countBadge}</div>
-      ${owned ? `<span class="badge owned-badge">Débloqué</span>` : `<button class="btn-unlock" data-unlock="${id}">Débloquer (test)</button>`}
+    const num = id.replace("niveau_","");
+    return `<div class="level-tile ${owned?"owned":"locked"}" data-pack-row="${id}">
+      <div class="level-tile-num">${owned?"":"🔒"} ${num}</div>
+      <div class="level-tile-count">${meta.count}</div>
+      ${owned ? `<span class="lvl-check">✓</span>` : `<button class="btn-unlock-sm" data-unlock="${id}" title="Débloquer (test)">🔓</button>`}
     </div>`;
-  }).join("");
+  }).join("") + `</div>`;
+
+  // --- Packs à thème : grille de tuiles ---
+  const themeIds = Object.keys(CAT).filter(id=>id.startsWith("theme_"));
+  const themeGrid = `<div class="theme-grid">` + themeIds.map(id=>{
+    const meta = CAT[id];
+    const owned = window.PackManager.isPurchased(id);
+    const name = id.replace(/^theme_/,"").replace(/_/g," ");
+    return `<div class="theme-tile ${owned?"owned":"locked"}" data-pack-row="${id}">
+      <div class="theme-ico">${owned?"":"🔒 "}${themeIco[id]||"✨"}</div>
+      <div class="theme-name">${name}</div>
+      <div class="theme-count">${meta.count} défis</div>
+      ${owned ? `<span class="badge owned-badge">Débloqué</span>` : `<button class="btn-unlock" data-unlock="${id}">Débloquer</button>`}
+    </div>`;
+  }).join("") + `</div>`;
+
+  const aftercareNote = `<div class="aftercare-note">☕ Aftercare (${CAT.base_aftercare.count} défis) — toujours inclus, jamais payant</div>`;
+
+  const resetBtn = anyOwned ? `<button class="ghost-btn" id="btnResetPurchases">↺ Réinitialiser les achats-tests</button>` : "";
   const restoreBox = `
-    <div class="shop-tools" style="margin-top:10px">${resetBtn}<button class="ghost-btn" id="btnRestorePurchases">↻ Restaurer mes achats</button></div>
+    <div class="shop-tools" style="margin-top:14px">${resetBtn}<button class="ghost-btn" id="btnRestorePurchases">↻ Restaurer mes achats</button></div>
     <p class="hint" id="restoreHint" style="display:none">
       Colle ton code de sauvegarde pour retrouver tes packs sur un autre navigateur :
       <input type="text" id="restoreCodeInput" placeholder="code..." style="width:100%;margin:6px 0;padding:10px;border-radius:10px;border:1px solid #3a2a45;background:var(--card2);color:var(--text);font-size:1rem">
       <span class="shop-tools"><button class="ghost-btn" id="btnApplyRestoreCode">Appliquer</button>
       <button class="ghost-btn" id="btnShowMyCode">Voir mon code (à copier avant de changer d'appareil)</button></span>
     </p>`;
-  el.innerHTML = rows + restoreBox;
+
+  el.innerHTML =
+    `<div class="shop-section-label">Niveaux</div>` + levelStrip +
+    `<div class="shop-section-label">Packs à thème</div>` + themeGrid +
+    aftercareNote + restoreBox;
   el.querySelectorAll("[data-unlock]").forEach(btn=>{
     btn.onclick = async ()=>{
       // TODO étape 2 : remplacer par un vrai achat StoreKit (RevenueCat) avant d'appeler markPurchased.
