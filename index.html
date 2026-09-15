@@ -118,8 +118,10 @@
   .chip-grid{display:flex;flex-wrap:wrap;gap:8px}
   .chip{display:flex;align-items:center;gap:6px;padding:8px 10px;border-radius:999px;background:var(--card2);border:1px solid #3a2a45;font-size:.82rem;cursor:pointer}
   .level-select button.locked{opacity:.45;cursor:not-allowed}
-  .chip.locked{opacity:.4;cursor:not-allowed}
+  .chip.locked{background:#241a26;border-color:#2a1f32;color:var(--muted);cursor:not-allowed}
   .chip.locked input{cursor:not-allowed}
+  .unlock-link{cursor:pointer}
+  [data-pack-row].flash-highlight{background:rgba(232,62,140,.25);border-radius:10px;transition:background 1.4s ease}
   .chip input{accent-color:var(--accent)}
   .mode-select{grid-template-columns:repeat(2,1fr)}
   .mode-select button{display:flex;flex-direction:column;align-items:center;gap:2px;padding:12px 8px;font-size:.8rem}
@@ -328,18 +330,9 @@
     <p class="hint">Relais = on change de partenaire à la moitié du chrono. Dé 6 = le dé choisit le type. Cachée = un seul lit le défi. Blitz = 30 secondes.</p>
   </div>
   <div class="setup-card">
-    <h2>Packs à jouer</h2>
+    <h2>Types de défis affichés</h2>
     <div class="checkbox-grid" id="packsList"></div>
-    <p class="hint">Décoche un pack pour l'exclure. Lieux est décoché par défaut. Vêtements : niveaux 1-2 encore habillés / sous-vêtements. À partir du niveau 3 : plus aucun vêtement (nu). Aftercare = retour au calme.</p>
-  </div>
-  <div class="setup-card">
-    <h2>Accessoires</h2>
-    <div class="chip-grid" id="accessoriesList"></div>
-  </div>
-  <div class="setup-card">
-    <h2>Limites (à exclure)</h2>
-    <div class="checkbox-grid" id="limitsList"></div>
-    <p class="hint">Coche ce que vous ne voulez pas voir ce soir.</p>
+    <p class="hint">Décoche un type pour l'exclure de la partie. Lieux est décoché par défaut. Vêtements : niveaux 1-2 encore habillés / sous-vêtements. À partir du niveau 3 : plus aucun vêtement (nu). Aftercare = retour au calme.</p>
   </div>
   <div class="setup-card">
     <h2>Niveau de depart</h2>
@@ -352,12 +345,25 @@
     </div>
     <label class="checkbox-item" style="margin-top:12px"><input type="checkbox" id="setupNude"> On commence déjà nus (même au niveau 1)</label>
     <p class="hint">Sinon tu pourras le signaler en jeu dès que les vêtements sont partis.</p>
+    <p class="hint" id="setupPreviewCount" style="color:var(--accent2);font-weight:600"></p>
   </div>
-  <div class="setup-card">
-    <h2>Durées</h2>
-    <div class="input-row"><label>Défis (s)</label><input type="number" id="challengeDuration" value="120" min="45" max="300" step="15"></div>
-    <div class="input-row"><label>Partie (min)</label><input type="number" id="sessionDuration" value="30" min="15" max="120" step="5"></div>
-  </div>
+  <details class="setup-card" id="advancedSettings">
+    <summary style="cursor:pointer;font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--accent2)">Réglages avancés (accessoires, limites, durées)</summary>
+    <div style="margin-top:14px">
+      <h2>Accessoires</h2>
+      <div class="chip-grid" id="accessoriesList"></div>
+    </div>
+    <div style="margin-top:16px">
+      <h2>Limites (à exclure)</h2>
+      <div class="checkbox-grid" id="limitsList"></div>
+      <p class="hint">Coche ce que vous ne voulez pas voir ce soir.</p>
+    </div>
+    <div style="margin-top:16px">
+      <h2>Durées</h2>
+      <div class="input-row"><label>Défis (s)</label><input type="number" id="challengeDuration" value="120" min="45" max="300" step="15"></div>
+      <div class="input-row"><label>Partie (min)</label><input type="number" id="sessionDuration" value="30" min="15" max="120" step="5"></div>
+    </div>
+  </details>
   <div class="setup-card">
     <h2>Contenu additionnel</h2>
     <div id="shopList"></div>
@@ -414,6 +420,21 @@
 </div>
 
 
+
+<div class="overlay" id="onboardingOverlay">
+  <div class="setup-card" style="max-width:440px;width:100%">
+    <h2>Bienvenue 👋</h2>
+    <p style="line-height:1.5;margin:10px 0">
+      Un jeu à défis progressifs pour couples, en 5 niveaux d'intensité.
+      Choisissez vos joueurs, vos accessoires et votre niveau de départ, puis lancez.
+    </p>
+    <p style="line-height:1.5;margin:10px 0;color:var(--muted)">
+      Les niveaux 1 à 3 sont gratuits. Le reste (niveaux 4-5, packs à thème) se débloque
+      dans « Contenu additionnel » en bas de l'écran.
+    </p>
+    <button class="main-btn btn-primary" onclick="closeOnboarding()">C'est parti</button>
+  </div>
+</div>
 
 <div class="overlay" id="nudeModal">
   <div class="setup-card nude-modal">
@@ -583,9 +604,51 @@ function renderAccessoryLocks(){
     if(!input) return;
     input.disabled = !owned;
     const label = input.closest("label");
-    if(label) label.classList.toggle("locked", !owned);
+    if(!label) return;
+    label.classList.toggle("locked", !owned);
     if(!owned) input.checked = false;
+    // Lien direct vers le pack correspondant dans "Contenu additionnel"
+    let link = label.querySelector(".unlock-link");
+    if(!owned){
+      if(!link){
+        link = document.createElement("span");
+        link.className = "unlock-link";
+        link.style.cssText = "text-decoration:underline;margin-left:4px;color:#ffb3d0";
+        link.textContent = "🔒 voir le pack";
+        label.appendChild(link);
+      }
+      link.onclick = (e)=>{ e.preventDefault(); scrollToPack(ACC_TO_PACK[a.id]); };
+    } else if(link){
+      link.remove();
+    }
   });
+}
+function scrollToPack(packId){
+  const row = document.querySelector(`[data-pack-row="${packId}"]`);
+  if(!row) return;
+  row.scrollIntoView({behavior:"smooth", block:"center"});
+  row.classList.add("flash-highlight");
+  setTimeout(()=>row.classList.remove("flash-highlight"), 1600);
+}
+function updateSetupPreview(){
+  const el = $("setupPreviewCount");
+  if(!el) return;
+  const lvl = settings.startLevel || 1;
+  let pool = (levelsData[lvl]||[]).slice();
+  allPacks.forEach(p=>{ const inp=$("pack_"+p.id); if(inp && !inp.checked) pool = pool.filter(c=>c.pack!==p.id); });
+  const accOn = {}; allAccessories.forEach(a=>{ const inp=$("acc_"+a.id); accOn[a.id] = !!(inp && inp.checked); });
+  pool = pool.filter(c=> !c.need || accOn[c.need]);
+  const limOn = {}; allLimits.forEach(l=>{ const inp=$("lim_"+l.id); limOn[l.id] = !!(inp && inp.checked); });
+  if(typeof challengeBans === "function"){
+    pool = pool.filter(c => !challengeBans(c).some(b => limOn[b] === true));
+  }
+  el.textContent = pool.length
+    ? `${pool.length} défi${pool.length>1?"s":""} disponible${pool.length>1?"s":""} au niveau ${lvl} avec ces réglages`
+    : `⚠️ Aucun défi avec ces réglages au niveau ${lvl} — élargis les accessoires ou change de niveau`;
+}
+function closeOnboarding(){
+  $("onboardingOverlay").classList.remove("show");
+  try{ localStorage.setItem("jdc_onboarding_seen","1"); }catch(e){}
 }
 function initLists(){
   const accIco={lubrifiant:"💧",sextoy:"📳",menottes:"🔗",bandeau:"🙈",plumes:"🪶",bougie:"🕯️",glace:"🧊",huile:"🧴",fouet:"👋",pinces:"🖇️",baillon:"🤐",collar:"📿",plug:"🔸",rings:"⭕",harnais:"♠️",restrain:"⛓️",comestible:"🍯",musique:"🎵",couverture:"🛏️"};
@@ -593,6 +656,12 @@ function initLists(){
   $("packsList").innerHTML = allPacks.map(p=>`<label class="checkbox-item"><input type="checkbox" id="pack_${p.id}" ${p.on?"checked":""}> ${p.label}</label>`).join("");
   $("limitsList").innerHTML = allLimits.map(l=>`<label class="checkbox-item"><input type="checkbox" id="lim_${l.id}"> ${l.label}</label>`).join("");
   renderAccessoryLocks();
+  ["accessoriesList","packsList","limitsList"].forEach(id=>{
+    $(id).addEventListener("change", updateSetupPreview);
+  });
+  try{
+    if(!localStorage.getItem("jdc_onboarding_seen")) $("onboardingOverlay").classList.add("show");
+  }catch(e){}
 }
 initLists(); if(typeof setChallengeLive==="function") setChallengeLive(false);
 
@@ -613,9 +682,9 @@ function renderShop(){
     const label = id.replace(/^niveau_/,"Niveau ").replace(/^theme_/,"").replace(/_/g," ");
     const countTxt = meta.count ? ` <span style="color:#a88b9e">(${meta.count})</span>` : "";
     if (meta.free){
-      return `<div class="input-row"><label style="min-width:auto;flex:1">${label}${countTxt} <span style="color:#a88b9e">· inclus</span></label></div>`;
+      return `<div class="input-row" data-pack-row="${id}"><label style="min-width:auto;flex:1">${label}${countTxt} <span style="color:#a88b9e">· inclus</span></label></div>`;
     }
-    return `<div class="input-row">
+    return `<div class="input-row" data-pack-row="${id}">
       <label style="min-width:auto;flex:1">${owned?"":"🔒 "}${label}${countTxt} ${owned?'<span style="color:#2ecc71">· débloqué</span>':""}</label>
       ${owned ? "" : `<button class="ghost-btn" data-unlock="${id}">Débloquer (test)</button>`}
     </div>`;
@@ -634,7 +703,7 @@ function renderShop(){
       window.PackManager.markPurchased(btn.dataset.unlock);
       levelsDataReady = false;
       await refreshLevelsData();
-      renderShop(); renderLevelLocks(); renderAccessoryLocks();
+      renderShop(); renderLevelLocks(); renderAccessoryLocks(); updateSetupPreview();
       toast("Pack débloqué (test local)");
     };
   });
@@ -643,7 +712,7 @@ function renderShop(){
     window.PackManager.resetPurchases();
     levelsDataReady = false;
     await refreshLevelsData();
-    renderShop(); renderLevelLocks(); renderAccessoryLocks();
+    renderShop(); renderLevelLocks(); renderAccessoryLocks(); updateSetupPreview();
     toast("Achats-tests réinitialisés");
   };
   // Bouton requis par Apple sur l'App Store. Pour l'instant : restauration par code local
@@ -660,7 +729,7 @@ function renderShop(){
     }
     levelsDataReady = false;
     await refreshLevelsData();
-    renderShop(); renderLevelLocks(); renderAccessoryLocks();
+    renderShop(); renderLevelLocks(); renderAccessoryLocks(); updateSetupPreview();
     toast("Achats restaurés.");
   };
   $("btnShowMyCode").onclick = ()=>{
@@ -670,7 +739,7 @@ function renderShop(){
     toast("Ton code est affiché ci-dessus — copie-le avant de changer d'appareil.");
   };
 }
-refreshLevelsData().then(()=>{ renderShop(); renderLevelLocks(); });
+refreshLevelsData().then(()=>{ renderShop(); renderLevelLocks(); updateSetupPreview(); });
 
 document.querySelectorAll("#gender1 button").forEach(b=>b.onclick=()=>{document.querySelectorAll("#gender1 button").forEach(x=>x.classList.remove("active"));b.classList.add("active");players[1].gender=b.dataset.gender});
 document.querySelectorAll("#gender2 button").forEach(b=>b.onclick=()=>{document.querySelectorAll("#gender2 button").forEach(x=>x.classList.remove("active"));b.classList.add("active");players[2].gender=b.dataset.gender});
@@ -683,6 +752,7 @@ document.querySelectorAll("#startLevelSelect button").forEach(b=>b.onclick=()=>{
   document.querySelectorAll("#startLevelSelect button").forEach(x=>x.classList.remove("active"));
   b.classList.add("active");
   settings.startLevel=lvl;
+  updateSetupPreview();
 });
 document.querySelectorAll("#setupModeSelect button").forEach(b=>b.onclick=()=>{document.querySelectorAll("#setupModeSelect button").forEach(x=>x.classList.remove("active"));b.classList.add("active");currentMode=b.dataset.mode});
 document.querySelectorAll("#catFilters button").forEach(b=>b.onclick=()=>{
