@@ -456,6 +456,7 @@
   <div class="top-bar">
 
     <div class="session-timer" id="sessionTimer">30:00</div>
+    <button class="ghost-btn" id="btnToggleSoundTop" onclick="toggleSound()" style="flex:0 0 auto;padding:8px 10px">🔊</button>
     <button class="ghost-btn" onclick="openMenu()">Menu</button>
     <div class="level-timer" id="levelTimer">Niv. 1</div>
   </div>
@@ -554,7 +555,6 @@
       <button id="btnNudeMenu" onclick="toggleNude()">On est nus</button>
     </div>
     <div class="session-controls" style="margin-bottom:14px">
-      <button id="btnToggleSound" onclick="toggleSound()">🔊 Son</button>
       <button onclick="backToMainMenu()">🏠 Menu principal</button>
     </div>
     <p class="hint" style="margin-bottom:8px">Mode</p>
@@ -980,7 +980,7 @@ function playGong(){
 function toggleSound(){
   soundOn=!soundOn;
   try{ localStorage.setItem("jdc_sound", soundOn?"on":"off"); }catch(e){}
-  const btn=$("btnToggleSound"); if(btn) btn.textContent = soundOn ? "🔊 Son" : "🔇 Muet";
+  const btn=$("btnToggleSoundTop"); if(btn) btn.textContent = soundOn ? "🔊" : "🔇";
   if(soundOn) ensureAudio();
   toast(soundOn ? "Son activé" : "Son coupé");
 }
@@ -1191,6 +1191,12 @@ function toggleSessionPause(){
   sessionPaused=!sessionPaused;
   $("btnPauseSession").textContent=sessionPaused?"Reprendre":"Pause";
   const tb=$("timerStart"); if(tb) tb.textContent=sessionPaused?"▶":"⏸";
+  if(sessionPaused){
+    clearInterval(timerInterval); // arrêt réel de l'intervalle, plus fiable qu'un indicateur vérifié à chaque tick
+    isRunning=false;
+  } else if(lastChallenge){
+    startChallengeTimer(); // reprend depuis timeLeft actuel (inchangé pendant la pause)
+  }
   toast(sessionPaused?"Pause":"Reprise");
 }
 function modeLabel(){
@@ -1928,7 +1934,7 @@ $("btnSpin").onclick=function(){
 };
 function resetGame(){ if(confirm("Réinitialiser ?")) location.reload(); }
 function backToMainMenu(){ if(confirm("Quitter la partie et revenir au menu principal ?")) location.reload(); }
-(function(){ const btn=$("btnToggleSound"); if(btn) btn.textContent = soundOn ? "🔊 Son" : "🔇 Muet"; })();
+(function(){ const btn=$("btnToggleSoundTop"); if(btn) btn.textContent = soundOn ? "🔊" : "🔇"; })();
 $("btnSuccess").onclick=completeChallenge;
 $("btnFail").onclick=failChallenge;
 $("btnSkip").onclick=skipChallenge;
