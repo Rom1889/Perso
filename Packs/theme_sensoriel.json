@@ -154,15 +154,6 @@
  },
  {
   "type": "Défi",
-  "text": "Chacun de l'huile. Massez le bras gauche en même temps.",
-  "need": "huile",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
   "text": "Glaçon sur la nuque 10 secondes, puis paume chaude.",
   "need": "glace",
   "partner": null,
@@ -173,15 +164,6 @@
  {
   "type": "Défi",
   "text": "Glaçon le long de la mâchoire, puis un baiser.",
-  "need": "glace",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
-  "text": "Glaçon 3 secondes sur le poignet, bouche chaude.",
   "need": "glace",
   "partner": null,
   "cat": "sensuel",
@@ -262,15 +244,6 @@
  },
  {
   "type": "Défi",
-  "text": "Plume le long de la mâchoire, puis un baiser.",
-  "need": "plumes",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
   "text": "{{partner}} choisit : cou ou avant-bras. Plume seulement là pendant {{time}}.",
   "need": "plumes",
   "partner": null,
@@ -280,34 +253,7 @@
  },
  {
   "type": "Défi",
-  "text": "Plume dans le dos par-dessus le vêtement, 5 fois.",
-  "need": "plumes",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
   "text": "Plume dans la paume, ensuite tu embrasses la paume.",
-  "need": "plumes",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
-  "text": "Yeux fermés. Plume ou doigt : 6 essais.",
-  "need": "plumes",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
-  "text": "Plume derrière le genou 10 secondes.",
   "need": "plumes",
   "partner": null,
   "cat": "sensuel",
@@ -326,24 +272,6 @@
  {
   "type": "Défi",
   "text": "Un point de crème sur le dos de la main de {{partner}}. Lèche-le.",
-  "need": "comestible",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
-  "text": "Trait de miel sur l'avant-bras. Lèche uniquement le trait.",
-  "need": "comestible",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
-  "text": "Crème au coin des lèvres de {{partner}}. Embrasse.",
   "need": "comestible",
   "partner": null,
   "cat": "sensuel",
@@ -399,33 +327,6 @@
   "type": "Défi",
   "text": "Fin : plus rien de sucré, un baiser propre.",
   "need": "comestible",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
-  "text": "Fais allonger {{partner}} et masse son dos avec de l'huile pendant {{time}}.",
-  "need": "huile",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
-  "text": "Passe une plume sur le cou puis les épaules de {{partner}}, très lentement, sans chatouiller trop fort.",
-  "need": "plumes",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
-  "text": "Verse un peu d'huile uniquement sur les épaules de {{partner}} et masse-les pendant {{time}}.",
-  "need": "huile",
   "partner": null,
   "cat": "sensuel",
   "pack": "classique",
@@ -631,15 +532,6 @@
  },
  {
   "type": "Défi",
-  "text": "Glaçon sur une hanche, bouche sur l'autre.",
-  "need": "glace",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 2
- },
- {
-  "type": "Défi",
   "text": "Glaçon sous le haut, 8 secondes max.",
   "need": "glace",
   "partner": null,
@@ -793,15 +685,6 @@
  },
  {
   "type": "Défi",
-  "text": "Trait sur le ventre, stop avant le sexe. Lèche.",
-  "need": "comestible",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 2
- },
- {
-  "type": "Défi",
   "text": "Pose un peu de crème sur une hanche de {{partner}} et lèche jusqu'à ce qu'il n'en reste plus.",
   "need": "comestible",
   "partner": null,
@@ -937,26 +820,8 @@
  },
  {
   "type": "Défi",
-  "text": "Passe une plume de la hanche jusqu'au genou de {{partner}}, très lentement.",
-  "need": "plumes",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 2
- },
- {
-  "type": "Défi",
   "text": "Pose une goutte de lubrifiant sur le ventre de {{partner}} et lèche-la entièrement.",
   "need": "lubrifiant",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 2
- },
- {
-  "type": "Défi",
-  "text": "Teste d'abord une petite goutte de cire sur toi. Ensuite trace une petite ligne dans le bas du dos de {{partner}}.",
-  "need": "bougie",
   "partner": null,
   "cat": "sensuel",
   "pack": "classique",
@@ -1055,15 +920,6 @@
  {
   "type": "Défi",
   "text": "Mets un peu d'huile autour de {{le_point}} de {{partner}}, puis passe la langue dessus pendant {{time}}.",
-  "need": "huile",
-  "partner": null,
-  "cat": "oral",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
-  "text": "Huile autour, pas sur {{le_point}}, 30 secondes. Ensuite tu as le droit.",
   "need": "huile",
   "partner": null,
   "cat": "oral",
@@ -1171,25 +1027,7 @@
  },
  {
   "type": "Défi",
-  "text": "Plume du sternum au pubis, ensuite oral 20 secondes.",
-  "need": "plumes",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
   "text": "Plume sur le périnée 10 secondes, puis langue.",
-  "need": "plumes",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
-  "text": "Plume et doigt en alternance sur {{le_sexe}} toutes les 15 secondes.",
   "need": "plumes",
   "partner": null,
   "cat": "sensuel",
@@ -1217,15 +1055,6 @@
  {
   "type": "Défi",
   "text": "Deviner plume ou langue sur la cuisse, 5 fois.",
-  "need": "plumes",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
-  "text": "Pose la plume. 20 secondes de bouche seulement sur {{le_sexe}} de {{partner}}.",
   "need": "plumes",
   "partner": null,
   "cat": "sensuel",
@@ -1306,15 +1135,6 @@
  },
  {
   "type": "Défi",
-  "text": "Cire à l'intérieur de cuisse (haut), loin du sexe, une goutte.",
-  "need": "bougie",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
   "text": "Crème sur {{la_poitrine}}. Lèche jusqu'à ce qu'il n'en reste plus.",
   "need": "comestible",
   "partner": null,
@@ -1378,37 +1198,10 @@
  },
  {
   "type": "Défi",
-  "text": "Fin : plus de sucré, seulement ta bouche 20 secondes.",
-  "need": "comestible",
-  "partner": null,
-  "cat": "oral",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
   "text": "Chacun une goutte sur l'autre. Vous léchez en même temps.",
   "need": "comestible",
   "partner": null,
   "cat": "sensuel",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
-  "text": "Une glace (ou un doigt froid) sur l'intérieur de cuisse, bouche chaude sur {{le_point}}. 20 secondes.",
-  "need": "glace",
-  "partner": null,
-  "cat": "oral",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
-  "text": "Mets du lubrifiant et masturbe {{partner}} très lentement pendant {{time}}. Pas d'accélération.",
-  "need": "lubrifiant",
-  "partner": null,
-  "cat": "oral",
   "pack": "classique",
   "level": 3
  },
@@ -1495,24 +1288,6 @@
  },
  {
   "type": "Défi",
-  "text": "Cire sur le bas du ventre de {{partner}} (test d'abord sur toi), puis langue à côté.",
-  "need": "bougie",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
-  "text": "Un peu de crème / miel sur {{la_poitrine}} de {{partner}}. Tu lèches jusqu'à ce qu'il n'en reste plus.",
-  "need": "comestible",
-  "partner": null,
-  "cat": "oral",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
   "text": "Huile sur le dos. Masse 20 secondes, puis prends {{partner}} sans essuyer.",
   "need": "huile",
   "partner": null,
@@ -1550,15 +1325,6 @@
  {
   "type": "Défi",
   "text": "Couche généreuse. Prends {{partner}} très lentement.",
-  "need": "lubrifiant",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 4
- },
- {
-  "type": "Défi",
-  "text": "Lubrifiant uniquement à l'entrée. Prends pendant {{time}}.",
   "need": "lubrifiant",
   "partner": null,
   "cat": "sensuel",
@@ -1631,15 +1397,6 @@
  {
   "type": "Défi",
   "text": "{{partner}} verse l'huile sur toi. Tu {{l}} prends.",
-  "need": "huile",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 4
- },
- {
-  "type": "Défi",
-  "text": "Retire-toi, mets de l'huile, reprends {{partner}} plus lentement.",
   "need": "huile",
   "partner": null,
   "cat": "sensuel",
@@ -1738,15 +1495,6 @@
  },
  {
   "type": "Défi",
-  "text": "Quatre pattes. Plume bas du dos, tu prends.",
-  "need": "plumes",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 4
- },
- {
-  "type": "Défi",
   "text": "Toi tu prends, {{partner}} te passe la plume dans le dos.",
   "need": "plumes",
   "partner": null,
@@ -1757,24 +1505,6 @@
  {
   "type": "Défi",
   "text": "Pas de plume pendant 30 premières secondes.",
-  "need": "plumes",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 4
- },
- {
-  "type": "Défi",
-  "text": "Pendant que tu prends {{partner}}, une plume sur son dos. Rythme lent seulement.",
-  "need": "plumes",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 4
- },
- {
-  "type": "Défi",
-  "text": "Deux pauses plume de 8 secondes pendant l'acte.",
   "need": "plumes",
   "partner": null,
   "cat": "sensuel",
@@ -1837,7 +1567,7 @@
  },
  {
   "type": "Défi",
-  "text": "Cire + rythme lent seulement.",
+  "text": "Avec la cire, seulement un rythme lent.",
   "need": "bougie",
   "partner": null,
   "cat": "sensuel",
@@ -1848,24 +1578,6 @@
   "type": "Défi",
   "text": "Test sur toi à chaque nouvelle goutte, même si tu l'as déjà fait.",
   "need": "bougie",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 4
- },
- {
-  "type": "Défi",
-  "text": "Fin : vérifier la peau, câlin.",
-  "need": "bougie",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 4
- },
- {
-  "type": "Défi",
-  "text": "Un trait sur le ventre. Lèche, ensuite tu prends {{partner}}.",
-  "need": "comestible",
   "partner": null,
   "cat": "sensuel",
   "pack": "classique",
@@ -1945,15 +1657,6 @@
  },
  {
   "type": "Défi",
-  "text": "Demande le goût : miel ou crème. Une seule, puis tu prends.",
-  "need": "comestible",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 4
- },
- {
-  "type": "Défi",
   "text": "Au milieu du chrono, rajoute du lubrifiant sur {{partner}} sans t'arrêter complètement.",
   "need": "lubrifiant",
   "partner": null,
@@ -2018,15 +1721,6 @@
  {
   "type": "Défi",
   "text": "Filet dans le bas du dos pendant que tu prends par-derrière.",
-  "need": "lubrifiant",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 5
- },
- {
-  "type": "Défi",
-  "text": "{{partner}} étale le lubrifiant sur toi. Ensuite tu {{l}} prends.",
   "need": "lubrifiant",
   "partner": null,
   "cat": "sensuel",
@@ -2108,15 +1802,6 @@
  {
   "type": "Défi",
   "text": "Deux couches d'huile sur vos bassins. Prends {{partner}} en restant bien collé pendant {{time}}.",
-  "need": "huile",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 5
- },
- {
-  "type": "Défi",
-  "text": "Huile + griffe légère des hanches pendant que tu prends.",
   "need": "huile",
   "partner": null,
   "cat": "sensuel",
@@ -2215,15 +1900,6 @@
  },
  {
   "type": "Défi",
-  "text": "Plume 10 secondes, ensuite tu prends plus franc 20 secondes. 3 cycles.",
-  "need": "plumes",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 5
- },
- {
-  "type": "Défi",
   "text": "Dès que la plume touche une hanche, tu changes de rythme.",
   "need": "plumes",
   "partner": null,
@@ -2269,25 +1945,7 @@
  },
  {
   "type": "Défi",
-  "text": "Après le bord : plume sur la cuisse, 10 secondes sans sexe.",
-  "need": "plumes",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 5
- },
- {
-  "type": "Défi",
   "text": "{{partner}} dit « plume » ou « toi ». 15 secondes.",
-  "need": "plumes",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 5
- },
- {
-  "type": "Défi",
-  "text": "Dernière minute du chrono : pose la plume. Seulement prendre {{partner}}.",
   "need": "plumes",
   "partner": null,
   "cat": "sensuel",
@@ -2350,15 +2008,6 @@
  },
  {
   "type": "Défi",
-  "text": "Une goutte de cire dans le bas du dos de {{partner}} (test d'abord). Ensuite prends-{{l}} par-derrière.",
-  "need": "bougie",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 5
- },
- {
-  "type": "Défi",
   "text": "Si {{partner}} dit orange/rouge : plus de cire, seulement câlin ou acte doux.",
   "need": "bougie",
   "partner": null,
@@ -2396,15 +2045,6 @@
  {
   "type": "Défi",
   "text": "Toi tu poses la goutte sans demander où (ventre ou poitrine). Lèche, prends.",
-  "need": "comestible",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 5
- },
- {
-  "type": "Défi",
-  "text": "Miel comme signal : après l'avoir léché, tu accélères 15 secondes.",
   "need": "comestible",
   "partner": null,
   "cat": "sensuel",

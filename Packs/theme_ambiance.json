@@ -154,15 +154,6 @@
  },
  {
   "type": "Défi",
-  "text": "Mettez-vous sous la couverture. Silence 20 secondes, seulement un câlin.",
-  "need": "couverture",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
   "text": "Pieds sous la couverture, visages dehors. Baisers.",
   "need": "couverture",
   "partner": null,
@@ -335,15 +326,6 @@
  {
   "type": "Défi",
   "text": "À mi-chrono : découvrez les épaules seulement.",
-  "need": "couverture",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 2
- },
- {
-  "type": "Défi",
-  "text": "Fin : recouvre {{partner}} et demande si ça va.",
   "need": "couverture",
   "partner": null,
   "cat": "sensuel",
@@ -668,15 +650,6 @@
  {
   "type": "Défi",
   "text": "Sortez les pieds. Le reste dessous. Tu prends.",
-  "need": "couverture",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 4
- },
- {
-  "type": "Défi",
-  "text": "Fin : restez enveloppés 20 secondes sans bouger.",
   "need": "couverture",
   "partner": null,
   "cat": "sensuel",

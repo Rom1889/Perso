@@ -145,15 +145,6 @@
  },
  {
   "type": "Défi",
-  "text": "Menottes devant. Fronts collés 20 secondes.",
-  "need": "menottes",
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
   "text": "Menottes. Guide {{partner}} par les mains liées jusqu'au canapé. Asseyez-vous, un baiser.",
   "need": "menottes",
   "partner": null,
@@ -191,15 +182,6 @@
  {
   "type": "Défi",
   "text": "Pose le sextoy éteint entre vos deux mains. Câlin.",
-  "need": "sextoy",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
-  "text": "Sextoy éteint dans le dos de {{partner}}, par-dessus, 15 secondes.",
   "need": "sextoy",
   "partner": null,
   "cat": "sensuel",
@@ -257,15 +239,6 @@
   "need": "sextoy",
   "partner": null,
   "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
-  "text": "Mets le collier, lâche. Embrasse le cou autour pendant 20 secondes.",
-  "need": "collar",
-  "partner": null,
-  "cat": "domination",
   "pack": "classique",
   "level": 1
  },
@@ -335,15 +308,6 @@
  {
   "type": "Défi",
   "text": "Demande : collier maintenant ou non. Si oui, lâche + baisers.",
-  "need": "collar",
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
-  "text": "Deux doigts sous le collier obligatoires. Ensuite 20 secondes de calme.",
   "need": "collar",
   "partner": null,
   "cat": "domination",
@@ -433,15 +397,6 @@
  },
  {
   "type": "Défi",
-  "text": "Menottes dans le dos. Caresse le ventre par-dessus pendant {{time}}.",
-  "need": "menottes",
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 2
- },
- {
-  "type": "Défi",
   "text": "Menottes devant. Allonge {{partner}} et embrasse le torse.",
   "need": "menottes",
   "partner": null,
@@ -470,15 +425,6 @@
  {
   "type": "Défi",
   "text": "Menottes. Enlève un vêtement de {{partner}} pendant qu'{{il}} est attaché{{e}}.",
-  "need": "menottes",
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 2
- },
- {
-  "type": "Défi",
-  "text": "Menottes devant. Ta main sous le haut, dans le dos.",
   "need": "menottes",
   "partner": null,
   "cat": "domination",
@@ -523,15 +469,6 @@
  },
  {
   "type": "Défi",
-  "text": "Fais glisser le sextoy éteint le long de la ceinture de {{partner}}, sans l'allumer, 20 secondes.",
-  "need": "sextoy",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 2
- },
- {
-  "type": "Défi",
   "text": "{{partner}} tient le sextoy éteint. Toi tu guides sa main sur son ventre.",
   "need": "sextoy",
   "partner": null,
@@ -542,15 +479,6 @@
  {
   "type": "Défi",
   "text": "Vibration basse dans ta main, tu poses la main (pas le jouet) sur {{partner}}.",
-  "need": "sextoy",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 2
- },
- {
-  "type": "Défi",
-  "text": "Sextoy éteint entre vos bassins habillés 15 secondes.",
   "need": "sextoy",
   "partner": null,
   "cat": "sensuel",
@@ -641,15 +569,6 @@
  {
   "type": "Défi",
   "text": "À la moitié du chrono, enlève le collier de {{partner}} et finis en caresses libres.",
-  "need": "collar",
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 2
- },
- {
-  "type": "Défi",
-  "text": "À la moitié du chrono, enlève le collier de {{partner}} et continue seulement avec des baisers dans le cou.",
   "need": "collar",
   "partner": null,
   "cat": "domination",
@@ -820,15 +739,6 @@
  },
  {
   "type": "Défi",
-  "text": "Menottes. Langue sur {{le_point}}, tes mains tiennent les menottes.",
-  "need": "menottes",
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
   "text": "Menottes + {{partner}} à genoux. {{il}} te fait un oral (bouche sur toi) 30 secondes.",
   "need": "menottes",
   "partner": null,
@@ -847,7 +757,7 @@
  },
  {
   "type": "Défi",
-  "text": "Menottes. {{partner}} n'a pas le droit de refermer les cuisses.",
+  "text": "Menottes aux poignets de {{partner}}. {{il}} n'a pas le droit de refermer les cuisses.",
   "need": "menottes",
   "partner": null,
   "cat": "domination",
@@ -928,15 +838,6 @@
  },
  {
   "type": "Défi",
-  "text": "Collier à {{partner}}. Fais-lui {{un_oral}} pendant {{time}}, sans tirer le collier.",
-  "need": "collar",
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
   "text": "Collier. {{partner}} demande pour que tu descendes la bouche.",
   "need": "collar",
   "partner": null,
@@ -955,15 +856,6 @@
  },
  {
   "type": "Défi",
-  "text": "Collier + {{partner}} assis{{e}} au bord du lit. Toi à genoux.",
-  "need": "collar",
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
   "text": "Enlève le collier avant la fin si ça gêne la respiration. Sinon continue.",
   "need": "collar",
   "partner": null,
@@ -973,7 +865,7 @@
  },
  {
   "type": "Défi",
-  "text": "Collier. Interdiction de tirer vers le bas.",
+  "text": "Collier autour du cou de {{partner}}, laisse tenue lâche. Interdiction de tirer vers le bas.",
   "need": "collar",
   "partner": null,
   "cat": "domination",
@@ -1055,15 +947,6 @@
  {
   "type": "Défi",
   "text": "Sextoy sur {{partner}}, intensité basse, toi tu l'embrasses.",
-  "need": "sextoy",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
-  "text": "Fais vibrer un sextoy contre l'intérieur de cuisse de {{partner}}, pas directement sur {{le_point}}.",
   "need": "sextoy",
   "partner": null,
   "cat": "sensuel",
@@ -1225,15 +1108,6 @@
  },
  {
   "type": "Défi",
-  "text": "Sextoy + tu prends par-derrière.",
-  "need": "sextoy",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 4
- },
- {
-  "type": "Défi",
   "text": "Intensité minimale tout le chrono pendant l'acte.",
   "need": "sextoy",
   "partner": null,
@@ -1288,17 +1162,8 @@
  },
  {
   "type": "Défi",
-  "text": "Fin : enlève, vérifie le cou.",
+  "text": "Fin : enlève le collier et vérifie le cou de {{partner}}.",
   "need": "collar",
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 4
- },
- {
-  "type": "Défi",
-  "text": "Menottes dans le dos. Prends {{partner}} pendant {{time}}. Si {{il}} veut changer de position, {{il}} doit le demander à voix haute.",
-  "need": "menottes",
   "partner": null,
   "cat": "domination",
   "pack": "classique",
@@ -1342,15 +1207,6 @@
  },
  {
   "type": "Défi",
-  "text": "Mets le collier à {{partner}} et guide-{{l}} légèrement pendant que tu {{l}} prends.",
-  "need": "collar",
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 4
- },
- {
-  "type": "Défi",
   "text": "Garde un sextoy sur {{le_point}} de {{partner}}, intensité minimale, pendant que tu {{l}} prends.",
   "need": "sextoy",
   "partner": null,
@@ -1362,15 +1218,6 @@
   "type": "Défi",
   "text": "Bande les yeux de {{partner}} et prends-{{l}} (ou continue l'oral). Change deux fois l'angle de tes hanches ou de ta tête, sans prévenir.",
   "need": "bandeau",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 4
- },
- {
-  "type": "Défi",
-  "text": "{{partner}} tient le sextoy sur {{le_point}}. Toi tu {{l}} prends en même temps.",
-  "need": "sextoy",
   "partner": null,
   "cat": "sensuel",
   "pack": "classique",
@@ -1540,15 +1387,6 @@
  },
  {
   "type": "Défi",
-  "text": "Sextoy sur toi (si possible) pendant que tu prends {{partner}}.",
-  "need": "sextoy",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 5
- },
- {
-  "type": "Défi",
   "text": "{{partner}} doit demander pour que le jouet s'allume.",
   "need": "sextoy",
   "partner": null,
@@ -1594,15 +1432,6 @@
  },
  {
   "type": "Défi",
-  "text": "Collier à {{partner}}. Prends-{{l}} jusqu'au bord de jouir, arrête, recommence. 2 fois.",
-  "need": "collar",
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 5
- },
- {
-  "type": "Défi",
   "text": "Si gêne : collier enlevé, défi devient un acte doux.",
   "need": "collar",
   "partner": null,
@@ -1613,15 +1442,6 @@
  {
   "type": "Défi",
   "text": "Après l'acte : enlève en premier, avant tout le reste.",
-  "need": "collar",
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 5
- },
- {
-  "type": "Défi",
-  "text": "Collier à {{partner}}. {{il}} s'assoit sur toi. Tu guides le bassin et tu {{l}} prends pendant {{time}}.",
   "need": "collar",
   "partner": null,
   "cat": "domination",

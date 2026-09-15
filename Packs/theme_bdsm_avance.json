@@ -172,15 +172,6 @@
  },
  {
   "type": "Défi",
-  "text": "Sangle une cheville de {{partner}} à un pied de lit. Embrasse la jambe libre, puis la jambe attachée, pendant {{time}}.",
-  "need": "restrain",
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 2
- },
- {
-  "type": "Défi",
   "text": "Poignets sanglés écartés. Fais {{un_oral}} pendant {{time}}.",
   "need": "restrain",
   "partner": null,
@@ -235,7 +226,7 @@
  },
  {
   "type": "Défi",
-  "text": "Sangles. Interdiction de refermer les jambes.",
+  "text": "Sangles aux chevilles de {{partner}}, jambes écartées. Interdiction de les refermer.",
   "need": "restrain",
   "partner": null,
   "cat": "domination",
@@ -317,15 +308,6 @@
  {
   "type": "Défi",
   "text": "Si tightness / douleur : stop immédiat. Sinon 3 respirations avec la pointe.",
-  "need": "plug",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
-  "text": "Pose le plug au loin. Câlin 20 secondes avec {{partner}}.",
   "need": "plug",
   "partner": null,
   "cat": "sensuel",
@@ -496,15 +478,6 @@
  },
  {
   "type": "Défi",
-  "text": "Fin : anneau enlevé. Main douce 20 secondes.",
-  "need": "rings",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
   "text": "Anneau posé dans la main de {{partner}}. Toi tu fais {{un_oral}}.",
   "need": "rings",
   "partner": null,
@@ -658,25 +631,7 @@
  },
  {
   "type": "Défi",
-  "text": "{{partner}} dit oui ou non pour les pinces. Non = oral sans.",
-  "need": "pinces",
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
   "text": "Range les pinces. Plus rien sur les tétons. Câlin ou oral doux.",
-  "need": "pinces",
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
-  "text": "Pince dans ta main. {{partner}} voit. Tu fais {{un_oral}}.",
   "need": "pinces",
   "partner": null,
   "cat": "domination",
@@ -707,15 +662,6 @@
   "need": "restrain",
   "partner": null,
   "cat": "oral",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
-  "text": "Sangles aux chevilles, jambes un peu écartées. Masturbe {{partner}} pendant {{time}}. {{il}} n'a pas le droit de refermer les jambes.",
-  "need": "restrain",
-  "partner": null,
-  "cat": "domination",
   "pack": "classique",
   "level": 3
  },
@@ -784,7 +730,7 @@
  },
  {
   "type": "Défi",
-  "text": "Plug + face à face.",
+  "text": "Plug toujours en place, vous êtes face à face.",
   "need": "plug",
   "partner": null,
   "cat": "sensuel",
@@ -806,15 +752,6 @@
   "need": "plug",
   "partner": null,
   "cat": "sensuel",
-  "pack": "classique",
-  "level": 4
- },
- {
-  "type": "Défi",
-  "text": "Plug + main sur {{le_point}} pendant que tu prends.",
-  "need": "plug",
-  "partner": null,
-  "cat": "oral",
   "pack": "classique",
   "level": 4
  },
@@ -847,7 +784,7 @@
  },
  {
   "type": "Défi",
-  "text": "Harnais + face à face.",
+  "text": "Avec le harnais, restez face à face.",
   "need": "harnais",
   "partner": null,
   "cat": "sensuel",
@@ -865,7 +802,7 @@
  },
  {
   "type": "Défi",
-  "text": "Change d'angle une fois.",
+  "text": "Pendant l'acte, change d'angle une fois.",
   "need": "harnais",
   "partner": null,
   "cat": "sensuel",
@@ -893,15 +830,6 @@
  {
   "type": "Défi",
   "text": "Anneau + rythme lent pendant {{time}}.",
-  "need": "rings",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 4
- },
- {
-  "type": "Défi",
-  "text": "Retire l'anneau à mi-chrono, continue.",
   "need": "rings",
   "partner": null,
   "cat": "sensuel",
@@ -938,24 +866,6 @@
  {
   "type": "Défi",
   "text": "{{partner}} dit si c'est trop serré. Tu obéis.",
-  "need": "rings",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 4
- },
- {
-  "type": "Défi",
-  "text": "Fin : retire avant le câlin.",
-  "need": "rings",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 4
- },
- {
-  "type": "Défi",
-  "text": "Anneau + face à face.",
   "need": "rings",
   "partner": null,
   "cat": "sensuel",
@@ -1009,7 +919,7 @@
  },
  {
   "type": "Défi",
-  "text": "Fouet + rythme lent.",
+  "text": "Si une marque devient trop visible, arrête le fouet immédiatement.",
   "need": "fouet",
   "partner": null,
   "cat": "domination",
@@ -1018,16 +928,7 @@
  },
  {
   "type": "Défi",
-  "text": "Si marque trop : stop fouet.",
-  "need": "fouet",
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 4
- },
- {
-  "type": "Défi",
-  "text": "Fin : vérifier la peau.",
+  "text": "À la fin, vérifiez ensemble la peau là où le fouet a été utilisé.",
   "need": "fouet",
   "partner": null,
   "cat": "domination",
@@ -1090,7 +991,7 @@
  },
  {
   "type": "Défi",
-  "text": "Une seule pince, pas deux.",
+  "text": "Utilise une seule pince à la fois, jamais les deux en même temps.",
   "need": "pinces",
   "partner": null,
   "cat": "domination",
@@ -1154,15 +1055,6 @@
  {
   "type": "Défi",
   "text": "Pas de bâillon si le nez est bouché. Vérifie. Ensuite acte.",
-  "need": "baillon",
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 4
- },
- {
-  "type": "Défi",
-  "text": "Bâillon lâche. 30 secondes. Enlève. Tu prends {{partner}}.",
   "need": "baillon",
   "partner": null,
   "cat": "domination",
@@ -1256,15 +1148,6 @@
   "need": "rings",
   "partner": "homme",
   "cat": "sensuel",
-  "pack": "classique",
-  "level": 4
- },
- {
-  "type": "Défi",
-  "text": "Avec le harnais, prends {{partner}} sur ce rythme : 3 mouvements lents, 1 plus franc.",
-  "need": "harnais",
-  "partner": null,
-  "cat": "domination",
   "pack": "classique",
   "level": 4
  },
@@ -1468,15 +1351,6 @@
  },
  {
   "type": "Défi",
-  "text": "Anneau en place. Silence. Prends {{partner}} pendant {{time}}.",
-  "need": "rings",
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 5
- },
- {
-  "type": "Défi",
   "text": "Enlève l'anneau avant toute autre chose. Ensuite câlin.",
   "need": "rings",
   "partner": null,
@@ -1532,15 +1406,6 @@
  {
   "type": "Défi",
   "text": "Si {{partner}} dit le safe word, le fouet va au sol tout de suite. Ensuite câlin.",
-  "need": "fouet",
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 5
- },
- {
-  "type": "Défi",
-  "text": "3 coups de fouet légers sur les fesses, ensuite tu prends {{partner}} jusqu'à la fin du chrono, plus de fouet.",
   "need": "fouet",
   "partner": null,
   "cat": "domination",
@@ -1612,43 +1477,7 @@
  },
  {
   "type": "Défi",
-  "text": "Après retrait : 20 secondes sans toucher cette zone.",
-  "need": "pinces",
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 5
- },
- {
-  "type": "Défi",
-  "text": "Une seule pince, peu serrée, 20 secondes max. Enlève, puis prends {{partner}}.",
-  "need": "pinces",
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 5
- },
- {
-  "type": "Défi",
-  "text": "Si {{partner}} dit le safe word, enlève les pinces en premier. Ensuite vous vous arrêtez.",
-  "need": "pinces",
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 5
- },
- {
-  "type": "Défi",
   "text": "Enlève les pinces. Caresse très légèrement la zone 15 secondes.",
-  "need": "pinces",
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 5
- },
- {
-  "type": "Défi",
-  "text": "Pinces + bandeau seulement si bandeau coché, sinon yeux ouverts.",
   "need": "pinces",
   "partner": null,
   "cat": "domination",
@@ -1667,15 +1496,6 @@
  {
   "type": "Défi",
   "text": "Bâillon 1 minute max d'affilée. Enlève, demande OK, éventuellement remets.",
-  "need": "baillon",
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 5
- },
- {
-  "type": "Défi",
-  "text": "Si le bâillon est en place (3 tapes = stop), prends {{partner}} lentement pendant {{time}}. Regarde ses mains.",
   "need": "baillon",
   "partner": null,
   "cat": "domination",

@@ -109,15 +109,6 @@
  },
  {
   "type": "Aftercare",
-  "text": "Arrête tout contact au sexe de {{partner}}. Apporte de l'eau, faites un câlin, puis demande : « on continue ? »",
-  "need": null,
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "aftercare",
-  "level": 3
- },
- {
-  "type": "Aftercare",
   "text": "Aftercare : masse le dos de {{partner}} 1 minute après être sortis.",
   "need": null,
   "partner": null,
@@ -236,15 +227,6 @@
  {
   "type": "Aftercare",
   "text": "Demande 3 mots à {{partner}} sur comment {{il}} se sent. Écoute. Ne relance pas un acte.",
-  "need": null,
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "aftercare",
-  "level": 5
- },
- {
-  "type": "Aftercare",
-  "text": "Détache {{partner}}. Apporte de l'eau. Dis « tu es en sécurité ». Rien d'autre pendant 1 minute.",
   "need": null,
   "partner": null,
   "cat": "sensuel",

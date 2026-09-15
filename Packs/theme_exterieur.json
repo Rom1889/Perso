@@ -55,15 +55,6 @@
  },
  {
   "type": "Défi",
-  "text": "Assieds {{partner}} sur le rebord d'un meuble. Seulement des baisers pendant {{time}}.",
-  "need": null,
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "lieux",
-  "level": 1
- },
- {
-  "type": "Défi",
   "text": "Sur le canapé, {{partner}} s'assoit sur toi, une jambe de chaque côté. Frottez-vous habillés pendant {{time}}.",
   "need": null,
   "partner": null,
@@ -101,15 +92,6 @@
  {
   "type": "Défi",
   "text": "{{partner}} se tient à un meuble. Embrasse de la taille aux côtes.",
-  "need": null,
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "lieux",
-  "level": 2
- },
- {
-  "type": "Défi",
-  "text": "Plaquez-vous contre un mur de la cuisine, bassins collés, 30 secondes, encore habillés.",
   "need": null,
   "partner": null,
   "cat": "sensuel",
@@ -353,24 +335,6 @@
  {
   "type": "Défi",
   "text": "Change de pièce seulement à genoux, {{partner}} au bord d'un meuble.",
-  "need": null,
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "lieux",
-  "level": 4
- },
- {
-  "type": "Défi",
-  "text": "Devant le miroir : {{partner}} doit regarder comment tu {{l}} prends.",
-  "need": null,
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "lieux",
-  "level": 4
- },
- {
-  "type": "Défi",
-  "text": "Sous la douche : prends {{partner}} contre la paroi, rythme court.",
   "need": null,
   "partner": null,
   "cat": "sensuel",

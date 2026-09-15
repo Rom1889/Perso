@@ -109,15 +109,6 @@
  },
  {
   "type": "Q+Acte",
-  "text": "Demande à {{partner}} : baiser court ou baiser qui dure ? Fais exactement ce qui a été choisi, 5 fois.",
-  "need": null,
-  "partner": null,
-  "cat": "qacte",
-  "pack": "qacte",
-  "level": 1
- },
- {
-  "type": "Q+Acte",
   "text": "Demande où {{partner}} veut tes mains : nuque, taille ou visage. Pose-les là et ne les déplace plus.",
   "need": null,
   "partner": null,
@@ -470,15 +461,6 @@
  {
   "type": "Q+Acte",
   "text": "Demande à {{partner}} : plus lent, ou plus près ? Tu n'appliques que le choix donné, jusqu'à la fin.",
-  "need": null,
-  "partner": null,
-  "cat": "qacte",
-  "pack": "qacte",
-  "level": 4
- },
- {
-  "type": "Q+Acte",
-  "text": "{{partner}} choisit où tu mets tes mains : hanches, poitrine ou nuque. Garde-les là pendant que tu {{l}} prends.",
   "need": null,
   "partner": null,
   "cat": "qacte",

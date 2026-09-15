@@ -415,15 +415,6 @@
  },
  {
   "type": "Défi",
-  "text": "Inspire contre le cou de {{partner}}, expire lentement, puis embrasse cet endroit.",
-  "need": null,
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
   "text": "Prends {{partner}} par la main et embrasse l'intérieur de sa paume.",
   "need": null,
   "partner": null,
@@ -667,15 +658,6 @@
  },
  {
   "type": "Défi",
-  "text": "Prends les deux oreilles de {{partner}} entre tes lèvres, une après l'autre.",
-  "need": null,
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
   "text": "Masse la nuque de {{partner}} avec les deux pouces seulement, pendant {{time}}.",
   "need": null,
   "partner": null,
@@ -712,15 +694,6 @@
  },
  {
   "type": "Défi",
-  "text": "Dis le prénom de {{partner}} une fois contre chaque clavicule.",
-  "need": null,
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
   "text": "Parcours la mâchoire de {{partner}} du bout du nez, d'une oreille à l'autre.",
   "need": null,
   "partner": null,
@@ -749,15 +722,6 @@
  {
   "type": "Défi",
   "text": "Fais le tour de la taille de {{partner}} par-dessus les vêtements, lentement.",
-  "need": null,
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
-  "text": "Prends la main gauche de {{partner}} et embrasse chaque phalange, une par une.",
   "need": null,
   "partner": null,
   "cat": "sensuel",
@@ -892,15 +856,6 @@
  },
  {
   "type": "Défi",
-  "text": "Demande à {{partner}} de fermer les yeux et effleure ses cils avec tes lèvres.",
-  "need": null,
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
   "text": "Une main sur la joue de {{partner}}, l'autre dans son dos. Commence un baiser et arrête-toi au milieu.",
   "need": null,
   "partner": null,
@@ -911,15 +866,6 @@
  {
   "type": "Défi",
   "text": "Retire une chaussette de {{partner}} et embrasse sa cheville.",
-  "need": null,
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
-  "text": "Fais le tour de {{partner}} sans {{l}} toucher, puis un seul baiser.",
   "need": null,
   "partner": null,
   "cat": "sensuel",
@@ -973,15 +919,6 @@
  },
  {
   "type": "Défi",
-  "text": "Pose une seule de tes lèvres sur la bouche de {{partner}} et reste ainsi 15 secondes.",
-  "need": null,
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
   "text": "Glisse un doigt sous un bracelet de {{partner}} et caresse l'endroit où tu sens le pouls.",
   "need": null,
   "partner": null,
@@ -1001,15 +938,6 @@
  {
   "type": "Défi",
   "text": "Fais le tour du visage de {{partner}} en 8 baisers à peu près égaux.",
-  "need": null,
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
-  "text": "Remonte le vêtement de {{partner}} de 3 cm dans le bas du dos et embrasse seulement cette bande de peau.",
   "need": null,
   "partner": null,
   "cat": "sensuel",
@@ -1072,15 +1000,6 @@
  },
  {
   "type": "Défi",
-  "text": "Masse les trapèzes de {{partner}} en silence total pendant {{time}}.",
-  "need": null,
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
   "text": "Demande à {{partner}} de fermer les yeux. Pose tes lèvres sur chaque paupière, une puis l'autre.",
   "need": null,
   "partner": null,
@@ -1091,24 +1010,6 @@
  {
   "type": "Défi",
   "text": "Fais un pas en arrière comme si tu partais. Attends 3 secondes, reviens, et pose un dernier baiser sur la bouche de {{partner}}.",
-  "need": null,
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
-  "text": "Caresse les côtes de {{partner}} par-dessus les vêtements, sans descendre plus bas.",
-  "need": null,
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
-  "text": "Embrasse le poignet de {{partner}} à l'endroit où tu sens le pouls.",
   "need": null,
   "partner": null,
   "cat": "sensuel",
@@ -1189,34 +1090,7 @@
  },
  {
   "type": "Défi",
-  "text": "Fais glisser tes lèvres du lobe de l'oreille de {{partner}} jusqu'à sa mâchoire.",
-  "need": null,
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
   "text": "Dis à {{partner}} de poser les mains derrière son dos. Seulement des baisers tant que les mains restent là.",
-  "need": null,
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
-  "text": "{{partner}} n'a pas le droit de t'embrasser. Toi tu as le droit de l'embrasser où tu veux au-dessus de la ceinture.",
-  "need": null,
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 1
- },
- {
-  "type": "Défi",
-  "text": "Donne un seul ordre : « viens plus près ». Quand {{partner}} le fait, récompense par un long baiser.",
   "need": null,
   "partner": null,
   "cat": "domination",

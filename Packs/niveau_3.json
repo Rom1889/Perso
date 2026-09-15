@@ -253,15 +253,6 @@
  },
  {
   "type": "Défi",
-  "text": "Allonge {{partner}} confortablement et fais-lui {{un_oral}} pendant tout le chrono.",
-  "need": null,
-  "partner": null,
-  "cat": "oral",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
   "text": "{{partner}} reste debout. Toi tu t'agenouilles et tu fais {{un_oral}} pendant {{time}}. Tes mains peuvent tenir ses hanches.",
   "need": null,
   "partner": null,
@@ -470,24 +461,6 @@
  {
   "type": "Défi",
   "text": "{{partner}} ferme les yeux. Sur son ventre, ses cuisses et {{le_sexe}}, alterne sans prévenir : une caresse avec la main, un souffle, un passage de langue. Continue pendant {{time}}.",
-  "need": null,
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
-  "text": "Assieds-toi sur les cuisses de {{partner}} et frotte-toi contre {{lui}} pendant {{time}}.",
-  "need": null,
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
-  "text": "Interdiction d'utiliser la bouche. Seulement tes mains sur {{partner}} pendant {{time}}.",
   "need": null,
   "partner": null,
   "cat": "sensuel",
@@ -802,15 +775,6 @@
  },
  {
   "type": "Défi",
-  "text": "Fais {{un_oral}} ou masturbe {{partner}}. Dès qu'{{il}} dit « stop », tu retires bouche et mains. Tu ne reprends que quand {{il}} dit « reprise ».",
-  "need": null,
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
   "text": "Allonge-toi sur le dos. {{partner}} s'approche de ton visage comme {{il}} veut (ventre, sexe, poitrine). Toi tu n'as le droit d'utiliser que ta bouche, pas les mains.",
   "need": null,
   "partner": null,
@@ -1009,15 +973,6 @@
  },
  {
   "type": "Défi",
-  "text": "Garde ton pouce sous les couilles de {{partner}} et sers-toi du reste de la main sur {{le_sexe}}.",
-  "need": null,
-  "partner": "homme",
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
   "text": "Sur {{partner}}, tout ce qui coule, tu n'as le droit de l'essuyer qu'avec ta langue.",
   "need": null,
   "partner": null,
@@ -1108,28 +1063,10 @@
  },
  {
   "type": "Défi",
-  "text": "Mettez-vous tête-bêche. Les deux bouches travaillent en même temps pendant {{time}}.",
-  "need": null,
-  "partner": null,
-  "cat": "oral",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
   "text": "Chacun a une main sur le sexe de l'autre. Même vitesse, vous vous regardez.",
   "need": null,
   "partner": null,
   "cat": "sensuel",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
-  "text": "Toi tu fais {{un_oral}} à {{partner}}. En même temps, {{partner}} te masturbe.",
-  "need": null,
-  "partner": null,
-  "cat": "oral",
   "pack": "classique",
   "level": 3
  },
@@ -1189,24 +1126,6 @@
  },
  {
   "type": "Défi",
-  "text": "Une main de {{partner}} sur toi, ta main sur {{le_sexe}} de {{partner}}, et ta bouche aussi sur {{partner}}. Les deux bougent pendant {{time}}.",
-  "need": null,
-  "partner": null,
-  "cat": "oral",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
-  "text": "Dis à {{partner}} de mettre les mains sous ses cuisses pendant l'oral.",
-  "need": null,
-  "partner": null,
-  "cat": "domination",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
   "text": "Fais {{un_oral}} ou masturbe {{partner}} pendant {{time}}. {{il}} n'a pas le droit de fermer les jambes. Si {{il}} le fait, tu retires bouche et mains jusqu'à ce qu'{{il}} rouvre.",
   "need": null,
   "partner": null,
@@ -1235,15 +1154,6 @@
  {
   "type": "Défi",
   "text": "Masturbe-toi tout près du visage de {{partner}} pendant {{time}}, sans poser sur sa peau pour l'instant.",
-  "need": null,
-  "partner": null,
-  "cat": "sensuel",
-  "pack": "classique",
-  "level": 3
- },
- {
-  "type": "Défi",
-  "text": "Assieds-toi face à {{partner}} et touche-toi. {{il}} n'a pas le droit d'intervenir.",
   "need": null,
   "partner": null,
   "cat": "sensuel",
