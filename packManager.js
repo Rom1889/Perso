@@ -63,10 +63,16 @@
   async function loadPack(packId){
     if (cache[packId]) return cache[packId];
     const meta = CATALOG[packId];
-    const res = await fetch(meta.file);
-    const data = await res.json();
-    cache[packId] = data;
-    return data;
+    try{
+      const res = await fetch(meta.file);
+      if(!res.ok) throw new Error(`HTTP ${res.status} sur ${meta.file}`);
+      const data = await res.json();
+      cache[packId] = data;
+      return data;
+    }catch(e){
+      console.error(`[PackManager] échec de chargement du pack "${packId}" (${meta.file}):`, e.message);
+      return []; // ce pack sera juste vide, le reste continue de charger
+    }
   }
 
   // Retourne la liste complète des défis débloqués (gratuits + achetés),

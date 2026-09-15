@@ -703,7 +703,13 @@ function personalize(text, playerId, ch){
 }
 
 async function startGame(){
-  if(!levelsDataReady) await refreshLevelsData();
+  try{
+    if(!levelsDataReady) await refreshLevelsData();
+  }catch(e){
+    console.error("[startGame] échec refreshLevelsData:", e);
+    toast("Erreur de chargement — regarde la console (F12) pour le détail.");
+    return;
+  }
   const totalDefis = Object.values(levelsData).reduce((s,a)=>s+a.length,0);
   if(!totalDefis){ toast("Aucun défi chargé — vérifie que le dossier packs/ est accessible."); return; }
   players[1].name=$("setupName1").value.trim()||"Joueur 1";
