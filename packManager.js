@@ -8,21 +8,21 @@
 (function(){
   const BUNDLE_ID = "com.tonstudio.jeudecouple"; // <- adapter à ton App ID réel
 
-  // Catalogue des packs : id -> fichier JSON + statut gratuit
+  // Catalogue des packs : id -> fichier JSON + statut gratuit + nb de défis (pour affichage)
   const CATALOG = {
-    niveau_1:        { free: true,  file: "Packs/niveau_1.json" },
-    niveau_2:        { free: true,  file: "Packs/niveau_2.json" },
-    base_aftercare:  { free: true,  file: "Packs/base_aftercare.json" },
-    niveau_3:        { free: false, file: "Packs/niveau_3.json" },
-    niveau_4:        { free: false, file: "Packs/niveau_4.json" },
-    niveau_5:        { free: false, file: "Packs/niveau_5.json" },
-    theme_sensoriel:    { free: false, file: "Packs/theme_sensoriel.json" },
-    theme_ambiance:     { free: false, file: "Packs/theme_ambiance.json" },
-    theme_jeux_legers:  { free: false, file: "Packs/theme_jeux_legers.json" },
-    theme_bdsm_avance:  { free: false, file: "Packs/theme_bdsm_avance.json" },
-    theme_photo_video:  { free: false, file: "Packs/theme_photo_video.json" },
-    theme_qacte:        { free: false, file: "Packs/theme_qacte.json" },
-    theme_exterieur:    { free: false, file: "Packs/theme_exterieur.json" },
+    niveau_1:        { free: true,  file: "Packs/niveau_1.json",        count: 139 },
+    niveau_2:        { free: true,  file: "Packs/niveau_2.json",        count: 143 },
+    niveau_3:        { free: true,  file: "Packs/niveau_3.json",        count: 142 },
+    base_aftercare:  { free: true,  file: "Packs/base_aftercare.json",  count: 29  },
+    niveau_4:        { free: false, file: "Packs/niveau_4.json",        count: 132 },
+    niveau_5:        { free: false, file: "Packs/niveau_5.json",        count: 157 },
+    theme_sensoriel:    { free: false, file: "Packs/theme_sensoriel.json",    count: 276 },
+    theme_ambiance:     { free: false, file: "Packs/theme_ambiance.json",     count: 98  },
+    theme_jeux_legers:  { free: false, file: "Packs/theme_jeux_legers.json",  count: 188 },
+    theme_bdsm_avance:  { free: false, file: "Packs/theme_bdsm_avance.json",  count: 201 },
+    theme_photo_video:  { free: false, file: "Packs/theme_photo_video.json",  count: 244 },
+    theme_qacte:        { free: false, file: "Packs/theme_qacte.json",        count: 66  },
+    theme_exterieur:    { free: false, file: "Packs/theme_exterieur.json",    count: 47  },
   };
 
   // Product ID StoreKit = BUNDLE_ID + "." + packId (doit matcher le .storekit / App Store Connect)
@@ -58,6 +58,33 @@
     savePurchased(purchased);
   }
 
+  // Efface tous les achats-tests locaux (pratique en dev — n'a aucun effet sur de vrais reçus StoreKit)
+  function resetPurchases(){
+    purchased = new Set();
+    savePurchased(purchased);
+  }
+
+  // --- Sauvegarde portable (palliatif tant qu'il n'y a pas de vrais reçus StoreKit) ---
+  // Génère un code que l'utilisateur peut copier et recoller sur un autre navigateur/appareil
+  // pour retrouver ses packs débloqués. À remplacer par PackManager de RevenueCat (restauration
+  // via l'Apple ID) une fois StoreKit branché — Apple exige un vrai bouton "Restaurer mes achats".
+  function exportPurchaseCode(){
+    const payload = { v: 1, packs: [...purchased] };
+    return btoa(unescape(encodeURIComponent(JSON.stringify(payload))));
+  }
+  function importPurchaseCode(code){
+    try{
+      const payload = JSON.parse(decodeURIComponent(escape(atob(code.trim()))));
+      if(!payload || !Array.isArray(payload.packs)) throw new Error("format invalide");
+      payload.packs.forEach(id => { if(CATALOG[id]) purchased.add(id); });
+      savePurchased(purchased);
+      return true;
+    }catch(e){
+      console.error("[PackManager] code de sauvegarde invalide:", e.message);
+      return false;
+    }
+  }
+
   // --- Chargement des JSON et fusion dans le pool de défis ---
   const cache = {};
   async function loadPack(packId){
@@ -67,6 +94,7 @@
       const res = await fetch(meta.file);
       if(!res.ok) throw new Error(`HTTP ${res.status} sur ${meta.file}`);
       const data = await res.json();
+      if(!Array.isArray(data)) throw new Error(`JSON inattendu (pas un tableau) dans ${meta.file}`);
       cache[packId] = data;
       return data;
     }catch(e){
@@ -95,7 +123,8 @@
   }
 
   window.PackManager = {
-    CATALOG, productId, isPurchased, markPurchased, restorePurchases,
+    CATALOG, productId, isPurchased, markPurchased, restorePurchases, resetPurchases,
+    exportPurchaseCode, importPurchaseCode,
     getUnlockedChallenges, getUnlockedLevelsData,
   };
 })();
