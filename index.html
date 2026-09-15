@@ -166,6 +166,10 @@
   .mode-select button{display:flex;flex-direction:column;align-items:center;gap:2px;padding:12px 8px;font-size:.8rem}
   .mode-select button small{font-weight:400;color:var(--muted);font-size:.68rem}
   .mode-select button.active small{color:#ffd0e4}
+  .level-select button{display:flex;flex-direction:column;align-items:center;gap:2px;line-height:1.15}
+  .level-select button small{font-weight:400;color:var(--muted);font-size:.62rem}
+  .level-select button.active small{color:#ffd0e4}
+  .level-select button.locked small{color:var(--muted)}
 
 
   html,body{height:100%;}
@@ -398,24 +402,24 @@
     <div class="setup-card">
       <h2>Niveau de depart</h2>
       <div class="level-select" id="startLevelSelect">
-        <button data-level="1" class="active">1</button>
-        <button data-level="2">2</button>
-        <button data-level="3">3</button>
-        <button data-level="4">4</button>
-        <button data-level="5">5</button>
+        <button data-level="1" class="active">1<small>Connexion</small></button>
+        <button data-level="2">2<small>Tension</small></button>
+        <button data-level="3">3<small>Sensualité</small></button>
+        <button data-level="4">4<small>Stimulation</small></button>
+        <button data-level="5">5<small>Acte complet</small></button>
       </div>
       <label class="checkbox-item" style="margin-top:12px"><input type="checkbox" id="setupNude"> On commence déjà nus (même au niveau 1)</label>
       <p class="hint">Sinon tu pourras le signaler en jeu dès que les vêtements sont partis.</p>
       <p class="hint" id="setupPreviewCount" style="color:var(--accent2);font-weight:600"></p>
     </div>
+  </div>
+
+  <div class="setup-step" data-step="3">
     <div class="setup-card">
       <h2>Types de défis affichés</h2>
       <div class="checkbox-grid" id="packsList"></div>
       <p class="hint">Seules les catégories que tu possèdes s'affichent ici. Décoche pour exclure de la partie (ex. Lieux est décoché par défaut). Vêtements : niveaux 1-2 encore habillés / sous-vêtements. À partir du niveau 3 : plus aucun vêtement (nu). Aftercare (retour au calme) est toujours actif, non désactivable.</p>
     </div>
-  </div>
-
-  <div class="setup-step" data-step="3">
     <div class="setup-card">
       <h2>Accessoires</h2>
       <div id="accessoriesList"></div>
@@ -549,6 +553,10 @@
       <button onclick="resetGame()">Reset</button>
       <button id="btnNudeMenu" onclick="toggleNude()">On est nus</button>
     </div>
+    <div class="session-controls" style="margin-bottom:14px">
+      <button id="btnToggleSound" onclick="toggleSound()">🔊 Son</button>
+      <button onclick="backToMainMenu()">🏠 Menu principal</button>
+    </div>
     <p class="hint" style="margin-bottom:8px">Mode</p>
     <div class="mode-switch">
       <button class="mode-btn active" data-mode="duo">Duo</button>
@@ -671,7 +679,8 @@ function renderLevelLocks(){
     const lvl = +b.dataset.level;
     const owned = isLevelOwned(lvl);
     b.classList.toggle("locked", !owned);
-    b.innerHTML = owned ? lvl : `${lvl} 🔒`;
+    const theme = b.querySelector("small") ? b.querySelector("small").textContent : "";
+    b.innerHTML = (owned ? lvl : `🔒 ${lvl}`) + (theme ? `<small>${theme}</small>` : "");
   });
 }
 function renderAccessoryLocks(){
@@ -935,6 +944,46 @@ document.querySelectorAll("#catFilters button").forEach(b=>b.onclick=()=>{
 });
 
 function toast(m){const t=$("toast");t.textContent=m;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),2200)}
+
+// --- Son : tic-tac des 10 dernières secondes + gong de fin, généré à la volée (pas de fichier audio à héberger) ---
+let audioCtx=null;
+let soundOn = (()=>{ try{ return localStorage.getItem("jdc_sound")!=="off"; }catch(e){ return true; } })();
+function ensureAudio(){
+  if(!soundOn) return;
+  if(!audioCtx){ try{ audioCtx=new (window.AudioContext||window.webkitAudioContext)(); }catch(e){} }
+  if(audioCtx && audioCtx.state==="suspended") audioCtx.resume();
+}
+function playTick(){
+  if(!soundOn || !audioCtx) return;
+  const t=audioCtx.currentTime;
+  const osc=audioCtx.createOscillator(), gain=audioCtx.createGain();
+  osc.type="square"; osc.frequency.setValueAtTime(1900,t);
+  gain.gain.setValueAtTime(0.0001,t);
+  gain.gain.exponentialRampToValueAtTime(0.12,t+0.005);
+  gain.gain.exponentialRampToValueAtTime(0.0001,t+0.06);
+  osc.connect(gain); gain.connect(audioCtx.destination);
+  osc.start(t); osc.stop(t+0.07);
+}
+function playGong(){
+  if(!soundOn || !audioCtx) return;
+  const t=audioCtx.currentTime;
+  [220,330,440].forEach((freq,i)=>{
+    const osc=audioCtx.createOscillator(), gain=audioCtx.createGain();
+    osc.type="sine"; osc.frequency.setValueAtTime(freq,t);
+    gain.gain.setValueAtTime(0.0001,t);
+    gain.gain.exponentialRampToValueAtTime(0.22/(i+1),t+0.02);
+    gain.gain.exponentialRampToValueAtTime(0.0001,t+1.6);
+    osc.connect(gain); gain.connect(audioCtx.destination);
+    osc.start(t); osc.stop(t+1.7);
+  });
+}
+function toggleSound(){
+  soundOn=!soundOn;
+  try{ localStorage.setItem("jdc_sound", soundOn?"on":"off"); }catch(e){}
+  const btn=$("btnToggleSound"); if(btn) btn.textContent = soundOn ? "🔊 Son" : "🔇 Muet";
+  if(soundOn) ensureAudio();
+  toast(soundOn ? "Son activé" : "Son coupé");
+}
 function formatTime(s){return s>=60?Math.floor(s/60)+" min":s+" s"}
 function partnerOf(id){return id===1?2:1}
 function genderize(text, g){
@@ -1033,6 +1082,7 @@ function personalize(text, playerId, ch){
 }
 
 async function startGame(){
+  ensureAudio();
   try{
     if(!levelsDataReady) await refreshLevelsData();
   }catch(e){
@@ -1074,7 +1124,9 @@ function startChallengeTimer(){
   isRunning=true;
   const tb=$("timerStart"); if(tb) tb.textContent="⏸";
   timerInterval=setInterval(()=>{
+    if(sessionPaused) return; // BUG corrigé : le timer du défi ignorait la pause, contrairement au timer de session
     timeLeft--; updateTimers();
+    if(timeLeft>0 && timeLeft<=10) playTick();
     if(currentMode==="relais" && !relaisDone && timeLeft===Math.floor(challengeSeconds()/2)){
       relaisDone=true;
       currentPlayer=currentPlayer===1?2:1;
@@ -1084,6 +1136,7 @@ function startChallengeTimer(){
     }
     if(timeLeft<=0){
       stopChallengeTimer();
+      playGong();
       toast("Temps écoulé");
       setTimeout(()=>dealNext(false),800);
     }
@@ -1868,6 +1921,8 @@ $("btnSpin").onclick=function(){
   },3500);
 };
 function resetGame(){ if(confirm("Réinitialiser ?")) location.reload(); }
+function backToMainMenu(){ if(confirm("Quitter la partie et revenir au menu principal ?")) location.reload(); }
+(function(){ const btn=$("btnToggleSound"); if(btn) btn.textContent = soundOn ? "🔊 Son" : "🔇 Muet"; })();
 $("btnSuccess").onclick=completeChallenge;
 $("btnFail").onclick=failChallenge;
 $("btnSkip").onclick=skipChallenge;
