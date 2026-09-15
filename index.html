@@ -332,87 +332,125 @@
   .nude-modal-ico{font-size:2.4rem}
   #nudeModal{background:rgba(8,4,10,.82);backdrop-filter:blur(6px)}
 
+  /* Parcours de setup en étapes */
+  #setupScreen{position:relative}
+  .shop-icon-btn{position:absolute;top:0;right:0;background:var(--card2);border:1px solid #3a2a45;border-radius:50%;width:42px;height:42px;font-size:1.2rem;cursor:pointer;display:flex;align-items:center;justify-content:center}
+  .stepper{display:flex;justify-content:center;gap:22px;margin:6px 0 20px}
+  .step-dot{display:flex;flex-direction:column;align-items:center;gap:4px;opacity:.5}
+  .step-dot.active{opacity:1}
+  .step-dot.done{opacity:.8}
+  .step-num{width:26px;height:26px;border-radius:50%;background:var(--card2);border:1px solid #3a2a45;display:flex;align-items:center;justify-content:center;font-size:.78rem;font-weight:700}
+  .step-dot.active .step-num{background:linear-gradient(135deg,#e83e8c,#c2185b);border-color:transparent;color:#fff}
+  .step-dot.done .step-num{background:#2a4a38;border-color:#2a4a38;color:#7be0a8}
+  .step-label{font-size:.62rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+  .setup-nav{display:flex;gap:10px;margin-top:6px}
+  .setup-nav .ghost-btn{flex:1}
+  .setup-nav .start-btn{flex:2}
+
 </style>
 </head>
 <body>
 <div id="setupScreen">
   <h1>Jeu de Couple</h1>
   <p class="subtitle">Packs • Limites • Roue • Chronos</p>
-  <div class="setup-card">
-    <h2>Joueur 1</h2>
-    <div class="input-row"><label>Nom</label><input type="text" id="setupName1" placeholder="Nom"></div>
-    <div class="gender-select" id="gender1">
-      <button data-gender="homme" class="active">Homme</button>
-      <button data-gender="femme">Femme</button>
+  <button class="shop-icon-btn" id="btnOpenShop" title="Boutique">🛍️</button>
+
+  <div class="stepper" id="setupStepper">
+    <span class="step-dot active" data-step="1"><span class="step-num">1</span><span class="step-label">Joueurs</span></span>
+    <span class="step-dot" data-step="2"><span class="step-num">2</span><span class="step-label">Partie</span></span>
+    <span class="step-dot" data-step="3"><span class="step-num">3</span><span class="step-label">Réglages</span></span>
+  </div>
+
+  <div class="setup-step" data-step="1">
+    <div class="setup-card">
+      <h2>Joueur 1</h2>
+      <div class="input-row"><label>Nom</label><input type="text" id="setupName1" placeholder="Nom"></div>
+      <div class="gender-select" id="gender1">
+        <button data-gender="homme" class="active">Homme</button>
+        <button data-gender="femme">Femme</button>
+      </div>
+    </div>
+    <div class="setup-card">
+      <h2>Joueur 2</h2>
+      <div class="input-row"><label>Nom</label><input type="text" id="setupName2" placeholder="Nom"></div>
+      <div class="gender-select" id="gender2">
+        <button data-gender="homme">Homme</button>
+        <button data-gender="femme" class="active">Femme</button>
+      </div>
     </div>
   </div>
-  <div class="setup-card">
-    <h2>Joueur 2</h2>
-    <div class="input-row"><label>Nom</label><input type="text" id="setupName2" placeholder="Nom"></div>
-    <div class="gender-select" id="gender2">
-      <button data-gender="homme">Homme</button>
-      <button data-gender="femme" class="active">Femme</button>
+
+  <div class="setup-step" data-step="2">
+    <div class="setup-card">
+      <h2>Mode de jeu</h2>
+      <div class="mode-select" id="setupModeSelect">
+        <button data-mode="duo" class="active">🎯 Duo<small>à tour de rôle</small></button>
+        <button data-mode="solo">🌙 Solo<small>un seul mène</small></button>
+        <button data-mode="marathon">🏃 Marathon<small>tous les niveaux</small></button>
+        <button data-mode="roulette">🎡 Roulette<small>la roue décide</small></button>
+        <button data-mode="relais">🔁 Relais<small>changement à mi-chrono</small></button>
+        <button data-mode="de">🎲 Dé 6<small>le dé choisit</small></button>
+        <button data-mode="cachee">🙈 Cachée<small>un seul lit</small></button>
+        <button data-mode="blitz">⚡ Blitz<small>30 secondes</small></button>
+      </div>
+      <p class="hint">Relais = on change de partenaire à la moitié du chrono. Dé 6 = le dé choisit le type. Cachée = un seul lit le défi. Blitz = 30 secondes.</p>
+    </div>
+    <div class="setup-card">
+      <h2>Niveau de depart</h2>
+      <div class="level-select" id="startLevelSelect">
+        <button data-level="1" class="active">1</button>
+        <button data-level="2">2</button>
+        <button data-level="3">3</button>
+        <button data-level="4">4</button>
+        <button data-level="5">5</button>
+      </div>
+      <label class="checkbox-item" style="margin-top:12px"><input type="checkbox" id="setupNude"> On commence déjà nus (même au niveau 1)</label>
+      <p class="hint">Sinon tu pourras le signaler en jeu dès que les vêtements sont partis.</p>
+      <p class="hint" id="setupPreviewCount" style="color:var(--accent2);font-weight:600"></p>
+    </div>
+    <div class="setup-card">
+      <h2>Types de défis affichés</h2>
+      <div class="checkbox-grid" id="packsList"></div>
+      <p class="hint">Seules les catégories que tu possèdes s'affichent ici. Décoche pour exclure de la partie (ex. Lieux est décoché par défaut). Vêtements : niveaux 1-2 encore habillés / sous-vêtements. À partir du niveau 3 : plus aucun vêtement (nu). Aftercare (retour au calme) est toujours actif, non désactivable.</p>
     </div>
   </div>
-  <div class="setup-card">
-    <h2>Mode de jeu</h2>
-    <div class="mode-select" id="setupModeSelect">
-      <button data-mode="duo" class="active">🎯 Duo<small>à tour de rôle</small></button>
-      <button data-mode="solo">🌙 Solo<small>un seul mène</small></button>
-      <button data-mode="marathon">🏃 Marathon<small>tous les niveaux</small></button>
-      <button data-mode="roulette">🎡 Roulette<small>la roue décide</small></button>
-      <button data-mode="relais">🔁 Relais<small>changement à mi-chrono</small></button>
-      <button data-mode="de">🎲 Dé 6<small>le dé choisit</small></button>
-      <button data-mode="cachee">🙈 Cachée<small>un seul lit</small></button>
-      <button data-mode="blitz">⚡ Blitz<small>30 secondes</small></button>
-    </div>
-    <p class="hint">Relais = on change de partenaire à la moitié du chrono. Dé 6 = le dé choisit le type. Cachée = un seul lit le défi. Blitz = 30 secondes.</p>
-  </div>
-  <div class="setup-card">
-    <h2>Types de défis affichés</h2>
-    <div class="checkbox-grid" id="packsList"></div>
-    <p class="hint">Seules les catégories que tu possèdes s'affichent ici. Décoche pour exclure de la partie (ex. Lieux est décoché par défaut). Vêtements : niveaux 1-2 encore habillés / sous-vêtements. À partir du niveau 3 : plus aucun vêtement (nu). Aftercare (retour au calme) est toujours actif, non désactivable.</p>
-  </div>
-  <div class="setup-card">
-    <h2>Niveau de depart</h2>
-    <div class="level-select" id="startLevelSelect">
-      <button data-level="1" class="active">1</button>
-      <button data-level="2">2</button>
-      <button data-level="3">3</button>
-      <button data-level="4">4</button>
-      <button data-level="5">5</button>
-    </div>
-    <label class="checkbox-item" style="margin-top:12px"><input type="checkbox" id="setupNude"> On commence déjà nus (même au niveau 1)</label>
-    <p class="hint">Sinon tu pourras le signaler en jeu dès que les vêtements sont partis.</p>
-    <p class="hint" id="setupPreviewCount" style="color:var(--accent2);font-weight:600"></p>
-  </div>
-  <details class="setup-card" id="advancedSettings">
-    <summary style="cursor:pointer;font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--accent2)">Réglages avancés (accessoires, limites, durées)</summary>
-    <div style="margin-top:14px">
+
+  <div class="setup-step" data-step="3">
+    <div class="setup-card">
       <h2>Accessoires</h2>
       <div id="accessoriesList"></div>
     </div>
-    <div style="margin-top:16px">
+    <div class="setup-card">
       <h2>Limites (à exclure)</h2>
       <div class="checkbox-grid" id="limitsList"></div>
       <p class="hint">Coche ce que vous ne voulez pas voir ce soir.</p>
     </div>
-    <div style="margin-top:16px">
+    <div class="setup-card">
       <h2>Durées</h2>
       <div class="input-row"><label>Défis (s)</label><input type="number" id="challengeDuration" value="120" min="45" max="300" step="15"></div>
       <div class="input-row"><label>Partie (min)</label><input type="number" id="sessionDuration" value="30" min="15" max="120" step="5"></div>
     </div>
-  </details>
-  <div class="setup-card">
+  </div>
+
+  <div class="setup-nav">
+    <button class="ghost-btn" id="btnStepBack" style="display:none">← Précédent</button>
+    <button class="start-btn" id="btnStepNext">Suivant →</button>
+    <button class="start-btn" id="btnStartGame" style="display:none" onclick="startGame()">Lancer la partie</button>
+  </div>
+</div>
+
+<div class="overlay" id="shopOverlay">
+  <div class="setup-card" style="max-width:520px;width:100%;max-height:85vh;overflow-y:auto">
     <h2>Contenu additionnel</h2>
     <div id="shopList"></div>
     <p class="hint">Niveaux 1-3 et Aftercare toujours inclus. Le reste se débloque pack par pack (achat réel à brancher ensuite — bouton de test ci-dessus en attendant). Les packs thématiques (Sensoriel, BDSM avancé, Photo...) s'appliquent à tous les niveaux possédés, pas un seul en particulier.</p>
+    <button class="ghost-btn" onclick="closeShop()" style="margin-top:14px;width:100%">Fermer</button>
   </div>
-  <button class="start-btn" onclick="startGame()">Lancer la partie</button>
 </div>
 
 <div id="gameScreen">
   <div class="top-bar">
+
     <div class="session-timer" id="sessionTimer">30:00</div>
     <button class="ghost-btn" onclick="openMenu()">Menu</button>
     <div class="level-timer" id="levelTimer">Niv. 1</div>
@@ -469,7 +507,7 @@
     </p>
     <p style="line-height:1.5;margin:10px 0;color:var(--muted)">
       Les niveaux 1 à 3 sont gratuits. Le reste (niveaux 4-5, packs à thème) se débloque
-      dans « Contenu additionnel » en bas de l'écran.
+      dans la boutique 🛍️ (icône en haut de l'écran).
     </p>
     <button class="main-btn btn-primary" onclick="closeOnboarding()">C'est parti</button>
   </div>
@@ -663,11 +701,14 @@ function renderAccessoryLocks(){
   });
 }
 function scrollToPack(packId){
-  const row = document.querySelector(`[data-pack-row="${packId}"]`);
-  if(!row) return;
-  row.scrollIntoView({behavior:"smooth", block:"center"});
-  row.classList.add("flash-highlight");
-  setTimeout(()=>row.classList.remove("flash-highlight"), 1600);
+  openShop();
+  setTimeout(()=>{
+    const row = document.querySelector(`[data-pack-row="${packId}"]`);
+    if(!row) return;
+    row.scrollIntoView({behavior:"smooth", block:"center"});
+    row.classList.add("flash-highlight");
+    setTimeout(()=>row.classList.remove("flash-highlight"), 1600);
+  }, 60);
 }
 function updateSetupPreview(){
   const el = $("setupPreviewCount");
@@ -689,6 +730,35 @@ function closeOnboarding(){
   $("onboardingOverlay").classList.remove("show");
   try{ localStorage.setItem("jdc_onboarding_seen","1"); }catch(e){}
 }
+let setupStep = 1;
+function renderSetupStep(){
+  document.querySelectorAll(".setup-step").forEach(el=>{
+    el.style.display = (+el.dataset.step === setupStep) ? "" : "none";
+  });
+  document.querySelectorAll("#setupStepper .step-dot").forEach(d=>{
+    const s = +d.dataset.step;
+    d.classList.toggle("active", s === setupStep);
+    d.classList.toggle("done", s < setupStep);
+  });
+  $("btnStepBack").style.display = setupStep>1 ? "" : "none";
+  $("btnStepNext").style.display = setupStep<3 ? "" : "none";
+  $("btnStartGame").style.display = setupStep===3 ? "" : "none";
+  window.scrollTo({top:0, behavior:"smooth"});
+  updateSetupPreview();
+}
+function goStep(delta){
+  setupStep = Math.min(3, Math.max(1, setupStep+delta));
+  renderSetupStep();
+}
+document.querySelectorAll("#setupStepper .step-dot").forEach(d=>{
+  d.onclick = ()=>{ setupStep = +d.dataset.step; renderSetupStep(); };
+  d.style.cursor = "pointer";
+});
+$("btnStepNext").onclick = ()=>goStep(1);
+$("btnStepBack").onclick = ()=>goStep(-1);
+function openShop(){ $("shopOverlay").classList.add("show"); }
+function closeShop(){ $("shopOverlay").classList.remove("show"); }
+$("btnOpenShop").onclick = openShop;
 function ownedPackTypes(){
   const list = [{id:"classique",label:"Classique",on:true}]; // contenu de base, lié aux niveaux, pas à un pack thématique
   const owns = id => !window.PackManager || window.PackManager.isPurchased(id);
@@ -738,6 +808,7 @@ function initLists(){
   }catch(e){}
 }
 initLists(); if(typeof setChallengeLive==="function") setChallengeLive(false);
+renderSetupStep();
 
 // --- Chargement dynamique des packs (PackManager) ---
 let levelsDataReady = false;
@@ -845,7 +916,8 @@ document.querySelectorAll("#gender2 button").forEach(b=>b.onclick=()=>{document.
 document.querySelectorAll("#startLevelSelect button").forEach(b=>b.onclick=()=>{
   const lvl = +b.dataset.level;
   if(!isLevelOwned(lvl)){
-    toast(`Niveau ${lvl} verrouillé — débloque-le dans "Contenu additionnel" ci-dessous.`);
+    toast(`Niveau ${lvl} verrouillé — débloque-le dans la boutique.`);
+    scrollToPack("niveau_"+lvl);
     return;
   }
   document.querySelectorAll("#startLevelSelect button").forEach(x=>x.classList.remove("active"));
