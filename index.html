@@ -222,6 +222,7 @@
   .flip-card.open .flip-inner{transform:rotateY(180deg)}
   .flip-card.burn .flip-inner{transform:rotateY(180deg)}
   .flip-face{position:absolute;inset:0;border-radius:14px;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden}
+  .need-badge{position:absolute;top:8px;right:8px;z-index:5;background:#152238;border:1px solid #3a5a8a;color:#a8d0ff;border-radius:10px;padding:3px 8px;font-size:.65rem;font-weight:700;white-space:nowrap}
   .flip-back{
     display:grid;place-items:center;
     border:1px solid #c45a7a;
@@ -1467,10 +1468,11 @@ function showChoice(list){
   box.innerHTML='<div class="choice-hint">Acte '+ACT_LABEL[eveningAct()]+'</div><div class="shop"><button onclick="reshuffleChoices()">Relancer · 8 pts</button><button onclick="buyShield()">Ne pas brûler · 5 pts</button><button onclick="openCustom()">Défi perso · 10 pts</button></div>'+
     list.map((c,i)=>{
       const preview=personalize(c.text, currentPlayer, c).replace(/\n/g," ");
+      const accBadge = c.need ? `<span class="need-badge">${ACC_ICO[c.need]||"✨"} ${(allAccessories.find(a=>a.id===c.need)||{}).label||c.need}</span>` : "";
       return '<div class="flip-card" id="flip'+i+'" onclick="tapChoiceCard('+i+')">'+
         '<div class="flip-inner">'+
-          '<div class="flip-face flip-back"><span class="sigil">♥</span><div class="shine"></div><button class="peek-btn" onclick="event.stopPropagation();peekCard('+i+')">Aperçu · 6 pts</button></div>'+
-          '<div class="flip-face flip-front">'+preview+'<button class="play-this" onclick="event.stopPropagation();pickChoice('+i+')">On joue celle-là</button><div class="ember"><i class="flame"></i><i class="flame"></i><i class="flame"></i><i class="flame"></i></div></div>'+
+          '<div class="flip-face flip-back">'+accBadge+'<span class="sigil">♥</span><div class="shine"></div><button class="peek-btn" onclick="event.stopPropagation();peekCard('+i+')">Aperçu · 6 pts</button></div>'+
+          '<div class="flip-face flip-front">'+accBadge+preview+'<button class="play-this" onclick="event.stopPropagation();pickChoice('+i+')">On joue celle-là</button><div class="ember"><i class="flame"></i><i class="flame"></i><i class="flame"></i><i class="flame"></i></div></div>'+
         '</div></div>';
     }).join("");
   box.classList.add("show");
