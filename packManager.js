@@ -122,9 +122,25 @@
     return out;
   }
 
+  // Retourne n textes d'exemple d'un pack, achat ou non — pour un aperçu avant achat.
+  // Ne marque rien comme possédé, se contente de lire le même fichier public.
+  async function previewPack(packId, n=3){
+    try{
+      const data = await loadPack(packId);
+      if(!Array.isArray(data) || !data.length) return [];
+      // échantillon dispersé plutôt que les n premiers (plus représentatif)
+      const step = Math.max(1, Math.floor(data.length/n));
+      const sample = [];
+      for(let i=0; i<data.length && sample.length<n; i+=step) sample.push(data[i]);
+      return sample.map(x=>x.text);
+    }catch(e){
+      return [];
+    }
+  }
+
   window.PackManager = {
     CATALOG, productId, isPurchased, markPurchased, restorePurchases, resetPurchases,
-    exportPurchaseCode, importPurchaseCode,
+    exportPurchaseCode, importPurchaseCode, previewPack,
     getUnlockedChallenges, getUnlockedLevelsData,
   };
 })();

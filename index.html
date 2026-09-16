@@ -141,6 +141,8 @@
   .theme-count{font-size:.62rem;color:var(--muted)}
   .theme-tile .badge.owned-badge{margin-top:2px}
   .theme-tile .btn-unlock{margin-top:2px;width:100%;font-size:.72rem;padding:6px 4px}
+  .preview-box{grid-column:1/-1;width:100%;margin-top:6px;padding:8px;background:#150f1a;border-radius:10px}
+  .preview-box p{margin:4px 0;font-style:italic}
   .aftercare-note{font-size:.78rem;color:var(--muted);display:flex;align-items:center;gap:6px;margin-top:14px;padding:9px 12px;background:var(--card2);border-radius:12px}
   .shop-item{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px;border-radius:14px;background:var(--card2);border:1px solid #3a2a45;margin-bottom:8px}
   .shop-item.owned{border-color:#2a4a38}
@@ -553,6 +555,15 @@
   </div>
 </div>
 
+<div class="overlay" id="level5Modal">
+  <div class="setup-card nude-modal">
+    <div class="nude-modal-ico">💥</div>
+    <h2>Niveau 5 · Acte complet</h2>
+    <p>Le palier le plus intense. Rappel : le safe word et vos limites cochées restent actifs à tout moment.<br>On y va à votre rythme.</p>
+    <button class="main-btn btn-primary" onclick="closeLevel5Modal()">On est prêts</button>
+  </div>
+</div>
+
 <div class="overlay" id="customOverlay">
   <div class="setup-card" style="max-width:420px;width:100%">
     <h2>Défi perso · 10 pts</h2>
@@ -669,7 +680,7 @@ let sessionTimeLeft=0, levelTimeLeft=0, sessionInterval=null, sessionPaused=fals
 let lastChallenge=null, usedChallenges=new Set(), recentHistory=[], spinning=false;
 let lastOutcome=null, heatStreak=0, forceAftercare=0, pendingChoices=[], challengeLive=false, wheelAngle=0;
 let relaisDone=false, hiddenText="";
-let maxLevelReached=1, sessionCounts={success:0,fail:0,skip:0};
+let maxLevelReached=1, sessionCounts={success:0,fail:0,skip:0}, level5Warned=false;
 let soloActor=1; // pour le mode Solo : quel joueur reste l'acteur toute la partie
 
 // --- Stats persistantes (parties jouées, record de niveau, favoris) ---
@@ -854,9 +865,45 @@ function initLists(){
   ["accessoriesList","packsList","limitsList"].forEach(id=>{
     $(id).addEventListener("change", updateSetupPreview);
   });
+  applySavedPrefs();
   try{
     if(!localStorage.getItem("jdc_onboarding_seen")) $("onboardingOverlay").classList.add("show");
   }catch(e){}
+}
+function loadSetupPrefs(){
+  try{ return JSON.parse(localStorage.getItem("jdc_setup_prefs")) || null; }catch(e){ return null; }
+}
+function saveSetupPrefs(){
+  try{
+    const prefs = {
+      accessories:{}, limits:{}, packs:{},
+      challengeDuration:+($("challengeDuration").value)||120,
+      sessionDuration:+($("sessionDuration").value)||30,
+      startLevel:settings.startLevel||1,
+      nude:!!($("setupNude") && $("setupNude").checked),
+    };
+    allAccessories.forEach(a=>{ const el=$("acc_"+a.id); if(el) prefs.accessories[a.id]=el.checked; });
+    allLimits.forEach(l=>{ const el=$("lim_"+l.id); if(el) prefs.limits[l.id]=el.checked; });
+    document.querySelectorAll("#packsList input[type=checkbox]").forEach(inp=>{ prefs.packs[inp.id.replace(/^pack_/,"")]=inp.checked; });
+    localStorage.setItem("jdc_setup_prefs", JSON.stringify(prefs));
+  }catch(e){}
+}
+function applySavedPrefs(){
+  const p = loadSetupPrefs();
+  if(!p) return;
+  if(p.accessories) Object.entries(p.accessories).forEach(([id,v])=>{ const el=$("acc_"+id); if(el) el.checked=v; });
+  if(p.limits) Object.entries(p.limits).forEach(([id,v])=>{ const el=$("lim_"+id); if(el) el.checked=v; });
+  if(p.packs) Object.entries(p.packs).forEach(([id,v])=>{ const el=$("pack_"+id); if(el) el.checked=v; });
+  if(p.challengeDuration && $("challengeDuration")) $("challengeDuration").value=p.challengeDuration;
+  if(p.sessionDuration && $("sessionDuration")) $("sessionDuration").value=p.sessionDuration;
+  if(p.nude!==undefined && $("setupNude")) $("setupNude").checked=p.nude;
+  if(p.startLevel && isLevelOwned(p.startLevel)){
+    settings.startLevel=p.startLevel;
+    document.querySelectorAll("#startLevelSelect button").forEach(b=>{
+      b.classList.toggle("active", +b.dataset.level===p.startLevel);
+    });
+  }
+  updateSetupPreview();
 }
 initLists(); if(typeof setChallengeLive==="function") setChallengeLive(false);
 renderSetupStep();
@@ -898,7 +945,11 @@ function renderShop(){
       <div class="theme-ico">${owned?"":"🔒 "}${themeIco[id]||"✨"}</div>
       <div class="theme-name">${name}</div>
       <div class="theme-count">${meta.count} défis</div>
-      ${owned ? `<span class="badge owned-badge">Débloqué</span>` : `<button class="btn-unlock" data-unlock="${id}">Débloquer</button>`}
+      ${owned ? `<span class="badge owned-badge">Débloqué</span>` : `
+        <button class="btn-unlock" data-unlock="${id}">Débloquer</button>
+        <button class="ghost-btn" data-preview="${id}" style="font-size:.7rem;padding:5px 8px;margin-top:4px">👁 Aperçu</button>
+        <div class="preview-box" id="preview-${id}" style="display:none"></div>
+      `}
     </div>`;
   }).join("") + `</div>`;
 
@@ -926,6 +977,25 @@ function renderShop(){
       await refreshLevelsData();
       renderShop(); renderLevelLocks(); renderAccessoryLocks(); renderPacksList(); updateSetupPreview();
       toast("Pack débloqué (test local)");
+    };
+  });
+  el.querySelectorAll("[data-preview]").forEach(btn=>{
+    btn.onclick = async ()=>{
+      const id = btn.dataset.preview;
+      const box = $("preview-"+id);
+      if(!box) return;
+      if(box.style.display==="block"){ box.style.display="none"; btn.textContent="👁 Aperçu"; return; }
+      btn.textContent="…"; btn.disabled=true;
+      const texts = await window.PackManager.previewPack(id, 3);
+      btn.disabled=false; btn.textContent="👁 Aperçu";
+      if(!texts.length){ box.innerHTML=`<p class="hint">Aperçu indisponible.</p>`; }
+      else {
+        box.innerHTML = texts.map(t=>{
+          const clean = personalize(t, 1, null);
+          return `<p class="hint" style="text-align:left">"${clean}"</p>`;
+        }).join("");
+      }
+      box.style.display="block";
     };
   });
   const resetEl = $("btnResetPurchases");
@@ -1135,6 +1205,7 @@ function personalize(text, playerId, ch){
 
 async function startGame(){
   ensureAudio();
+  saveSetupPrefs();
   try{
     if(!levelsDataReady) await refreshLevelsData();
   }catch(e){
@@ -1163,12 +1234,15 @@ async function startGame(){
   sessionTimeLeft=settings.sessionMinutes*60;
   levelTimeLeft=Math.floor(sessionTimeLeft/Math.max(1,6-currentLevel));
   points={1:0,2:0}; history=[]; usedChallenges=new Set(); recentHistory=[]; lastChallenge=null; lastOutcome=null; heatStreak=0; forceAftercare=0; pendingChoices=[]; challengeLive=false; sessionPaused=false;
-  sessionCounts={success:0,fail:0,skip:0}; maxLevelReached=currentLevel;
+  sessionCounts={success:0,fail:0,skip:0}; maxLevelReached=currentLevel; level5Warned=false;
   currentPlayer = currentMode==="solo" ? soloActor : 1;
   $("setupScreen").style.display="none"; $("gameScreen").style.display="flex";
   document.querySelectorAll(".mode-btn").forEach(b=>b.classList.toggle("active",b.dataset.mode===currentMode));
   updateUI(); updateTimers(); startSessionTimer(); updateLevelInfo(); updateHistory(); updateNudeUI();
-  if(!applyLevelNude()) setTimeout(()=>dealNext(true),300);
+  if(currentLevel===5){
+    settings.nude=true; updateNudeUI();
+    level5Warned=true; openLevel5Modal();
+  } else if(!applyLevelNude()) setTimeout(()=>dealNext(true),300);
   toast("Partie lancée · "+modeLabel());
 }
 
@@ -1607,6 +1681,15 @@ function closeNudeModal(){
   if(el) el.classList.remove("show");
   dealNext(true);
 }
+function openLevel5Modal(){
+  const el=$("level5Modal");
+  if(el) el.classList.add("show");
+}
+function closeLevel5Modal(){
+  const el=$("level5Modal");
+  if(el) el.classList.remove("show");
+  dealNext(true);
+}
 function applyLevelNude(){
   if(currentLevel<3) return false;
   const was=!!settings.nude;
@@ -1627,7 +1710,12 @@ function nextLevel(auto=false){
   levelTimeLeft=Math.floor(sessionTimeLeft/Math.max(1,6-currentLevel));
   updateLevelInfo(); stopChallengeTimer(); timeLeft=settings.challengeDuration; updateTimers();
   toast(auto?"Niveau "+currentLevel+" (auto)":"Niveau "+currentLevel);
-  if(!applyLevelNude()) setTimeout(()=>dealNext(true),400);
+  if(currentLevel===5 && !level5Warned){
+    level5Warned=true;
+    openLevel5Modal();
+  } else if(!applyLevelNude()){
+    setTimeout(()=>dealNext(true),400);
+  }
 }
 function prevLevel(){
   if(currentLevel<=1) return toast("Déjà au niveau 1");
