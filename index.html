@@ -217,13 +217,12 @@
     border-radius:999px;padding:4px 8px;font-size:.68rem;cursor:pointer
   }
   .choice-hint{text-align:center;font-size:.68rem;color:var(--muted);letter-spacing:.03em}
-  .flip-card{flex:1;min-height:74px;perspective:1000px;cursor:pointer}
+  .flip-card{flex:1;min-height:74px;perspective:1000px;cursor:pointer;position:relative}
   .flip-inner{position:relative;width:100%;height:100%;transition:transform .5s cubic-bezier(.2,.7,.2,1);transform-style:preserve-3d}
   .flip-card.open .flip-inner{transform:rotateY(180deg)}
   .flip-card.burn .flip-inner{transform:rotateY(180deg)}
   .flip-face{position:absolute;inset:0;border-radius:14px;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden}
-  .need-badge{position:absolute;top:8px;right:8px;z-index:5;background:#152238;border:1px solid #3a5a8a;color:#a8d0ff;border-radius:10px;padding:3px 8px;font-size:.65rem;font-weight:700;white-space:nowrap}
-  .need-badge-inline{display:inline-block;background:#152238;border:1px solid #3a5a8a;color:#a8d0ff;border-radius:10px;padding:3px 8px;font-size:.65rem;font-weight:700;white-space:nowrap;margin-bottom:6px;align-self:flex-start}
+  .need-badge{position:absolute;top:8px;right:8px;z-index:9;background:#152238;border:1px solid #3a5a8a;color:#a8d0ff;border-radius:10px;padding:3px 8px;font-size:.65rem;font-weight:700;white-space:nowrap;pointer-events:none}
   .flip-back{
     display:grid;place-items:center;
     border:1px solid #c45a7a;
@@ -1470,11 +1469,11 @@ function showChoice(list){
     list.map((c,i)=>{
       const preview=personalize(c.text, currentPlayer, c).replace(/\n/g," ");
       const accBadge = c.need ? `<span class="need-badge">${ACC_ICO[c.need]||"✨"} ${(allAccessories.find(a=>a.id===c.need)||{}).label||c.need}</span>` : "";
-      const accBadgeInline = c.need ? `<span class="need-badge-inline">${ACC_ICO[c.need]||"✨"} ${(allAccessories.find(a=>a.id===c.need)||{}).label||c.need}</span>` : "";
       return '<div class="flip-card" id="flip'+i+'" onclick="tapChoiceCard('+i+')">'+
+        accBadge+
         '<div class="flip-inner">'+
-          '<div class="flip-face flip-back">'+accBadge+'<span class="sigil">♥</span><div class="shine"></div><button class="peek-btn" onclick="event.stopPropagation();peekCard('+i+')">Aperçu · 6 pts</button></div>'+
-          '<div class="flip-face flip-front">'+accBadgeInline+preview+'<button class="play-this" onclick="event.stopPropagation();pickChoice('+i+')">On joue celle-là</button><div class="ember"><i class="flame"></i><i class="flame"></i><i class="flame"></i><i class="flame"></i></div></div>'+
+          '<div class="flip-face flip-back"><span class="sigil">♥</span><div class="shine"></div><button class="peek-btn" onclick="event.stopPropagation();peekCard('+i+')">Aperçu · 6 pts</button></div>'+
+          '<div class="flip-face flip-front">'+preview+'<button class="play-this" onclick="event.stopPropagation();pickChoice('+i+')">On joue celle-là</button><div class="ember"><i class="flame"></i><i class="flame"></i><i class="flame"></i><i class="flame"></i></div></div>'+
         '</div></div>';
     }).join("");
   box.classList.add("show");
