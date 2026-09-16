@@ -436,8 +436,26 @@
     </div>
     <div class="setup-card">
       <h2>Durées</h2>
-      <div class="input-row"><label>Défis (s)</label><input type="number" id="challengeDuration" value="120" min="45" max="300" step="15"></div>
-      <div class="input-row"><label>Partie (min)</label><input type="number" id="sessionDuration" value="30" min="15" max="120" step="5"></div>
+      <p class="hint" style="margin-bottom:4px">Défis</p>
+      <div class="level-select" id="challengeDurationSelect">
+        <button data-sec="60">1 min</button>
+        <button data-sec="120" class="active">2 min</button>
+        <button data-sec="300">5 min</button>
+        <button data-sec="custom" id="btnCustomChallenge">Perso.</button>
+      </div>
+      <div class="input-row" id="customChallengeRow" style="display:none;margin-top:8px">
+        <label>Secondes</label><input type="number" id="customChallengeInput" min="20" max="600" step="5" value="120">
+      </div>
+      <p class="hint" style="margin:12px 0 4px">Partie</p>
+      <div class="level-select" id="sessionDurationSelect">
+        <button data-min="30" class="active">30 min</button>
+        <button data-min="45">45 min</button>
+        <button data-min="60">60 min</button>
+        <button data-min="custom" id="btnCustomSession">Perso.</button>
+      </div>
+      <div class="input-row" id="customSessionRow" style="display:none;margin-top:8px">
+        <label>Minutes</label><input type="number" id="customSessionInput" min="10" max="180" step="5" value="30">
+      </div>
     </div>
   </div>
 
@@ -670,6 +688,7 @@ const allLimits = [
   {id:"orgasme",label:"Pas de contrôle d'orgasme"}
 ];
 let settings = {accessories:{}, packs:{}, limits:{}, startLevel:1, challengeDuration:120, sessionMinutes:30, nude:false};
+let selectedChallengeSec=120, selectedSessionMin=30;
 let players = {1:{name:"Joueur 1",gender:"homme"}, 2:{name:"Joueur 2",gender:"femme"}};
 let currentLevel=1, currentMode="duo", currentPlayer=1, currentCat="all";
 let points={1:0,2:0}, history=[];
@@ -877,8 +896,8 @@ function saveSetupPrefs(){
   try{
     const prefs = {
       accessories:{}, limits:{}, packs:{},
-      challengeDuration:+($("challengeDuration").value)||120,
-      sessionDuration:+($("sessionDuration").value)||30,
+      challengeDuration:selectedChallengeSec,
+      sessionDuration:selectedSessionMin,
       startLevel:settings.startLevel||1,
       nude:!!($("setupNude") && $("setupNude").checked),
     };
@@ -894,8 +913,26 @@ function applySavedPrefs(){
   if(p.accessories) Object.entries(p.accessories).forEach(([id,v])=>{ const el=$("acc_"+id); if(el) el.checked=v; });
   if(p.limits) Object.entries(p.limits).forEach(([id,v])=>{ const el=$("lim_"+id); if(el) el.checked=v; });
   if(p.packs) Object.entries(p.packs).forEach(([id,v])=>{ const el=$("pack_"+id); if(el) el.checked=v; });
-  if(p.challengeDuration && $("challengeDuration")) $("challengeDuration").value=p.challengeDuration;
-  if(p.sessionDuration && $("sessionDuration")) $("sessionDuration").value=p.sessionDuration;
+  if(p.challengeDuration){
+    selectedChallengeSec=p.challengeDuration;
+    const matches = [...document.querySelectorAll("#challengeDurationSelect button[data-sec]")].filter(b=>b.dataset.sec!=="custom");
+    const hit = matches.some(b=>+b.dataset.sec===p.challengeDuration);
+    document.querySelectorAll("#challengeDurationSelect button").forEach(b=>{
+      const isCustomBtn = b.dataset.sec==="custom";
+      b.classList.toggle("active", hit ? +b.dataset.sec===p.challengeDuration : isCustomBtn);
+    });
+    if(!hit){ $("customChallengeInput").value=p.challengeDuration; $("customChallengeRow").style.display="flex"; }
+  }
+  if(p.sessionDuration){
+    selectedSessionMin=p.sessionDuration;
+    const matches = [...document.querySelectorAll("#sessionDurationSelect button[data-min]")].filter(b=>b.dataset.min!=="custom");
+    const hit = matches.some(b=>+b.dataset.min===p.sessionDuration);
+    document.querySelectorAll("#sessionDurationSelect button").forEach(b=>{
+      const isCustomBtn = b.dataset.min==="custom";
+      b.classList.toggle("active", hit ? +b.dataset.min===p.sessionDuration : isCustomBtn);
+    });
+    if(!hit){ $("customSessionInput").value=p.sessionDuration; $("customSessionRow").style.display="flex"; }
+  }
   if(p.nude!==undefined && $("setupNude")) $("setupNude").checked=p.nude;
   if(p.startLevel && isLevelOwned(p.startLevel)){
     settings.startLevel=p.startLevel;
@@ -1046,6 +1083,32 @@ document.querySelectorAll("#startLevelSelect button").forEach(b=>b.onclick=()=>{
   settings.startLevel=lvl;
   updateSetupPreview();
 });
+document.querySelectorAll("#challengeDurationSelect button").forEach(b=>b.onclick=()=>{
+  document.querySelectorAll("#challengeDurationSelect button").forEach(x=>x.classList.remove("active"));
+  b.classList.add("active");
+  if(b.dataset.sec==="custom"){
+    $("customChallengeRow").style.display="flex";
+    $("customChallengeInput").focus();
+    selectedChallengeSec=+$("customChallengeInput").value||120;
+  } else {
+    $("customChallengeRow").style.display="none";
+    selectedChallengeSec=+b.dataset.sec;
+  }
+});
+$("customChallengeInput").addEventListener("input", ()=>{ selectedChallengeSec=+$("customChallengeInput").value||120; });
+document.querySelectorAll("#sessionDurationSelect button").forEach(b=>b.onclick=()=>{
+  document.querySelectorAll("#sessionDurationSelect button").forEach(x=>x.classList.remove("active"));
+  b.classList.add("active");
+  if(b.dataset.min==="custom"){
+    $("customSessionRow").style.display="flex";
+    $("customSessionInput").focus();
+    selectedSessionMin=+$("customSessionInput").value||30;
+  } else {
+    $("customSessionRow").style.display="none";
+    selectedSessionMin=+b.dataset.min;
+  }
+});
+$("customSessionInput").addEventListener("input", ()=>{ selectedSessionMin=+$("customSessionInput").value||30; });
 document.querySelectorAll("#setupModeSelect button").forEach(b=>b.onclick=()=>{
   document.querySelectorAll("#setupModeSelect button").forEach(x=>x.classList.remove("active"));
   b.classList.add("active");
@@ -1227,8 +1290,8 @@ async function startGame(){
   if(!Object.values(settings.packs).some(Boolean)) settings.packs.classique=true;
   settings.limits={}; allLimits.forEach(l=>settings.limits[l.id]=$("lim_"+l.id).checked);
   settings.nude=!!$("setupNude") && $("setupNude").checked;
-  settings.challengeDuration=+$("challengeDuration").value||120;
-  settings.sessionMinutes=+$("sessionDuration").value||30;
+  settings.challengeDuration=selectedChallengeSec;
+  settings.sessionMinutes=selectedSessionMin;
   currentLevel=settings.startLevel;
   timeLeft=settings.challengeDuration;
   sessionTimeLeft=settings.sessionMinutes*60;
