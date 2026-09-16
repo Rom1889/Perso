@@ -202,8 +202,8 @@
   #gameScreen .timer-btn{width:36px;height:36px}
   #gameScreen .footer{margin:0;position:static}
   #gameScreen .safe-word{padding:5px 12px;font-size:.78rem;margin:0}
-  #gameScreen .play-tools{display:grid;grid-template-columns:1fr 1fr auto;gap:6px;align-items:center}
-  #gameScreen .play-tools .ghost-btn{justify-self:center}
+  #gameScreen .play-tools{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+  #gameScreen .play-tools button{min-height:42px;padding:8px 4px;font-size:.82rem;border-radius:11px;justify-self:stretch;text-align:center}
 
 
 
@@ -478,10 +478,8 @@
   </div>
   <div class="level-info" id="levelInfo">Niveau 1 / 5 · Duo</div>
   <div class="play-tools">
-    <div style="display:flex;gap:4px">
-      <button class="ghost-btn" onclick="prevLevel()" style="flex:0 0 auto;padding:10px 12px" title="Niveau -">−</button>
-      <button class="main-btn btn-warning" onclick="nextLevel()" style="flex:1">Niveau +</button>
-    </div>
+    <button class="main-btn btn-warning" onclick="prevLevel()" title="Niveau -">−</button>
+    <button class="main-btn btn-warning" onclick="nextLevel()">Niveau +</button>
     <button class="main-btn btn-warning" onclick="extendLevel()">+2 min</button>
     <button class="ghost-btn" id="btnNude" onclick="toggleNude()">On est nus</button>
   </div>
@@ -822,13 +820,15 @@ function openShop(){ $("shopOverlay").classList.add("show"); }
 function closeShop(){ $("shopOverlay").classList.remove("show"); }
 $("btnOpenShop").onclick = openShop;
 function ownedPackTypes(){
-  const list = [{id:"classique",label:"Classique",on:true}]; // contenu de base, lié aux niveaux, pas à un pack thématique
+  const list = [
+    {id:"classique",label:"Classique",on:true}, // contenu de base, lié aux niveaux, pas à un pack thématique
+    {id:"aftercare",label:"Aftercare",on:true},
+  ];
   const owns = id => !window.PackManager || window.PackManager.isPurchased(id);
   if(owns("theme_qacte")) list.push({id:"qacte",label:"Question + Acte",on:true});
   if(owns("theme_photo_video")) list.push({id:"photo",label:"Photo / Video",on:true});
   if(owns("theme_exterieur")) list.push({id:"lieux",label:"Lieux (canapé, douche)",on:false});
   return list;
-  // Note : Aftercare n'apparaît plus ici — contenu de sécurité, toujours inclus, jamais désactivable.
 }
 function renderPacksList(){
   // Préserve les choix déjà faits par l'utilisateur avant de reconstruire la liste
