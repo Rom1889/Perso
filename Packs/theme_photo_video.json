@@ -721,7 +721,7 @@
  },
  {
   "type": "Défi",
-  "text": "Photo de tes pouces qui écartent un peu, langue au centre.",
+  "text": "Photo de tes pouces qui écartent un peu les lèvres de {{partner}}, langue au centre.",
   "need": null,
   "partner": null,
   "cat": "photo",
