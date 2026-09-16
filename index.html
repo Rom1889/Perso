@@ -396,7 +396,11 @@
         <button data-mode="cachee">🙈 Cachée<small>un seul lit</small></button>
         <button data-mode="blitz">⚡ Blitz<small>30 secondes</small></button>
       </div>
-      <p class="hint">Relais = on change de partenaire à la moitié du chrono. Cachée = un seul lit le défi. Blitz = 30 secondes.</p>
+      <div class="gender-select" id="soloActorSelect" style="display:none;margin-top:10px">
+        <button data-actor="1" class="active">Joueur 1 mène</button>
+        <button data-actor="2">Joueur 2 mène</button>
+      </div>
+      <p class="hint">Relais = on change de partenaire à la moitié du chrono. Cachée = un seul lit le défi. Blitz = 30 secondes, sans choix de carte (Relancer/Défi perso indisponibles dans ce mode). Marathon = pioche dans tous les niveaux déjà atteints, chrono plus court, le partenaire gagne aussi un point.</p>
     </div>
     <div class="setup-card">
       <h2>Niveau de depart</h2>
@@ -472,7 +476,10 @@
   </div>
   <div class="level-info" id="levelInfo">Niveau 1 / 5 · Duo</div>
   <div class="play-tools">
-    <button class="main-btn btn-warning" onclick="nextLevel()">Niveau +</button>
+    <div style="display:flex;gap:4px">
+      <button class="ghost-btn" onclick="prevLevel()" style="flex:0 0 auto;padding:10px 12px" title="Niveau -">−</button>
+      <button class="main-btn btn-warning" onclick="nextLevel()" style="flex:1">Niveau +</button>
+    </div>
     <button class="main-btn btn-warning" onclick="extendLevel()">+2 min</button>
     <button class="ghost-btn" id="btnNude" onclick="toggleNude()">On est nus</button>
   </div>
@@ -488,6 +495,7 @@
     <div class="timer-box">
       <div class="timer" id="timer">02:00</div>
       <button class="timer-btn" id="timerStart">▶</button>
+      <button class="timer-btn" id="btnFavorite" onclick="toggleFavorite(lastChallenge && lastChallenge.text)" title="Ajouter aux favoris">☆</button>
       <button class="ghost-btn" id="btnBuyTime" onclick="buyTime()">+30 s · 4 pts</button>
     </div>
     </div>
@@ -515,6 +523,24 @@
       dans la boutique 🛍️ (icône en haut de l'écran).
     </p>
     <button class="main-btn btn-primary" onclick="closeOnboarding()">C'est parti</button>
+  </div>
+</div>
+
+<div class="overlay" id="favoritesOverlay">
+  <div class="setup-card" style="max-width:460px;width:100%;max-height:80vh;overflow-y:auto">
+    <h2>⭐ Mes favoris</h2>
+    <div id="favoritesList"></div>
+    <button class="ghost-btn" style="width:100%;margin-top:14px" onclick="closeFavorites()">Fermer</button>
+  </div>
+</div>
+
+<div class="overlay" id="recapOverlay">
+  <div class="setup-card" style="max-width:420px;width:100%;text-align:center">
+    <div style="font-size:2.2rem">🎉</div>
+    <h2>Partie terminée</h2>
+    <div id="recapStats" style="text-align:left;margin:14px 0"></div>
+    <button class="start-btn" onclick="closeRecap()">Continuer à discuter</button>
+    <button class="ghost-btn" style="width:100%;margin-top:8px" onclick="backToMainMenu()">Retour au menu</button>
   </div>
 </div>
 
@@ -546,6 +572,7 @@
     <div class="session-controls" style="margin-bottom:12px">
       <button id="btnPauseSession" onclick="toggleSessionPause()">Pause</button>
       <button onclick="extendLevel();">+2 min</button>
+      <button onclick="prevLevel();">Niveau −</button>
       <button onclick="nextLevel();">Niveau +</button>
     </div>
     <div class="session-controls" style="margin-bottom:14px">
@@ -554,6 +581,7 @@
       <button id="btnNudeMenu" onclick="toggleNude()">On est nus</button>
     </div>
     <div class="session-controls" style="margin-bottom:14px">
+      <button onclick="openFavorites()">⭐ Mes favoris</button>
       <button onclick="backToMainMenu()">🏠 Menu principal</button>
     </div>
     <p class="hint" style="margin-bottom:8px">Mode</p>
@@ -641,6 +669,36 @@ let sessionTimeLeft=0, levelTimeLeft=0, sessionInterval=null, sessionPaused=fals
 let lastChallenge=null, usedChallenges=new Set(), recentHistory=[], spinning=false;
 let lastOutcome=null, heatStreak=0, forceAftercare=0, pendingChoices=[], challengeLive=false, wheelAngle=0;
 let relaisDone=false, hiddenText="";
+let maxLevelReached=1, sessionCounts={success:0,fail:0,skip:0};
+let soloActor=1; // pour le mode Solo : quel joueur reste l'acteur toute la partie
+
+// --- Stats persistantes (parties jouées, record de niveau, favoris) ---
+function loadStats(){
+  try{ return JSON.parse(localStorage.getItem("jdc_stats")) || {gamesPlayed:0, bestLevel:1, favorites:[]}; }
+  catch(e){ return {gamesPlayed:0, bestLevel:1, favorites:[]}; }
+}
+function saveStats(s){ try{ localStorage.setItem("jdc_stats", JSON.stringify(s)); }catch(e){} }
+function toggleFavorite(text){
+  if(!text) return;
+  const s = loadStats();
+  const i = s.favorites.indexOf(text);
+  if(i>=0){ s.favorites.splice(i,1); toast("Retiré des favoris"); }
+  else { s.favorites.push(text); toast("Ajouté aux favoris ⭐"); }
+  saveStats(s);
+  updateFavoriteBtn();
+}
+function isFavorite(text){ return loadStats().favorites.includes(text); }
+function updateFavoriteBtn(){
+  const btn=$("btnFavorite"); if(!btn || !lastChallenge) return;
+  btn.textContent = isFavorite(lastChallenge.text) ? "⭐" : "☆";
+}
+function renderFavoritesList(){
+  const el=$("favoritesList"); if(!el) return;
+  const favs=loadStats().favorites;
+  el.innerHTML = favs.length
+    ? favs.map(t=>`<div class="input-row" style="align-items:flex-start"><label style="flex:1;font-weight:400;font-size:.85rem">${t}</label></div>`).join("")
+    : `<p class="hint">Aucun favori pour l'instant — clique sur ☆ pendant un défi pour le garder.</p>`;
+}
 
 function $(id){return document.getElementById(id)}
 const ACC_TO_PACK = {
@@ -918,7 +976,17 @@ document.querySelectorAll("#startLevelSelect button").forEach(b=>b.onclick=()=>{
   settings.startLevel=lvl;
   updateSetupPreview();
 });
-document.querySelectorAll("#setupModeSelect button").forEach(b=>b.onclick=()=>{document.querySelectorAll("#setupModeSelect button").forEach(x=>x.classList.remove("active"));b.classList.add("active");currentMode=b.dataset.mode});
+document.querySelectorAll("#setupModeSelect button").forEach(b=>b.onclick=()=>{
+  document.querySelectorAll("#setupModeSelect button").forEach(x=>x.classList.remove("active"));
+  b.classList.add("active");
+  currentMode=b.dataset.mode;
+  $("soloActorSelect").style.display = currentMode==="solo" ? "flex" : "none";
+});
+document.querySelectorAll("#soloActorSelect button").forEach(b=>b.onclick=()=>{
+  document.querySelectorAll("#soloActorSelect button").forEach(x=>x.classList.remove("active"));
+  b.classList.add("active");
+  soloActor=+b.dataset.actor;
+});
 document.querySelectorAll("#catFilters button").forEach(b=>b.onclick=()=>{
   document.querySelectorAll("#catFilters button").forEach(x=>x.classList.remove("active"));
   b.classList.add("active");
@@ -1095,6 +1163,8 @@ async function startGame(){
   sessionTimeLeft=settings.sessionMinutes*60;
   levelTimeLeft=Math.floor(sessionTimeLeft/Math.max(1,6-currentLevel));
   points={1:0,2:0}; history=[]; usedChallenges=new Set(); recentHistory=[]; lastChallenge=null; lastOutcome=null; heatStreak=0; forceAftercare=0; pendingChoices=[]; challengeLive=false; sessionPaused=false;
+  sessionCounts={success:0,fail:0,skip:0}; maxLevelReached=currentLevel;
+  currentPlayer = currentMode==="solo" ? soloActor : 1;
   $("setupScreen").style.display="none"; $("gameScreen").style.display="flex";
   document.querySelectorAll(".mode-btn").forEach(b=>b.classList.toggle("active",b.dataset.mode===currentMode));
   updateUI(); updateTimers(); startSessionTimer(); updateLevelInfo(); updateHistory(); updateNudeUI();
@@ -1167,7 +1237,7 @@ function startSessionTimer(){
     if(sessionPaused) return;
     sessionTimeLeft--; levelTimeLeft--;
     if(levelTimeLeft<=0 && currentLevel<5) nextLevel(true);
-    if(sessionTimeLeft<=0){ clearInterval(sessionInterval); stopChallengeTimer(); toast("Fin de la partie"); }
+    if(sessionTimeLeft<=0){ clearInterval(sessionInterval); stopChallengeTimer(); showRecap(); }
     updateTimers();
   },1000);
 }
@@ -1514,7 +1584,11 @@ function dealNext(fresh){
   else newChallenge();
   if(fresh) updateLevelInfo();
 }
-function updateLevelInfo(){ $("levelInfo").textContent="Niveau "+currentLevel+" / 5 · "+modeLabel()+" · "+ACT_LABEL[eveningAct()]; }
+function updateLevelInfo(){
+  const total=sessionCounts.success+sessionCounts.fail+sessionCounts.skip;
+  $("levelInfo").textContent="Niveau "+currentLevel+" / 5 · "+modeLabel()+" · "+ACT_LABEL[eveningAct()]+" · "+total+" défi"+(total>1?"s":"")+" joué"+(total>1?"s":"");
+}
+function updateSessionCounter(){ updateLevelInfo(); }
 function updateUI(){
   $("displayNameP1").textContent=players[1].name+(players[1].gender==="femme"?" ♀":" ♂");
   $("displayNameP2").textContent=players[2].name+(players[2].gender==="femme"?" ♀":" ♂");
@@ -1549,10 +1623,19 @@ function nextLevel(auto=false){
     return;
   }
   currentLevel++;
+  if(currentLevel>maxLevelReached) maxLevelReached=currentLevel;
   levelTimeLeft=Math.floor(sessionTimeLeft/Math.max(1,6-currentLevel));
   updateLevelInfo(); stopChallengeTimer(); timeLeft=settings.challengeDuration; updateTimers();
   toast(auto?"Niveau "+currentLevel+" (auto)":"Niveau "+currentLevel);
   if(!applyLevelNude()) setTimeout(()=>dealNext(true),400);
+}
+function prevLevel(){
+  if(currentLevel<=1) return toast("Déjà au niveau 1");
+  currentLevel--;
+  levelTimeLeft=Math.floor(sessionTimeLeft/Math.max(1,6-currentLevel));
+  updateLevelInfo(); stopChallengeTimer(); timeLeft=settings.challengeDuration; updateTimers();
+  toast("Niveau "+currentLevel);
+  dealNext(true);
 }
 function extendLevel(){ levelTimeLeft+=120; updateTimers(); toast("+2 min"); }
 function challengeBans(c){
@@ -1643,7 +1726,16 @@ function getAvailableChallenges(extraFilter){
     if(fresh.length) pool = fresh;
   }
   if(currentMode==="blitz"){
-    const short=pool.filter(c=>!/(1 minute|2 min|une minute|\b40 secondes\b|\b60 secondes\b)/i.test(c.text||""));
+    const tooSlow = c => {
+      const t=(c.text||"");
+      let maxSec=0;
+      t.replace(/(\d+)\s*secondes?/gi, (_,n)=>{ maxSec=Math.max(maxSec,+n); return _; });
+      t.replace(/(\d+)\s*minutes?/gi, (_,n)=>{ maxSec=Math.max(maxSec,+n*60); return _; });
+      if(/\bune minute\b/i.test(t)) maxSec=Math.max(maxSec,60);
+      if(/\bdeux minutes\b/i.test(t)) maxSec=Math.max(maxSec,120);
+      return maxSec>35; // au-delà de ~35s, trop lent pour le rythme Blitz
+    };
+    const short=pool.filter(c=>!tooSlow(c));
     if(short.length) pool=short;
   }
   if(!pool.length){
@@ -1728,6 +1820,7 @@ function showChallenge(ch){
   if(box){ box.classList.remove("show"); box.innerHTML=""; }
   if(play) play.style.display="block";
   lastChallenge = ch;
+  updateFavoriteBtn();
   rememberChallenge(ch);
   relaisDone = false;
   hiddenText = personalize(ch.text, currentPlayer, ch);
@@ -1824,10 +1917,11 @@ function completeChallenge(){
   history.unshift({text:hiddenText||$("challengeText").textContent,player:players[currentPlayer].name,status:"success",level:currentLevel});
   updateHistory(); toast(currentMode==="marathon"?("+3 / +1 marathon"):("+3 pour "+players[currentPlayer].name));
   lastOutcome="success";
+  sessionCounts.success++; updateSessionCounter();
   const kind=classifyChallenge(lastChallenge);
   if(kind==="pic" || kind==="vague") heatStreak++;
   else heatStreak=0;
-  if(kind==="pic" && heatStreak>=2){ forceAftercare=1; heatStreak=0; toast("Retour : aftercare"); }
+  if(kind==="pic" && heatStreak>=2){ forceAftercare=1; heatStreak=0; toast("Deux défis intenses d'affilée — place à une carte plus calme (aftercare) 💗"); }
   afterTurn(1100);
 }
 function failChallenge(){
@@ -1838,6 +1932,7 @@ function failChallenge(){
   history.unshift({text:$("challengeText").textContent,player:players[currentPlayer].name,status:"fail",level:currentLevel});
   updateHistory(); toast("-1 pour "+players[currentPlayer].name);
   lastOutcome="fail"; heatStreak=0;
+  sessionCounts.fail++; updateSessionCounter();
   afterTurn();
 }
 function skipChallenge(){
@@ -1846,6 +1941,7 @@ function skipChallenge(){
   history.unshift({text:hiddenText||$("challengeText").textContent,player:players[currentPlayer].name,status:"skip",level:currentLevel});
   updateHistory(); toast("Passe — suivante plus douce");
   lastOutcome="skip"; heatStreak=0;
+  sessionCounts.skip++; updateSessionCounter();
   afterTurn();
 }
 function updateHistory(){
@@ -1855,6 +1951,24 @@ function updateHistory(){
 }
 function openMenu(){ $("menuOverlay").classList.add("show"); }
 function closeMenu(){ $("menuOverlay").classList.remove("show"); }
+function showRecap(){
+  const s = loadStats();
+  s.gamesPlayed = (s.gamesPlayed||0) + 1;
+  const isRecord = maxLevelReached > (s.bestLevel||1);
+  if(isRecord) s.bestLevel = maxLevelReached;
+  saveStats(s);
+  $("recapStats").innerHTML = `
+    <div class="input-row"><label>Défis réussis</label><b>${sessionCounts.success}</b></div>
+    <div class="input-row"><label>Défis ratés</label><b>${sessionCounts.fail}</b></div>
+    <div class="input-row"><label>Défis passés</label><b>${sessionCounts.skip}</b></div>
+    <div class="input-row"><label>Niveau max atteint</label><b>${maxLevelReached}${isRecord?" 🏆 record !":""}</b></div>
+    <div class="input-row"><label>Parties jouées au total</label><b>${s.gamesPlayed}</b></div>
+  `;
+  $("recapOverlay").classList.add("show");
+}
+function closeRecap(){ $("recapOverlay").classList.remove("show"); }
+function openFavorites(){ closeMenu(); renderFavoritesList(); $("favoritesOverlay").classList.add("show"); }
+function closeFavorites(){ $("favoritesOverlay").classList.remove("show"); }
 function openWheel(){ $("wheelOverlay").classList.add("show"); $("wheelResult").textContent="Touche Lancer"; }
 function closeWheel(){
   $("wheelOverlay").classList.remove("show");
@@ -1898,7 +2012,7 @@ document.querySelectorAll(".mode-btn").forEach(btn=>{
     document.querySelectorAll(".mode-btn").forEach(b=>b.classList.remove("active"));
     btn.classList.add("active");
     currentMode=btn.dataset.mode;
-    currentPlayer=1;
+    if(currentMode==="solo") soloActor=currentPlayer; else currentPlayer=1;
     updateUI();
     toast("Mode "+currentMode);
     updateLevelInfo();
